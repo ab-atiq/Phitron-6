@@ -1,0 +1,20 @@
+Print Outer Tree
+Explanation:  
+এক্সাম ইন্সট্রাকশন ভিডিওতে বিস্তারিত বলা আছে।
+
+
+
+Hints
+আপনি মডিউলে দেখানো টেকনিক ইউজ করে লেভেল অরডারে ইনপুট নিয়ে নিতে পারেন। 
+এরপর, 
+root এর left আছে কিনা যদি থাকে তাহলে  printLeft (আপনি যেকোনো নাম দিতে পারেন) নামের একটি function call করবো  এবং সেইখানে root কে পাঠিয়ে দিব।
+এখন root এর মানটি প্রিন্ট করবো 
+root এর right আছে কিনা যদি থাকে তাহলে  printRight (আপনি যেকোনো নাম দিতে পারেন) নামের একটি function call করবো  এবং সেইখানে root কে পাঠিয়ে দিব।
+
+এখন আসি printLeft function টিতে কি করবো.
+প্রথমে চেক করবো root এর left আছে কিনা,  যদি থাকে তাহলে printfLeft কে  recursive call করবো এবং recursive কলের সময় argument হিসেবে root এর left কে পাঠাবো। এরপর root এর left এর মানটি প্রিন্ট করে দিব।
+যদি root এর left না থাকে তাহলে চেক করবেন  root এর right আছে কিনা, যদি থাকে তাহলে printLeft কে  recursive call করবো এবং recursive কলের সময় argument হিসেবে root এর right কে পাঠাবো। এরপর root এর right এর মানটি প্রিন্ট করে দিব।
+
+এখন আসি printRight function টিতে কি করবো.
+প্রথমে চেক করবো root এর right আছে কিনা,  যদি থাকে তাহলে root এর right  এর মানটি প্রিন্ট করে দিব। এরপর printRight কে  recursive call করবো এবং recursive কলের সময় argument হিসেবে root এর right কে পাঠাবো। 
+যদি root এর right না থাকে তাহলে চেক করবেন  root এর left আছে কিনা,  যদি থাকে তাহলে root এর left এর মানটি প্রিন্ট করে দিব। এরপর printRight কে  recursive call করবো এবং recursive কলের সময় argument হিসেবে root এর left কে পাঠাবো।

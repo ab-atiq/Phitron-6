@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "*html": "html",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "cstdint": "cpp",
+        "iostream": "cpp",
+        "limits": "cpp",
+        "list": "cpp",
+        "stack": "cpp",
+        "deque": "cpp",
+        "xstring": "cpp",
+        "xiosbase": "cpp",
+        "queue": "cpp",
+        "xutility": "cpp",
+        "utility": "cpp",
+        "compare": "cpp",
+        "xstddef": "cpp",
+        "xhash": "cpp",
+        "xlocinfo": "cpp",
+        "xtree": "cpp",
+        "initializer_list": "cpp"
+    }
+}
