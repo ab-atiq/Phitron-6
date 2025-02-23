@@ -1,49 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Student
-{
-public:
-    string name;
-    int rr;
-    int marks;
 
-    Student(string name, int rr, int marks)
-    {
-        this->name = name;
-        this->rr = rr;
-        this->marks = marks;
-    }
-};
-class cmp
+int main(int argc, char const *argv[])
 {
-public:
-    bool operator()(Student l, Student r)
+    int tcs;
+    cin >> tcs;
+    getchar();
+    while (tcs--)
     {
-        if (l.marks > r.marks)
-            return true;
-        else if (l.marks < r.marks)
-            return false;
-        else
-            return l.rr > r.rr;
+        string sent;
+        getline(cin, sent);
+
+        stringstream sntc(sent);
+        string word;
+
+        map<string, int> frq_map;
+
+        int _max = INT_MIN;
+        string frq_word;
+
+        while (sntc >> word)
+        {
+            frq_map[word]++;
+
+            if (frq_map[word] > _max)
+            {
+                _max = frq_map[word]; // i am updating here
+                frq_word = word;      // store that word which is most frequent first
+            }
+        }
+        cout << frq_word << " " << _max << endl;
     }
-};
-int main()
-{
-    priority_queue<Student, vector<Student>, cmp> pq;
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        string name;
-        int rr, marks;
-        cin >> name >> rr >> marks;
-        Student obj(name, rr, marks);
-        pq.push(obj);
-    }
-    while (!pq.empty())
-    {
-        cout << pq.top().name << " " << pq.top().rr << " " << pq.top().marks << endl;
-        pq.pop();
-    }
+
     return 0;
 }

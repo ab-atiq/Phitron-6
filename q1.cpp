@@ -1,32 +1,45 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+pair<string, int> countMostFrequentWord(const string &sentence)
+{
+    map<string, int> wordCount;
+    stringstream stream(sentence);
+    string word;
+    string mostFrequentWord;
+    int maxCount = 0;
+
+    while (stream >> word)
+    {
+        wordCount[word]++;
+        if (wordCount[word] > maxCount)
+        {
+            maxCount = wordCount[word];
+            mostFrequentWord = word;
+        }
+    }
+
+    return make_pair(mostFrequentWord, maxCount);
+}
+
 int main()
 {
-    int i, N;
-    scanf("%d", &N);
+    int t;
+    cin >> t;
+    cin.ignore();
 
-    int A[N + 1];
-
-    for (i = 1; i <= N; i++)
+    vector<pair<string, int>> results;
+    for (int i = 0; i < t; ++i)
     {
-        scanf("%d", &A[i]);
+        string sentence;
+        getline(cin, sentence);
+        results.push_back(countMostFrequentWord(sentence));
     }
 
-    int K;
-    scanf("%d", &K);
-
-    // toogle the value of A[temp]
-    if (A[K] == 0)
+    for (size_t i = 0; i < results.size(); ++i)
     {
-        A[K] = 1;
-    }
-    else if (A[K] == 1)
-    {
-        A[K] = 0;
-    }
-
-    for (int i = 1; i <= N; i++)
-    {
-        printf("%d", A[i]);
+        cout << results[i].first << " " << results[i].second << endl;
     }
 
     return 0;
