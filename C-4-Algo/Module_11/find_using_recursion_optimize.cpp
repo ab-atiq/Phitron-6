@@ -3,7 +3,7 @@ using namespace std;
 
 int par[1005]; // parent or leader array
 
-// time complexity = O(logn) 
+// time complexity = O(logn)
 int find(int node)
 {
     // cout<<node<<endl;

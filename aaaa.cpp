@@ -1,79 +1,69 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-const long long INF = 1e18;  // Avoid integer overflow
-
-vector<vector<pair<int, int>>> adj_list;
-vector<long long> dis;
-vector<int> parent;
-
-void dijkstra(int src, int n)
+int knapsack(int N, int W, vector<int> &weights, vector<int> &values, vector<int> &selected_items)
 {
-    priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
-    
-    dis.assign(n + 1, INF);  // Efficient memory allocation
-    parent.assign(n + 1, -1); // Track path reconstruction
+    vector<vector<int>> dp(N + 1, vector<int>(W + 1, 0));
 
-    dis[src] = 0;
-    pq.push({0, src});
-
-    while (!pq.empty())
+    // Build the DP table
+    for (int i = 1; i <= N; i++)
     {
-        auto [par_dis, par_node] = pq.top();
-        pq.pop();
-
-        if (par_dis > dis[par_node])
-            continue; // Ignore outdated distances
-
-        for (auto [child_node, child_dis] : adj_list[par_node])
+        for (int w = 0; w <= W; w++)
         {
-            if (par_dis + child_dis < dis[child_node])
+            if (weights[i - 1] <= w)
             {
-                dis[child_node] = par_dis + child_dis;
-                parent[child_node] = par_node;
-                pq.push({dis[child_node], child_node});
+                dp[i][w] = max(dp[i - 1][w], values[i - 1] + dp[i - 1][w - weights[i - 1]]);
+            }
+            else
+            {
+                dp[i][w] = dp[i - 1][w];
             }
         }
     }
-}
 
-void printPath(int n)
-{
-    if (dis[n] == INF)
+    // Backtracking to find the selected items
+    int w = W;
+    for (int i = N; i > 0 && w > 0; i--)
     {
-        cout << "-1\n"; // No path found
-        return;
+        if (dp[i][w] != dp[i - 1][w])
+        {                                    // Item was included
+            selected_items.push_back(i - 1); // Store item index
+            w -= weights[i - 1];             // Reduce remaining weight
+        }
     }
 
-    vector<int> path;
-    for (int curr = n; curr != -1; curr = parent[curr])
-        path.push_back(curr);
-
-    reverse(path.begin(), path.end());
-    for (int v : path) cout << v << " ";
-    cout << endl;
+    return dp[N][W];
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
 
-    int n, m;
-    cin >> n >> m;
+    int T;
+    cin >> T;
 
-    adj_list.resize(n + 1); // Dynamically allocate adjacency list
-
-    for (int i = 0; i < m; i++)
+    while (T--)
     {
-        int a, b, w;
-        cin >> a >> b >> w;
-        adj_list[a].push_back({b, w});
-        adj_list[b].push_back({a, w});
-    }
+        int N, W;
+        cin >> N >> W;
 
-    dijkstra(1, n);
-    printPath(n);
+        vector<int> weights(N), values(N);
+        for (int i = 0; i < N; i++)
+            cin >> weights[i];
+        for (int i = 0; i < N; i++)
+            cin >> values[i];
+
+        vector<int> selected_items;
+        int max_value = knapsack(N, W, weights, values, selected_items);
+
+        cout << "Maximum Value: " << max_value << "\n";
+        cout << "Selected Items (0-based index): ";
+        for (int idx : selected_items)
+            cout << idx << " ";
+        cout << "\n";
+    }
 
     return 0;
 }
