@@ -16,10 +16,10 @@ int main()
     {
         if (dp[i])
         {
-            if (i + 3 <= 100000)
-                dp[i + 3] = true;
-            if (i * 2 <= 100000)
-                dp[i * 2] = true;
+            if (i + 5 <= 100000)
+                dp[i + 5] = true;
+            if (i * 4 <= 100000)
+                dp[i * 4] = true;
         }
     }
 

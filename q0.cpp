@@ -1,50 +1,33 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-vector<int> adj_mat[1005];
-bool vis_arr[1005];
-
-void bfs(int source)
+int n, m;
+long long mat[15][15];
+long long dp[15][15];
+long long max_sum(int r, int c)
 {
-    queue<int> q;
-    q.push(source);
-    vis_arr[source] = true;
-
-    while (!q.empty())
-    {
-        int parent = q.front();
-        q.pop();
-        cout << parent << " ";
-
-        for (int child : adj_mat[parent])
-        {
-            if (!vis_arr[child])
-            {
-                q.push(child);
-                vis_arr[child] = true;
-            }
-        }
-    }
+    if (r >= n || c >= m)
+        return -1e9;
+    if (r == n - 1 && c == m - 1)
+        return mat[r][c];
+    if (dp[r][c] != -1)
+        return dp[r][c];
+    long down = max_sum(r + 1, c);
+    long right = max_sum(r, c + 1);
+    return dp[r][c] = mat[r][c] + max(down, right);
 }
-
 int main()
 {
-    int n, e;
-    cin >> n >> e;
-
-    for (int i = 0; i < e; i++)
+    cin >> n >> m;
+    for (int i = 0; i < n; i++)
     {
-        int a, b;
-        cin >> a >> b;
-        adj_mat[a].push_back(b);
-        adj_mat[b].push_back(a);
+        for (int j = 0; j < m; j++)
+        {
+            cin >> mat[i][j];
+            dp[i][j] = -1;
+        }
     }
 
-    // Reset visitation array
-    fill(vis_arr, vis_arr + 1005, false);
-
-    int start_node = 0; // Change this if needed
-    bfs(start_node);
+    cout << max_sum(0, 0);
 
     return 0;
 }

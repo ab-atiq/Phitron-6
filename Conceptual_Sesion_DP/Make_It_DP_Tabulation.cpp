@@ -11,10 +11,10 @@ void solve()
     {
         if (dp[i])
         {
-            if (i + 3 <= N)
-                dp[i + 3] = true;
-            if (i * 2 <= N)
-                dp[i * 2] = true;
+            if (i + 5 <= N)
+                dp[i + 5] = true;
+            if (i * 4 <= N)
+                dp[i * 4] = true;
         }
     }
 }
