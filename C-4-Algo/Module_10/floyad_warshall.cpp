@@ -30,6 +30,8 @@ int main()
         // ajd_mat[v][u] = w; // For undirected graph
     }
 
+    n=100
+    n^3 = 10,00,000
     for (int k = 0; k < n; k++)
     {
         for (int i = 0; i < n; i++)

@@ -1,33 +1,65 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n, m;
-long long mat[15][15];
-long long dp[15][15];
-long long max_sum(int r, int c)
-{
-    if (r >= n || c >= m)
-        return -1e9;
-    if (r == n - 1 && c == m - 1)
-        return mat[r][c];
-    if (dp[r][c] != -1)
-        return dp[r][c];
-    long down = max_sum(r + 1, c);
-    long right = max_sum(r, c + 1);
-    return dp[r][c] = mat[r][c] + max(down, right);
-}
+long long int dis[1001];
+long long int a, b, w, dest;
 int main()
 {
-    cin >> n >> m;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            cin >> mat[i][j];
-            dp[i][j] = -1;
-        }
-    }
+   long long int n, e;
+   cin >> n >> e;
+   vector<pair<pair<long long int, long long int>, long long int>> edge_list;
+   while (e--)
+   {
 
-    cout << max_sum(0, 0);
+      cin >> a >> b >> w;
+      edge_list.push_back({{a, b}, w});
+   }
 
-    return 0;
+   for (int i = 0; i < n; i++)
+      dis[i] = LLONG_MAX;
+
+   long long int src, qury;
+   cin >> src >> qury;
+   dis[src] = 0;
+
+   for (long long int i = 0; i < n - 1; i++)
+   {
+      for (auto ed : edge_list)
+      {
+         long long int a = ed.first.first;
+         long long int b = ed.first.second;
+         long long int w = ed.second;
+         if (dis[a] != LONG_MAX && dis[a] + w < dis[b])
+            dis[b] = dis[a] + w;
+      }
+   }
+
+   bool cycle = false;
+   for (auto ed : edge_list)
+   {
+      long long int a = ed.first.first;
+      long long int b = ed.first.second;
+      long long int w = ed.second;
+      if (dis[a] != LLONG_MAX && dis[a] + w < dis[b])
+      {
+         cycle = true;
+         break;
+      }
+   }
+
+   if (cycle)
+   {
+      cout << "Negative Cycle Detected";
+      return 0;
+   }
+
+   while (qury--)
+   {
+      cin >> dest;
+      if (dis[dest] == LLONG_MAX)
+         cout << "Not Possible" << endl;
+      else
+         cout << dis[dest] << endl;
+   }
+
+   return 0;
 }

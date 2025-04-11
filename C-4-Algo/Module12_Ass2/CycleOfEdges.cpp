@@ -2,7 +2,7 @@
 using namespace std;
 
 const int MAXN = 100000; // Maximum number of nodes
-int parent[MAXN + 1], size[MAXN + 1];
+int parent[MAXN + 1], sz[MAXN + 1];
 
 // Find with path compression
 int find(int u) {
@@ -10,19 +10,19 @@ int find(int u) {
     return parent[u] = find(parent[u]); 
 }
 
-// Union by size
+// Union by size (using sz instead of size)
 bool unite(int u, int v) {
     int rootU = find(u);
     int rootV = find(v);
     if (rootU == rootV) return false; // Cycle detected
 
     // Attach the smaller tree to the larger tree
-    if (size[rootU] > size[rootV]) {
+    if (sz[rootU] > sz[rootV]) {
         parent[rootV] = rootU;
-        size[rootU] += size[rootV];
+        sz[rootU] += sz[rootV];
     } else {
         parent[rootU] = rootV;
-        size[rootV] += size[rootU];
+        sz[rootV] += sz[rootU];
     }
     return true;
 }
@@ -37,7 +37,7 @@ int main() {
     // Initialize DSU
     for (int i = 1; i <= n; i++) {
         parent[i] = i;
-        size[i] = 1;
+        sz[i] = 1;
     }
 
     int cycleEdges = 0;
