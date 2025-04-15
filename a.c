@@ -1,23 +1,23 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
-
 int main()
 {
-
-    int N;
-    scanf("%d", &N);
-    for (int i = 1; i <= N; i++)
+    int a;
+    scanf("%d", &a);
+    if (a > 65)
     {
-        if (i % 5 == 0)
+        printf("ALPHA\n");
+        if (a < 97)
         {
-            printf("%d Yes\n", i);
+            printf("IS CAPITAL\n");
         }
         else
         {
-            printf("%d No\n", i);
+            printf("IS SMALL\n");
         }
+    }
+    else
+    {
+        printf("IS DIGIT");
     }
     return 0;
 }
