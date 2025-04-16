@@ -26,7 +26,7 @@ int main()
     return 0;
 }
 
-/*  
+/*
 input:
 11
 -5 -4 -3 -2 -1 0 1 2 3 4 5
@@ -34,14 +34,13 @@ output:
 15 -15
 */
 
-
-/* 
+/*
 #include <stdio.h>
 
 int main() {
     int n, num;
     scanf("%d", &n);
-    
+
     int pos_sum = 0, neg_sum = 0;
     for (int i = 0; i < n; ++i) {
         scanf("%d", &num);
@@ -53,5 +52,5 @@ int main() {
     }
     printf("%d %d", pos_sum, neg_sum);
     return 0;
-} 
+}
 */

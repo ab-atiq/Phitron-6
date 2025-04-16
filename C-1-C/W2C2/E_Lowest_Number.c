@@ -22,3 +22,17 @@ int main()
     printf("%d %d", min, min_pos);
     return 0;
 }
+
+/*  
+Input
+3
+1 2 3
+Output
+1 1
+
+Input
+5
+5 6 2 3 2
+Output
+2 3
+*/
