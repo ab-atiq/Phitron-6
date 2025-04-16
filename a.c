@@ -1,23 +1,33 @@
 #include <stdio.h>
+
 int main()
 {
-    int a;
-    scanf("%d", &a);
-    if (a > 65)
+
+    int T;
+    scanf("%d", &T);
+
+    for (int tc = 1; tc <= T; tc++)
     {
-        printf("ALPHA\n");
-        if (a < 97)
+
+        int X, Y;
+        scanf("%d %d", &X, &Y);
+
+        if (X > Y)
         {
-            printf("IS CAPITAL\n");
+            int temp = X;
+            X = Y;
+            Y = temp;
         }
-        else
+
+        int sum = 0;
+
+        for (int i = X + 1; i < Y; i++)
         {
-            printf("IS SMALL\n");
+            if (i % 2 != 0)
+            {
+                sum = sum + i;
+            }
         }
+        printf("%d\n", sum);
     }
-    else
-    {
-        printf("IS DIGIT");
-    }
-    return 0;
 }

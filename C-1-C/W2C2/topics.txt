@@ -1,0 +1,38 @@
+Problem solving with Loop and Array (Array recap):
+1. 
+    1-N print(loop), 
+    N-1 print(loop), 
+    1-N(positive) or N-0(negative) print depend on N value (loop), 
+    sum of positive and negative from array (array).
+    
+2. print all the values of Array at even_indexes in reverse way. (index starts from 0 or 0 index based) 
+   + update index value.
+3. 
+Statement:
+    Given positive integer N and an array "A" of size "N". 
+    Also you will be given two values "Index" and "Value". 
+    You need to change the value of "Index" to "Value" and then print the array in "reverse way".
+
+Constraints:
+1 <= N <= 10^5
+
+Input Format:
+    First line will contain N.
+    Second line will contain the array A.
+    Third line will contain Index and Value.
+
+Output Format:
+    Output the final array in reverse order.
+
+input:
+5
+10 20 30 40 50
+4 10
+
+Output:
+10 40 30 20 10 
+
+
+Codeforces Problem:
+1. https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/B
+2. https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/E
