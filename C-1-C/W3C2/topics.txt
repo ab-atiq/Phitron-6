@@ -1,0 +1,9 @@
+Frequency Array Problem:
+1. Count Letters (https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/J)
+
+
+String problem:
+1. I Love strings (https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/K)
+
+
+
