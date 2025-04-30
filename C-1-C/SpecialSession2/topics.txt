@@ -1,13 +1,14 @@
 Problem solving with conditional statement, Loop, Array and Assignment-2 Exam Preparation:
 
 1. Print "I love practice" 1 to N times given format:
-    1. I love practice
-    2. I love practice
-    3. I love practice
-    4. I love practice
-    .
-    .
     N. I love practice
+    .
+    .
+    4. I love practice
+    3. I love practice
+    2. I love practice
+    1. I love practice
+
 
 2.  1-N print(loop), 
     N-1 print(loop), 
