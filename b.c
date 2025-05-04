@@ -1,29 +1,20 @@
 #include <stdio.h>
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    int a[n + 1];
-    for (int i = 0; i < n; i++)
+    int N;
+    scanf("%d", &N);
+    if (N > 0)
     {
-        /* code */
-        scanf("%d", &a[i]);
+        for (int i = 1; i <= N; i++)
+        {
+            printf("%d ", i);
+        }
     }
-    int idx, val;
-    scanf("%d %d", &idx, &val);
-
-    for (int i = 0; i >= idx + 1; i--)
+    else if (N < 0)
     {
-        /* code */
-        a[i] = a[i - 1];
+        for (int i = N; i <= 0; i++)
+        {
+            printf("%d ", i);
+        }
     }
-    a[idx] = val;
-
-    for (int i = 0; i <= n; i++)
-    {
-        /* code */
-        printf("%d ", a[i]);
-    }
-
-    return 0;
 }
