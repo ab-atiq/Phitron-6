@@ -26,6 +26,7 @@ int main()
     //     return 0;
     // }
     // Check all numbers from 1 to n to see if any lucky number divides n then that number is almost lucky
+    // 1 - 1000 all lucky numbers are 4, 7, 44, 47, 74, 77, 444, 447, 474, 744, 777
     for (int i = 1; i <= n; i++)
     {
         if (isLucky(i))
