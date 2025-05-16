@@ -1,0 +1,94 @@
+আপনার প্রবলেম সল্যুশন সঠিকভাবে হয় নাই। 
+নিচের এপ্রোচ ফলো করতে পারেন। 
+
+Problem Explanation:
+
+Petya lucky number পছন্দ করে। Lucky number হলো সেইসব positive integer যেগুলোর decimal representation-এ শুধুমাত্র lucky digits 4 আর 7 থাকে। যেমন 47, 744, 4 এগুলো lucky number, কিন্তু 5, 17, 467 এগুলো lucky number না।
+
+Petya almost lucky number বলছে সেইসব number কে যেগুলো কোনো lucky number দ্বারা নিঃশেষে বিভাজ্য (evenly divisible)। তোমাকে একটা number n দেওয়া হবে, বলতে হবে এটি almost lucky কিনা।
+
+Input:
+একটা integer n (1 ≤ n ≤ 1000)
+
+Output:
+যদি n almost lucky হয়, তাহলে "YES" প্রিন্ট করো, নাহলে "NO"।
+
+Examples:
+
+Input: 47
+Output: YES
+কারণ 47 নিজেই একটা lucky number, এবং যেকোনো number নিজের দ্বারা বিভাজ্য।
+
+Input: 16
+Output: YES
+কারণ 16 কে 4 দ্বারা ভাগ করা যায় (4 একটা lucky number)।
+
+Input: 78
+Output: NO
+কারণ 78 কে কোনো lucky number দ্বারা ভাগ করা যায় না।
+
+
+
+Solution Concept:
+
+Lucky Number Generate: প্রথমে আমাদের 1 থেকে n পর্যন্ত সব lucky numbers generate করতে হবে। Lucky numbers হলো শুধুমাত্র 4 আর 7 দিয়ে গঠিত numbers (যেমন 4, 7, 44, 47, 74, 77, ...)।
+
+Divisibility Check: এরপর n কে এই lucky numbers দিয়ে ভাগ করে দেখতে হবে যে কোনোটা দিয়ে নিঃশেষে বিভাজ্য কিনা। যদি কোনো lucky number দিয়ে ভাগ করা যায়, তাহলে n almost lucky, নাহলে না।
+
+Optimization: যেহেতু n সর্বোচ্চ 1000, আমরা আগে থেকেই 1000 এর মধ্যে যতগুলো lucky number আছে সেগুলো generate করে রাখতে পারি, তারপর সেগুলো দিয়ে check করতে পারি।
+
+Solution Steps:
+
+Generate Lucky Numbers: Recursion বা BFS ব্যবহার করে সব lucky numbers generate করো যেগুলো n এর সমান বা ছোট।
+
+Check Division: Generate করা প্রতিটি lucky number এর জন্য check করো n কে এই number দিয়ে ভাগ করা যায় কিনা (n % lucky_number == 0 কিনা)।
+
+Result: যদি কোনো lucky number দিয়ে n কে ভাগ করা যায়, তাহলে "YES" print করো, নাহলে "NO"।
+
+Example Solution Code:
+
+c
+#include <stdio.h>
+#include <stdbool.h>
+
+bool isLucky(int num) {
+    while (num > 0) {
+        int digit = num % 10;
+        if (digit != 4 && digit != 7) {
+            return false;
+        }
+        num /= 10;
+    }
+    return true;
+}
+
+bool isAlmostLucky(int n) {
+    for (int i = 4; i <= n; i++) {
+        if (isLucky(i) && n % i == 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (isAlmostLucky(n)) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+    return 0;
+}
+
+
+Explanation of Code:
+
+isLucky Function: এই function check করে একটি number lucky কিনা (শুধুমাত্র 4 আর 7 দিয়ে গঠিত কিনা)।
+
+isAlmostLucky Function: এই function 4 থেকে n পর্যন্ত সব numbers check করে। যদি কোনো number lucky হয় এবং n কে এই number দিয়ে ভাগ করা যায়, তাহলে true return করে।
+
+Main Function: Input n নিয়ে isAlmostLucky function call করে, result অনুযায়ী "YES" বা "NO" print করে।
+
+এই solution টি efficient কারণ এটি n এর মান small (1 ≤ n ≤ 1000) হওয়ায় directly check করতে পারে।
