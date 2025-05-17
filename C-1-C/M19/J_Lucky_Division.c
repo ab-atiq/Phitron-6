@@ -55,3 +55,20 @@ input:
 output:
 YES (16 is not Lucky but it is divisible by lucky number 4 so, 16 is almosh lucky number)
 */
+
+#include <stdio.h>
+int main()
+{
+    int x;
+    scanf("%d", &x);
+    // 1 - 1000 all lucky numbers are 4, 7, 44, 47, 74, 77, 444, 447, 474, 744, 777. Check Divisible by any one of them.
+    if ((x % 4 == 0) || (x % 7 == 0) || (x % 47 == 0) || (x % 74 == 0) || (x % 444 == 0) || (x % 447 == 0) || (x % 474 == 0) || (x % 477 == 0) || (x % 744 == 0) || (x % 747 == 0) || (x % 774 == 0) || (x % 777 == 0))
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
+    return 0;
+}
