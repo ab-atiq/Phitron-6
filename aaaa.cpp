@@ -1,20 +1,11 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main()
-{
-    ios::sync_with_stdio(false);
+
+int main() {
+    ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int n;
-    cin >> n;
-
-    for (int i = n; i >= 1; i--)
-    {
-        for (int j = i; j >= 1; j--)
-        {
-            cout << j << " ";
-        }
-        cout << endl;
-    }
-    return 0;
+    int a, b;
+    cin >> a >> b;
+    cout << a + b << "\n";
 }

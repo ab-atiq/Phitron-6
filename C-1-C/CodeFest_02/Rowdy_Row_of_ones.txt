@@ -1,0 +1,237 @@
+Problem Name: "Rowdy Row of Ones!"
+
+Problem Statement:
+You are the Chief of Matrix Intelligence (CMI) and you’ve just received a binary intelligence matrix (contains only 0 and 1) from the secret vault. Each row in this matrix is **sorted in non-decreasing order** — all the zeros come first, followed by ones. Your mission is **find the row with the highest number of 1s!**
+
+If there is more than one row with the same maximum number of 1s, report the **smallest index** (top-most such row).
+
+
+Constraints:
+    1 ≤ N ≤ 100  
+    1 ≤ M ≤ 100  
+    Each element in the matrix is either 0 or 1.  
+    Each row is sorted in non-decreasing order (all 0s before 1s).
+
+
+Input Format:
+    * The first line contains two integers N and M — the number of rows and columns in the matrix.
+    * The next N lines each contain M integers — either 0 or 1, separated by a space.
+
+Output Format:
+    Print a single integer — the 0-based index of the row that contains the maximum number of 1s.
+
+
+
+Sample Input:
+4 5
+0 0 1 1 1
+0 0 0 1 1
+0 0 0 0 1
+1 1 1 1 1
+📤 Sample Output:
+    3
+🧠 Explanation:
+Row 0 has 3 ones
+Row 1 has 2 ones
+Row 2 has 1 one
+Row 3 has 5 ones
+
+Row 3 has the maximum number of 1s. So, the answer is 3.
+
+Input:
+3 4
+0 0 0 0
+0 0 1 1
+0 1 1 1
+Output:
+2
+
+
+Input:
+1 3
+1 1 1
+Output:
+0
+
+
+Input:
+3 3
+0 0 0
+0 0 0
+0 0 1
+Output:
+2
+
+
+Input:
+5 6
+0 0 0 0 1 1
+0 0 1 1 1 1
+0 0 0 1 1 1
+1 1 1 1 1 1
+0 0 0 0 0 0
+Output:
+3
+
+
+Input:
+3 3
+1 1 1
+1 1 1
+1 1 1
+Output:
+0
+
+
+Input:
+5 5
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+Output:
+0
+
+
+Input:
+5 5
+1 1 1 1 1
+0 1 1 1 1
+0 0 1 1 1
+0 0 0 1 1
+0 0 0 0 1
+Output:
+0
+
+
+Input:
+5 6
+0 0 1 1 1 1
+0 1 1 1 1 1
+1 1 1 1 1 1
+0 0 0 0 0 1
+0 0 0 0 1 1
+Output:
+2
+
+
+Input:
+1 1
+0
+Output:
+0
+
+
+Input:
+1 1
+1
+Output:
+0
+
+
+Input:
+10 10
+0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1
+0 0 0 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 1 1
+0 1 1 1 1 1 1 1 1 1
+0 0 0 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 1 1 1 1 1
+0 0 1 1 1 1 1 1 1 1
+Output:
+5
+
+
+Input:
+12 12
+0 0 0 0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 1 1 1 1 1 1
+0 0 0 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 1 1 1
+0 0 1 1 1 1 1 1 1 1 1 1
+0 0 0 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 0 0 1 1
+Output:
+7
+
+
+
+Input:
+15 15
+0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 1 1 1 1 1 1 1
+Output:
+9
+
+
+
+Input:
+18 10
+0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1
+0 0 0 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 0
+0 1 1 1 1 1 1 1 1 1
+0 0 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 1
+Output:
+5
+
+
+Input:
+20 12
+0 0 0 0 0 0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 0 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 1 1 1 1 1 1 1
+0 0 0 0 1 1 1 1 1 1 1 1
+0 0 0 1 1 1 1 1 1 1 1 1
+0 0 1 1 1 1 1 1 1 1 1 1
+0 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0 1 1 1 1 1 1
+0 0 0 0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 0 0 0 1 1 1
+Output:
+9

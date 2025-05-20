@@ -1,0 +1,142 @@
+💡 Problem Name:
+Balanced Boogie Digits
+
+📝 Problem Statement:
+Once upon a time in the quirky land of Numbaria, numbers weren’t just digits—they had personalities! Even digits were calm and cool (like 2, 4, 6, 8, 0), while odd digits were loud and wild (like 1, 3, 5, 7, 9). But they never got along… unless they were in perfect balance.
+
+The great king of Numbaria declared a festival where only Balanced Numbers can enter—those numbers where the count of even digits equals the count of odd digits.
+
+As the royal programmer, your task is to find all such balanced numbers between two given limits. A number is called balanced if it contains an equal number of even and odd digits.
+
+Your job is to help the citizens of Numbaria party in perfect harmony!
+
+⌨️ Input Format:
+Two space-separated integers: L and R (inclusive)
+
+🖥️ Output Format:
+Print each balanced number from the range [L, R] on a new line.
+
+If no balanced number exists in the range, print -1.
+
+📌 Constraints:
+1≤L≤R≤10000
+
+Input:
+1 9
+
+Output:
+-1
+
+Note: No balanced number exists in the range from 1 to 9.
+
+Input:
+10 20
+
+Output:
+10
+12
+14
+16
+18
+
+
+
+| Number | Digits | Even Count | Odd Count | Balanced? |
+| ------ | ------ | ---------- | --------- | --------- |
+| 10     | 1,0    | 1          | 1         | ✅         |
+| 11     | 1,1    | 0          | 2         | ❌         |
+| 12     | 1,2    | 1          | 1         | ✅         |
+| 13     | 1,3    | 0          | 2         | ❌         |
+| 14     | 1,4    | 1          | 1         | ✅         |
+| 15     | 1,5    | 0          | 2         | ❌         |
+| 16     | 1,6    | 1          | 1         | ✅         |
+| 17     | 1,7    | 0          | 2         | ❌         |
+| 18     | 1,8    | 1          | 1         | ✅         |
+| 19     | 1,9    | 0          | 2         | ❌         |
+| 20     | 2,0    | 2          | 0         | ❌         |
+
+
+
+
+🧪 Sample Input:
+20 30
+✅ Sample Output:
+21
+23
+25
+27
+29
+30
+
+📘 Explanation:
+Each printed number has an equal count of even and odd digits.
+
+For example, 21 → digits: 2 (even), 1 (odd) → ✅ Balanced.
+
+22 → 2 (even), 2 (even) → ❌ Not balanced.
+
+33 → 3 (odd), 3 (odd) → ❌ Not balanced.
+
+
+
+Input:
+100 110
+
+Output:
+-1
+
+
+Input:
+123 135
+
+Output:
+-1
+
+
+Input:
+1000 1010
+
+Output:
+1001
+1003
+1005
+1007
+1009
+1010
+
+
+Input:
+2220 2230
+
+Output:
+-1
+
+
+Input:
+1100 1130
+
+Output:
+1100
+1102
+1104
+1106
+1108
+1120
+1122
+1124
+1126
+1128
+
+
+Input:
+1100 1100
+
+Output:
+1100
+
+
+Input:
+1101 1101
+
+Output:
+-1

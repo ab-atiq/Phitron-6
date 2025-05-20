@@ -44,7 +44,7 @@ Result: সবশেষে প্রাপ্ত মানই হবে আম�
 Example Solution Code:
 #include <stdio.h>
 
-long long log2_recursive(long long N) {
+long long int log2_recursive(long long int N) {
     if (N < 2) {
         return 0;
     } else {
@@ -53,7 +53,7 @@ long long log2_recursive(long long N) {
 }
 
 int main() {
-    long long N;
+    long long int N;
     scanf("%lld", &N); // ইনপুট নেওয়া
     printf("%lld\n", log2_recursive(N)); // ফলাফল প্রিন্ট করা
     return 0;

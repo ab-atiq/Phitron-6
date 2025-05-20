@@ -1,30 +1,13 @@
 #include <stdio.h>
 
+void sum(int *a, int *b)
+{
+    scanf("%d %d", a, b);
+}
 int main()
 {
-
-    int n, m;
-    scanf("%d %d", &n, &m);
-    int a[n][m];
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; i++)
-        {
-
-            scanf("%d", &a[i][j]);
-        }
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; i++)
-        {
-
-            printf("%d", a[i][j]);
-        }
-        printf("\n");
-    }
-
-    return 0;
+    int x,y;
+    sum(&x, &y);
+    printf("%d %d\n", x, y);
+    return 0; 
 }
