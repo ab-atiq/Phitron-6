@@ -7,8 +7,11 @@ int main()
 
     int odd_sum = 0, even_sum = 0;
     int len = strlen(str);
+
+    // string check from reverse
     for (int i = len - 1; i >= 0; i--)
     {
+        // len - 1 - i is index from last
         if ((len - 1 - i) % 2 == 0)
         {
             even_sum += str[i] - '0';
@@ -18,6 +21,7 @@ int main()
             odd_sum += str[i] - '0';
         }
     }
+    
     int diff = even_sum - odd_sum;
     if (diff % 11 == 0)
     {
