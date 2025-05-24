@@ -15,29 +15,34 @@ int main()
             scanf("%d", &matrix[i][j]);
         }
     }
-
-    int maxOnes = -1; // maxOnes = INT_MIN
-    int maxRowIndex = 0;
-
+    int idx = 0, max_1 = 0; // default row will be 0
     for (int i = 0; i < n; i++)
     {
-        int onesCount = 0;
+        int cnt_1_in_row = 0;
         for (int j = 0; j < m; j++)
         {
             if (matrix[i][j] == 1)
             {
-                onesCount = m - j; // All remaining are 1s since the row is sorted
-                break;
+                cnt_1_in_row++;
             }
         }
-
-        if (onesCount > maxOnes)
+        if (cnt_1_in_row > max_1)
         {
-            maxOnes = onesCount;
-            maxRowIndex = i;
+            max_1 = cnt_1_in_row;
+            idx = i;
         }
     }
-
-    printf("%d\n", maxRowIndex);
+    printf("%d\n", idx);
     return 0;
 }
+
+/*
+5 5
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+
+output: 0
+*/
