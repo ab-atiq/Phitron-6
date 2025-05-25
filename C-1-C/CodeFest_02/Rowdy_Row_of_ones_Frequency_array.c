@@ -24,10 +24,14 @@ int main()
         int onesCount = 0;
         for (int j = 0; j < m; j++)
         {
+            // if (matrix[i][j] == 1)
+            // {
+            //     onesCount = m - j; // All remaining are 1s since the row is sorted
+            //     break;
+            // }
             if (matrix[i][j] == 1)
             {
-                onesCount = m - j; // All remaining are 1s since the row is sorted
-                break;
+                onesCount++; // All 1 count
             }
         }
 
