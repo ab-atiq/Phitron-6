@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+public:
+    int roll;
+    int cls;
+    double gpa;
+    Student(int roll, int cls, double gpa)
+    {
+        // this->roll = roll;
+        (*this).roll = roll; // this object dereference then access roll variable
+        this->cls = cls;     // -> operator dereference and access varible
+        this->gpa = gpa;
+    }
+};
+
+// Student fun()
+// {
+//     Student karim(23, 8, 4.77);
+//     return karim;
+// }
+
+// after create object that object will remove from stack memory So, we need dynamic memory.
+Student *fun()
+{
+    Student karim(23, 8, 4.77);
+    Student *p = &karim;
+    return p;
+}
+
+int main()
+{
+    // Student rahim(123, 5, 4.33);
+    // cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
+
+    // Student karim_obj = fun();
+    // cout << karim_obj.roll << " " << karim_obj.cls << " " << karim_obj.gpa << endl;
+
+    Student *karim_obj = fun();                                                        // we can not get proper output because karim object remove from stack memory
+    cout << karim_obj->roll << " " << karim_obj->cls << " " << karim_obj->gpa << endl; // here garbage value print
+
+    return 0;
+}
