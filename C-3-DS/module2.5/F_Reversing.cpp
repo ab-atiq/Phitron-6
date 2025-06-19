@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm> // for std::reverse
 using namespace std;
 
 int main()
@@ -27,18 +28,21 @@ int main()
     // }
 
     // method 3: Reversing the Array Without Printing Directly using a while loop
-    int start = 0, end = A.size() - 1;
+    // int start = 0, end = A.size() - 1;
 
-    // Swap elements from the beginning and the end
-    while (start < end)
-    {
-        int temp = A[start];
-        A[start] = A[end];
-        A[end] = temp;
+    // // Swap elements from the beginning and the end
+    // while (start < end)
+    // {
+    //     int temp = A[start];
+    //     A[start] = A[end];
+    //     A[end] = temp;
 
-        start++;
-        end--;
-    }
+    //     start++;
+    //     end--;
+    // }
+
+    // method 4: Reversing the Array Without Printing Directly using STL reverse function
+    reverse(A.begin(), A.end());
 
     // Print the reversed array
     for (int i = 0; i < N; ++i)
