@@ -9,11 +9,16 @@ int main()
 
     vector<long long int> a(N + 1); // prefix sum can be greater than 1^9. So use long long int
     for (int i = 1; i <= N; i++)    // O(N)
+    {
         cin >> a[i];
+    }
 
+    // prefix sum array in same vector
     a[1] = a[1];                 // O(1) query
     for (int i = 2; i <= N; i++) // prefix sum - O(N)
+    {
         a[i] += a[i - 1];
+    }
 
     while (Q--)
     {

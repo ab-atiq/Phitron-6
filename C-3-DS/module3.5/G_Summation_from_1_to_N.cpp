@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    unsigned long long int n; // input value 10^9
+    long long int n; // input value 10^9
     cin >> n;
-    unsigned long long int sum = 0; // output value > 10^9
+    long long int sum = 0; // output value > 10^9
 
     // method 1: O(N) = 10^9
     // for (int i = 1; i <= n; i++)

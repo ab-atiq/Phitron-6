@@ -18,6 +18,8 @@ int main()
     {
         int x;
         cin >> x;
+
+        // Binary search - O(logN)
         int l = 0, r = N - 1;
         int flag = 0;
         while (l <= r)

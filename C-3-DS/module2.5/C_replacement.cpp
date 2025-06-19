@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // for transform
+#include <algorithm> // for transform & replace
 using namespace std;
 
 int main()
@@ -12,6 +12,7 @@ int main()
     {
         cin >> A[i];
     }
+
     // method 1: using if else
     // for (int i = 0; i < N; i++)
     // {
@@ -26,16 +27,30 @@ int main()
     //         A[i] = 2;
     // }
 
-    // method 2: using transform
+    // method 2: using replace
+    for (int i = 0; i < N; i++)
+    {
+        if (A[i] > 0)
+        {
+            replace(A.begin(), A.end(), A[i], 1);
+        }
+        else if (A[i] < 0)
+        {
+            replace(A.begin(), A.end(), A[i], 2);
+        }
+    }
+
+    // method 3: using transform
     // Replace values using std::transform and lambda function
-    transform(A.begin(), A.end(), A.begin(), [](int x)
-              {
-                  if (x > 0)
-                      return 1;
-                  if (x < 0)
-                      return 2;
-                  return x; // Zero remains unchanged
-              });
+    // transform(A.begin(), A.end(), A.begin(), [](int x)
+    //           {
+    //               if (x > 0)
+    //                   return 1;
+    //               if (x < 0)
+    //                   return 2;
+    //               return x; // Zero remains unchanged
+    //           });
+
     for (int i = 0; i < N; i++)
     {
         cout << A[i] << " ";
