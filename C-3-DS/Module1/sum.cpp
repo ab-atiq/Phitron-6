@@ -6,13 +6,13 @@ int main()
     cin >> n;
     int sum = 0;
 
-    // using loop
+    // using loop - TC O(n)
     // for(int i=1;i<=n;i++)
     // {
     //     sum += i;
     // }
 
-    // using formula
+    // using formula - TC O(1)
     sum = (n * (n + 1)) / 2;
 
     cout << sum << endl;

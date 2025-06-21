@@ -19,7 +19,7 @@ int main()
     // }
     // cout << endl;
 
-    // method 2: Reversing the Array Without Printing Directly using a for loop
+    // method 2: Reversing the Array Without Printing Directly using two pointer technique with for loop
     // for (int start = 0, end = N - 1; start < end; ++start, --end)
     // {
     //     int temp = A[start];
@@ -27,7 +27,7 @@ int main()
     //     A[end] = temp;
     // }
 
-    // method 3: Reversing the Array Without Printing Directly using a while loop
+    // method 3: Reversing the Array Without Printing Directly using two pointer technique with while loop
     // int start = 0, end = A.size() - 1;
 
     // // Swap elements from the beginning and the end

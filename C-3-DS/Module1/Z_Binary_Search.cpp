@@ -17,13 +17,35 @@ int main()
         int x;
         cin >> x;
 
+        // linear search - O(N)
+        // bool found = false;
+        // for (int i = 0; i < N; i++) // O(N)
+        // {
+        //     if (a[i] == x)
+        //     {
+        //         found = true;
+        //         break;
+        //     }
+        // }
+
+        // binary search - O(log N)
         bool found = false;
-        for (int i = 0; i < N; i++) // O(N)
+        int left = 0, right = N - 1;
+        while (left <= right) // O(log N)
         {
-            if (a[i] == x)
+            int mid = left + (right - left) / 2; // to avoid overflow
+            if (a[mid] == x)
             {
                 found = true;
                 break;
+            }
+            else if (a[mid] < x)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
             }
         }
 

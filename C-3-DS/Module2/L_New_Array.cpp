@@ -21,7 +21,7 @@ using namespace std;
 //     }
 // }
 
-void NewArray(vector<int> a, vector<int> b, vector<int> c, int n)
+void NewArray(vector<int> a, vector<int> b, int n)
 {
     vector<int> d;
     for (int i = 0; i < n; i++)
@@ -84,7 +84,8 @@ int main()
     // }
 
     // method 3: using function
-    NewArray(a, b, c, n);
+    // NewArray(a, b, c, n);
+    NewArray(a, b, n);
 
     return 0;
 }

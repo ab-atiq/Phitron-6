@@ -41,7 +41,7 @@ int main()
     //     C[N + i] = A[i];
     // }
 
-    // insert A then B in C vector - type 4 ('algorithm' header)
+    // insert B then A in C vector - type 4 ('algorithm' header)
     copy(B.begin(), B.end(), back_inserter(C));
     copy(A.begin(), A.end(), back_inserter(C));
 

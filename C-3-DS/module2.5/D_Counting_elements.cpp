@@ -40,6 +40,16 @@ int main()
     //     }
     // }
 
+    // method 3: Use iterator vector to count elements
+    // for (auto it = a.begin(); it != a.end(); ++it)
+    // {
+    //     // Check if the next element (current element + 1) exists in the vector
+    //     if (find(a.begin(), a.end(), *it + 1) != a.end())
+    //     {
+    //         count++; // Increment count if found
+    //     }
+    // }
+
     cout << count << endl;
     return 0;
 }

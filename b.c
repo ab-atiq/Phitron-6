@@ -1,20 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    int N;
-    scanf("%d", &N);
-    if (N > 0)
-    {
-        for (int i = 1; i <= N; i++)
-        {
-            printf("%d ", i);
-        }
-    }
-    else if (N < 0)
-    {
-        for (int i = N; i <= 0; i++)
-        {
-            printf("%d ", i);
-        }
-    }
+    int a = 6;
+    float b = 7.3, c = 6.7;
+    printf("%d", a *= b += c);
+    return 0;
 }

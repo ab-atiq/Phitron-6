@@ -44,14 +44,6 @@ int main()
         cout << "Found" << endl;
     }
 
-    // cout << v[3] << endl;
-
-    // cout << v[v.size() - 1] << endl;
-    // cout << v.back() << endl;
-
-    // cout << v[0] << endl;
-    // cout << v.front() << endl;
-
     // vector iterator 
     for (auto it = v.begin(); it < v.end(); it++)
     {

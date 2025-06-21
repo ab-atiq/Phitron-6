@@ -5,9 +5,10 @@ int main()
     int n;
     cin >> n;
 
-    for (int i = 1; i <= n; i++)
+    // time complexity O(n log n)
+    for (int i = 1; i <= n; i++) // TC O(n)
     {
-        for (int j = 1; j <= n; j *= 2)
+        for (int j = 1; j <= n; j *= 2) // TC O(log n)
         {
             cout << "Hello" << endl;
         }
