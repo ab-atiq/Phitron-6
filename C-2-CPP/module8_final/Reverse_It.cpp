@@ -49,3 +49,40 @@ int main()
 
     return 0;
 }
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+
+class Student{
+public:
+    string name;
+    int roll;
+    char section;
+    int marks;
+};
+
+int main()
+{
+    int n;
+    cin >> n;
+    Student arr[n];
+    char sec[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i].name >> arr[i].roll >> arr[i].section >> arr[i].marks;
+        sec[i] =  arr[i].section;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i].name << " " << arr[i].roll << " " << sec[n - i - 1] << " " << arr[i].marks << endl;
+    }
+
+    return 0;
+
+}
+
+
+
+*/

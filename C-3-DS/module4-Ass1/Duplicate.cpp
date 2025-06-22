@@ -21,7 +21,23 @@ int main()
     // However, this method is most suitable when the range of array values (A[i]) is small(< 10^5 bytes). Since the constraints allow values of 𝐴[𝑖] to go up to 10^9, a frequency vector would require an infeasibly large amount of memory.
     // Memory Limitation: Creating a frequency vector for 10^9 indices would require roughly 4*10^9 bytes (4 GB) of memory.
 
-    // method 2: sort and check for duplicates
+    // int freq[100000] = {0}; // array all values set are 0
+    // vector<int> freq(100000, 0);
+    // for (int i = 0; i < n; i++)
+    // {
+    //     freq[arr[i]]++;
+    // }
+    // for (int i = 0; i < 100000; i++)
+    // {
+    //     if (freq[i] > 1)
+    //     {
+    //         cout << "YES" << endl;
+    //         return 0;
+    //     }
+    // }
+    // cout << "NO" << endl;
+
+    // method 2: sort and check two consecutive value same for duplicates
     sort(arr.begin(), arr.end());   // O(NlogN)
     for (int i = 0; i < n - 1; i++) // O(N)
     {

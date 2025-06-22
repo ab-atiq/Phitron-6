@@ -6,10 +6,16 @@ int main()
     int N;
     cin >> N;
 
+    // loop start from 1
+    // for (int i = 1; i <= N; ++i)
+    // {
+    //     for (int j = 1; j <= N; ++j)
+
     for (int i = 0; i < N; ++i)
     {
         for (int j = 0; j < N; ++j)
         {
+            // if (i == j && i + j == N + 1) // loop start from 1
             if (i == j && i + j == N - 1)
             {
                 cout << "X"; // Center of the pattern
@@ -18,6 +24,7 @@ int main()
             {
                 cout << "\\"; // '\' represent 'escape' character
             }
+            // else if (i + j == N + 1)     // loop start from 1
             else if (i + j == N - 1) // diagonal from topRight to bottomLeft
             {
                 cout << "/";

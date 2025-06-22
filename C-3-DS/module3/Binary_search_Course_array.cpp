@@ -14,6 +14,7 @@ int main()
 
     int val;
     cin >> val;
+    
     int flag = 0;
 
     int l = 0;
