@@ -79,3 +79,17 @@ int main()
     }
     return 0;
 } */
+
+/*
+input
+5
+1 2 3 4 5
+output
+NO
+
+input
+5
+1 2 3 4 1
+output
+YES
+*/

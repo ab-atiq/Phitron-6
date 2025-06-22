@@ -1,4 +1,4 @@
-// array accending order sorted or not
+// array descending order sorted or not
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -27,7 +27,7 @@ int main()
 
         // for (int i = 0; i < n - 1; i++)
         // {
-        //     if (v[i] > v[i + 1])
+        //     if (v[i] < v[i + 1]) // for descending order check
         //     {
         //         sorted = false;
         //         break;
@@ -36,12 +36,12 @@ int main()
 
         // method 2: new array create then sort new array. then check array and new array same or not.
         vector<int> v2(v);
-        sort(v2.begin(), v2.end());
+        sort(v2.begin(), v2.end(), greater<int>());
 
         bool sorted = true;
         for (int i = 0; i < n; i++)
         {
-            if (v[i] != v2[i])
+            if (v[i] != v2[i]) // compare original array and sorted array
             {
                 sorted = false;
                 break;
@@ -60,3 +60,19 @@ int main()
 
     return 0;
 }
+
+/*
+input
+3
+5
+5 4 3 2 1
+4
+3 2 1 0
+3
+1 2 3
+
+output
+YES
+YES
+NO
+*/

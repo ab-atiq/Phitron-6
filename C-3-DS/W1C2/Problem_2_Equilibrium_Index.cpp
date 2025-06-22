@@ -143,3 +143,28 @@ int main()
     return 0;
 }
 */
+
+/*
+input
+7
+-7 1 5 2 -4 3 0
+prefix sum
+-7 -6 -1 1 -3 0 0
+suffix sum
+0 7 6 1 -1 3 0
+
+output
+3
+
+
+input
+5
+1 2 3 2 1
+prefix sum
+1 3 6 8 9
+suffix sum
+9 8 6 3 1
+
+output
+2
+*/
