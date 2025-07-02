@@ -39,6 +39,7 @@ void print_linked_list(Node *head)
 void delete_at_tail(Node *head, Node *&tail, int idx)
 {
     Node *tmp = head;
+    // must need loop to delete tail node
     for (int i = 1; i < idx; i++)
     {
         tmp = tmp->next;
@@ -46,7 +47,7 @@ void delete_at_tail(Node *head, Node *&tail, int idx)
     Node *deleteNode = tmp->next;
     tmp->next = tmp->next->next;
     delete deleteNode;
-    tail = tmp;
+    tail = tmp; // update tail to the new last node
 }
 
 int main()

@@ -42,6 +42,12 @@ void delete_at_any_pos(Node *head, int idx)
     for (int i = 1; i < idx; i++)
     {
         tmp = tmp->next;
+
+        // shown in practice day video
+        if (tmp == NULL)
+        {
+            return; // If idx is out of bounds, do nothing
+        }
     }
     Node *deleteNode = tmp->next;
     tmp->next = tmp->next->next;

@@ -1,29 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-int loga(int N, int i)
-{
-    int po = pow(2, i);
-    if (po == N)
-    {
-        return i;
-    }
-    int po1 = loga(N, i + 1);
-    return po1;
-}
+
 int main()
 {
-    int N;
-    scanf("%d", &N);
-    if (N == 0)
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for (int i = 0; i < n; i++)
     {
-        printf("1");
+        scanf("%d", &a[i]);
     }
-    else
+    int fre[6] = {0};
+    for (int i = 0; i < n; i++)
     {
-        int i = 0;
-        int lo = loga(N, i);
-        printf("%d", lo);
+        if (a[i] >= 0 && a[i] <= 5)
+        {
+            fre[a[i]]++;
+        }
+    }
+    for (int i = 0; i < 6; i++)
+    {
+        printf("%d\n", fre[i]);
     }
     return 0;
 }

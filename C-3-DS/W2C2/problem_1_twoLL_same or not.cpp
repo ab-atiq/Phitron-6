@@ -82,14 +82,47 @@ int main()
     int size1 = get_size(head1);
     int size2 = get_size(head2);
 
-    if (size1 == size2)
+    if (size1 != size2)
     {
-        cout << "YES" << endl;
+        cout << "NOT Same" << endl;
+        return 0;
+    }
+
+    // for coneceptual session
+    // two linked list same or not
+    int same = 1; // Assume they are the same initially
+    Node *tmp1 = head1;
+    Node *tmp2 = head2;
+    while (tmp1 != NULL && tmp2 != NULL)
+    {
+        if (tmp1->val != tmp2->val)
+        {
+            same = 0; // Found a difference
+            break;
+        }
+        tmp1 = tmp1->next;
+        tmp2 = tmp2->next;
+    }
+    if (same)
+    {
+        cout << "Same" << endl;
     }
     else
     {
-        cout << "NO" << endl;
+        cout << "NOT Same" << endl;
     }
 
     return 0;
 }
+
+/*
+10 20 30 40 -1
+10 20 30 40 -1
+
+same
+
+10 20 30 40 -1
+10 20 30 -1
+
+not same
+*/

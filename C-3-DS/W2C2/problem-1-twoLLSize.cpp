@@ -91,5 +91,21 @@ int main()
         cout << "NO" << endl;
     }
 
+    // for coneceptual session
+    // two linked list same or not
+    int same = 1; // Assume they are the same initially
+    Node *tmp1 = head1;
+    Node *tmp2 = head2;
+    while (tmp1 != NULL && tmp2 != NULL)
+    {
+        if (tmp1->val != tmp2->val)
+        {
+            same = 0; // Found a difference
+            break;
+        }
+        tmp1 = tmp1->next;
+        tmp2 = tmp2->next;
+    }
+
     return 0;
 }

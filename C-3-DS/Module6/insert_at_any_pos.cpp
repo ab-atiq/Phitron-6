@@ -16,13 +16,33 @@ public:
 void insert_at_any_pos(Node *head, int idx, int val) // we will not modify the head pointer so we will pass it by value instead of reference.
 {
     Node *newnode = new Node(val);
+
+    // not show in module
+    if (head == NULL && idx == 1) // if the head is null and we want to insert at index 1 then we can do it
+    {
+        head = newnode; // this will not work because we are passing by value
+        return;         // returning because the process is done
+    }
+
+    // not show in module
+    if (idx == 1) // if index is 1 based then we want to insert at the head
+    {
+        newnode->next = head; // first step
+        head = newnode;       // second step
+        return;               // returning because the process is done
+    }
+
     Node *tmp = head;
     for (int i = 1; i < idx; i++)
     {
         tmp = tmp->next;
+        if (tmp = NULL)
+        {
+            return;
+        }
     }
-    newnode->next = tmp->next;
-    tmp->next = newnode;
+    newnode->next = tmp->next; // first step
+    tmp->next = newnode;       // second step
 }
 
 void print_linked_list(Node *head)
