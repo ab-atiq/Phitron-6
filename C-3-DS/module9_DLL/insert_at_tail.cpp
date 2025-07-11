@@ -29,6 +29,7 @@ void print_forward(Node *head)
 void insert_at_tail(Node *&head, Node *&tail, int val)
 {
     Node *newnode = new Node(val);
+    // if (tail == NULL) // tail is NULL means list is empty
     if (head == NULL)
     {
         head = newnode;

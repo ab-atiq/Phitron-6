@@ -70,6 +70,7 @@ int main()
     // print_list_backward(tail);
 
     // Check palindrome
+    // i = left pointer, j = right pointer
     Node *left = head;
     Node *right = tail;
     bool is_palindrome = true;

@@ -15,6 +15,7 @@ public:
     }
 };
 
+// print the list from head to tail
 void print_forward(Node *head)
 {
     Node *tmp = head;
@@ -26,6 +27,7 @@ void print_forward(Node *head)
     cout << endl;
 }
 
+// print the list from tail to head
 void print_backward(Node *tail)
 {
     Node *tmp = tail;

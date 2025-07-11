@@ -26,10 +26,22 @@ void print_forward(Node *head)
     cout << endl;
 }
 
+void print_backward(Node *tail)
+{
+    Node *tmp = tail;
+    while (tmp != NULL)
+    {
+        cout << tmp->val << " ";
+        tmp = tmp->prev;
+    }
+    cout << endl;
+}
+
 void insert_at_tail(Node *&head, Node *&tail, int val)
 {
     Node *newnode = new Node(val);
-    if (head == NULL)
+    // if (head == NULL)
+    if (tail == NULL) // tail is NULL means list is empty
     {
         head = newnode;
         tail = newnode;
@@ -57,5 +69,6 @@ int main()
     }
 
     print_forward(head);
+    print_backward(tail);
     return 0;
 }

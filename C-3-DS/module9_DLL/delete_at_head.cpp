@@ -26,11 +26,13 @@ void print_forward(Node *head)
     cout << endl;
 }
 
+// delete the head node of a doubly linked list. if initial list is empty, do nothing and getting segmentation fault
 void delete_at_head(Node *&head, Node *&tail)
 {
     Node *deleteNode = head;
     head = head->next;
     delete deleteNode;
+    
     if (head == NULL)
     {
         tail = NULL;

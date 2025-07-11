@@ -26,7 +26,7 @@ void print_forward(Node *head)
     cout << endl;
 }
 
-// last node can not delete from this function
+// head or tail node can not delete from this function. Also, not track tail pointer because all middle nodes does not need to track tail pointer
 void delete_at_any_pos(Node *head, int idx)
 {
     Node *tmp = head;
@@ -40,7 +40,7 @@ void delete_at_any_pos(Node *head, int idx)
     delete deleteNode;
 }
 
-// this function can delete any node including last node
+// can delete any node including last or tail node. but, can not delete head
 // void delete_at_any_pos(Node *&head, int idx)
 // {
 //     Node *tmp = head;
@@ -48,8 +48,8 @@ void delete_at_any_pos(Node *head, int idx)
 //     {
 //         tmp = tmp->next;
 //     }
-//     Node *deletenode = tmp->next;
 
+//     Node *deletenode = tmp->next;
 //     tmp->next = tmp->next->next;
 //     delete deletenode;
 

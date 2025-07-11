@@ -26,6 +26,7 @@ void print_forward(Node *head)
     cout << endl;
 }
 
+// insert at any position in a doubly linked list. But, can not insert at the head or tail. Also, tail pointer not track when insert at tail.
 void insert_at_any_pos(Node *head, int idx, int val)
 {
     Node *newNode = new Node(val);
