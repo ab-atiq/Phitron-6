@@ -70,48 +70,48 @@ void print_list_backward(Node *tail)
 }
 
 // method 1: delete the head node of a doubly linked list. if initial list is empty, do nothing and getting segmentation fault
-// void delete_at_head(Node *&head, Node *&tail)
-// {
-//     if (head == NULL) // Check if the list is empty
-//         return;
-
-//     Node *deleteNode = head;
-//     head = head->next;
-//     delete deleteNode;
-
-//     if (head == NULL) // If the list becomes empty after deletion. That means, Initially, there was only one node in the list and we deleted it. After deletion, both head and tail should be NULL.
-//     {
-//         tail = NULL;
-//         return;
-//     }
-//     head->prev = NULL;
-// }
-
-// method 2: delete the head node of a doubly linked list with handling corner case
 void delete_at_head(Node *&head, Node *&tail)
 {
-    if (head == NULL)
+    if (head == NULL) // Check if the list is empty
+        return;
+
+    Node *deleteNode = head;
+    head = head->next;
+    delete deleteNode;
+
+    if (head == NULL) // If the list becomes empty after deletion. That means, Initially, there was only one node in the list and we deleted it. After deletion, both head and tail should be NULL.
     {
-        cout << "List is empty. Nothing to delete at head.\n";
+        tail = NULL;
         return;
     }
-
-    Node *tmp = head;
-
-    // Only one node
-    if (head == tail)
-    {
-        head = NULL;
-        tail = NULL;
-    }
-    else
-    {
-        head = head->next;
-        head->prev = NULL;
-    }
-
-    delete tmp;
+    head->prev = NULL;
 }
+
+// method 2: delete the head node of a doubly linked list with handling corner case
+// void delete_at_head(Node *&head, Node *&tail)
+// {
+//     if (head == NULL)
+//     {
+//         cout << "List is empty. Nothing to delete at head.\n";
+//         return;
+//     }
+
+//     Node *tmp = head;
+
+//     // Only one node
+//     if (head == tail)
+//     {
+//         head = NULL;
+//         tail = NULL;
+//     }
+//     else
+//     {
+//         head = head->next;
+//         head->prev = NULL;
+//     }
+
+//     delete tmp;
+// }
 
 // method 1: delete the tail node of a doubly linked list. if initial list is empty, do nothing and getting segmentation fault
 void delete_at_tail(Node *&head, Node *&tail)
@@ -203,6 +203,49 @@ void delete_at_any_pos(Node *&head, Node *&tail, int idx)
     }
     tmp->next->prev = tmp;
 }
+
+// Not check yet
+// method 2: delete a node at any position in a doubly linked list including head or tail with handling corner case
+// void delete_at_any_position(Node *&head, Node *&tail, int pos)
+// {
+//     if (head == NULL)
+//     {
+//         cout << "List is empty. Cannot delete.\n";
+//         return;
+//     }
+
+//     if (pos == 0)
+//     {
+//         delete_at_head(head, tail);
+//         return;
+//     }
+
+//     Node *tmp = head;
+//     int i = 0;
+
+//     while (tmp != NULL && i < pos)
+//     {
+//         tmp = tmp->next;
+//         i++;
+//     }
+
+//     if (tmp == NULL)
+//     {
+//         cout << "Invalid position. Cannot delete.\n";
+//         return;
+//     }
+
+//     if (tmp == tail)
+//     {
+//         delete_at_tail(head, tail);
+//         return;
+//     }
+
+//     // Remove node in middle
+//     tmp->prev->next = tmp->next;
+//     tmp->next->prev = tmp->prev;
+//     delete tmp;
+// }
 
 int main()
 {
