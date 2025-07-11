@@ -26,6 +26,7 @@ void print_forward(Node *head)
     cout << endl;
 }
 
+// last node can not delete from this function
 void delete_at_any_pos(Node *head, int idx)
 {
     Node *tmp = head;
@@ -38,6 +39,26 @@ void delete_at_any_pos(Node *head, int idx)
     tmp->next->prev = tmp;
     delete deleteNode;
 }
+
+// this function can delete any node including last node
+// void delete_at_any_pos(Node *&head, int idx)
+// {
+//     Node *tmp = head;
+//     for (int i = 1; i < idx; i++)
+//     {
+//         tmp = tmp->next;
+//     }
+//     Node *deletenode = tmp->next;
+
+//     tmp->next = tmp->next->next;
+//     delete deletenode;
+
+//     if (tmp->next == NULL)
+//     {
+//         return;
+//     }
+//     tmp->next->prev = tmp;
+// }
 
 int main()
 {
