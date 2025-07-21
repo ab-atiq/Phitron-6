@@ -1,0 +1,1 @@
+// https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/solutions/6987397/simple-stack-queue-beginner-friendly-bea-kgcg/
