@@ -4,10 +4,8 @@ using namespace std;
 
 class MyStack
 {
-private:
-    list<int> l;
-
 public:
+    list<int> l;
     void push(int val)
     {
         l.push_back(val);
@@ -113,7 +111,7 @@ int main()
 10 20 30 40 50
 
 // output:
-YES
+Same
 
 // input:
 5

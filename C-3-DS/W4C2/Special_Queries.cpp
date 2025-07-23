@@ -11,19 +11,19 @@ int main()
 
     while (Q--)
     {
-        int cmd;
+        string cmd;
         cin >> cmd;
-        if (cmd == 0)
+        if (cmd == "JOIN")
         {
             string name;
             cin >> name;
             q.push(name);
         }
-        else if (cmd == 1)
+        else if (cmd == "DONE")
         {
             if (q.empty())
             {
-                cout << "Invalid" << endl;
+                cout << "No Student" << endl;
             }
             else
             {
