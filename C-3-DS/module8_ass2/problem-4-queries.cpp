@@ -11,6 +11,7 @@ public:
         this->next = NULL;
     }
 };
+
 void insert_at_tail(Node *&head, Node *&tail, int value)
 {
     Node *newnode = new Node(value);
@@ -25,6 +26,7 @@ void insert_at_tail(Node *&head, Node *&tail, int value)
     // tail=newnode; //update kore dite
     tail = tail->next;
 }
+
 void insert_at_head(Node *&head, Node *&tail, int value) // reference dite hobe
 {
     Node *newnode = new Node(value);
@@ -48,6 +50,7 @@ void print_linked_list(Node *head)
     }
     cout << endl;
 }
+
 int size(Node *head)
 {
     int count = 0;
@@ -59,6 +62,7 @@ int size(Node *head)
     }
     return count;
 }
+
 void delete_at_head(Node *&head, Node *&tail)
 {
     if (head == NULL)
@@ -73,6 +77,7 @@ void delete_at_head(Node *&head, Node *&tail)
         tail = NULL;
     }
 }
+
 void delete_at_any_position(Node *&head, int value)
 {
     Node *temp = head;
@@ -97,6 +102,7 @@ void delete_at_any_position(Node *&head, int value)
 //     tail=temp;
 
 // }
+
 void delete_at_tail(Node *head, Node *&tail, int idx)
 {
     Node *tmp = head;

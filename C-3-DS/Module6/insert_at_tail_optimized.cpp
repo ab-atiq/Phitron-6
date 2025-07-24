@@ -13,6 +13,7 @@ public:
     }
 };
 
+// tail pointer used. taile pointer will help to insert at tail in O(1) time without traversing the whole linked list
 void insert_at_tail(Node *&head, Node *&tail, int val)
 {
     Node *newnode = new Node(val);

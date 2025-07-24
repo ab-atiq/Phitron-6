@@ -13,6 +13,7 @@ class Node
     }
 };
 
+// traverse to tail node then insert at tail
 void insert_at_tail(Node* &head, int val)
 {
     Node *newnode = new Node(val);

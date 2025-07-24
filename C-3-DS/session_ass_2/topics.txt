@@ -1,0 +1,11 @@
+1. module 7.5 -> practice day 2(problem 4) 
+    ** variation using delete
+
+2. delete operations
+    - delete head
+    - delete tail
+    - delete any
+
+3. duplicate remove
+    - frequncy array
+    - loop

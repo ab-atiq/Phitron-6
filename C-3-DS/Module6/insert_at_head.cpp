@@ -16,6 +16,12 @@ public:
 void insert_at_head(Node *&head, int val)
 {
     Node *newnode = new Node(val);
+    // not show in module
+    // if (head == NULL)
+    // {
+    //     head = newnode;
+    //     return;
+    // }
     newnode->next = head;
     head = newnode;
 }

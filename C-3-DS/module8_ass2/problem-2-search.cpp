@@ -1,6 +1,5 @@
-// You need to take a singly linked list of integer value as input and print the difference between the maximum and minimum value of the singly linked list.
-#include <iostream>
-#include <climits>
+// take singly linked list as input until -1 is encountered. then search a target value.
+#include <bits/stdc++.h>
 
 using namespace std;
 
