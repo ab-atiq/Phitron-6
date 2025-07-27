@@ -11,9 +11,14 @@ void print_list(list<int> l)
     }
     cout << endl;
     cout << "R -> ";
-    for (auto it = l.rbegin(); it != l.rend(); it++)
+    // for (auto it = l.rbegin(); it != l.rend(); it++)
+    // {
+    //     cout << *it << " ";
+    // }
+    l.reverse();
+    for (int i : l)
     {
-        cout << *it << " ";
+        cout << i << " ";
     }
     cout << endl;
 }
@@ -47,11 +52,15 @@ int main()
                 continue;
             }
             // iterate from start to specific index
-            auto it = l.begin();
-            for (int i = 0; i < idx; i++)
-            {
-                it++;
-            }
+            // auto it = l.begin();
+            // for (int i = 0; i < idx; i++)
+            // {
+            //     it++;
+            // }
+            // l.erase(it); // erase index
+
+            // iterate using next
+            auto it = next(l.begin(), idx);
             l.erase(it); // erase index
             print_list(l);
         }

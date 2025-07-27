@@ -1,0 +1,18 @@
+1. Watch DS week-3 conceptual session-1  (corner case handle)
+
+2. Remove Duplicate again (module + week-2 conceptual session-2)
+
+3. palindrome (two pointer technique)
+
+4. Train Route Tracker (dinajpur rangpur natore dhaka cumilla chittagong end)
+- visit location
+- next
+- prev
+
+5. queries again (same as practice day-1 problem 4)
+
+6. remember previous queries? (STL List)
+- X V 
+    - X=0, head insert
+    - X=1, tail insert
+    - X=2, delete v'th index (if invalid then does not perform operation)
