@@ -2,46 +2,26 @@
 using namespace std;
 int main()
 {
-    stack<int> s;
-    queue<int> q;
     int n;
     cin >> n;
+    int a[n];
     for (int i = 0; i < n; i++)
     {
-        int x;
-        cin >> x;
-        s.push(x);
+        cin >> a[i];
     }
-    int m;
-    cin >> m;
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        int x;
-        cin >> x;
-        q.push(x);
-    }
-
-    if (s.size() != q.size())
-    {
-        cout << "NO" << endl;
-    }
-    else
-    {
-        bool flag = true;
-        while (!s.empty() && !q.empty())
+        for (int j = i + 1; j < n; j++)
         {
-            if (s.top() != q.front())
+            if (a[i] > a[j])
             {
-                flag = false;
-                break;
+                swap(a[i], a[j]);
             }
-            s.pop();
-            q.pop();
         }
-        if (flag == true)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout << a[i];
     }
     return 0;
 }

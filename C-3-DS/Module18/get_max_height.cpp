@@ -78,3 +78,11 @@ int main()
     cout << max_height(root);
     return 0;
 }
+
+/* 
+input: 
+10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1
+
+output:
+2
+*/

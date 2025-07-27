@@ -58,32 +58,44 @@ Node *input_tree()
     return root;
 }
 
-int count_leaf_nodes(Node *root)
+int count_nodes_level_order(Node *root)
 {
     if (root == NULL)
         return 0;
 
-    // any node left and right child does not exist then that node is child node
-    if (root->left == NULL && root->right == NULL)
-        return 1;
+    int count = 0;
+    queue<Node *> q;
+    q.push(root);
+    while (!q.empty())
+    {
+        // 1.  ber kore ana
+        Node *f = q.front();
+        q.pop();
 
-    int l = count_leaf_nodes(root->left);
-    int r = count_leaf_nodes(root->right);
-    return l + r;
+        // 2.  oi node ke niye kaj
+        // cout << f->val << " ";
+        count++;
+
+        // 3.  children push kora
+        if (f->left)
+            q.push(f->left);
+        if (f->right)
+            q.push(f->right);
+    }
+    return count;
 }
 
 int main()
 {
     Node *root = input_tree();
-    cout << count_leaf_nodes(root);
+    cout << count_nodes_level_order(root) << endl;
     return 0;
 }
 
-
-/* 
-input: 
+/*
+input:
 10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1
 
 output:
-3
+6
 */
