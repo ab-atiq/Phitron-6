@@ -1,3 +1,4 @@
+// https://www.codingninjas.com/studio/problems/special-binary-tree_920502
 #include <bits/stdc++.h>
 bool isSpecialBinaryTree(BinaryTreeNode<int> *root)
 {
