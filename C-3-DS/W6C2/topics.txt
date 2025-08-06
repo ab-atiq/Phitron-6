@@ -1,0 +1,13 @@
+1. pair compare use depend on name(ascending)
+- name and roll
+
+2. Priority Queue
+   -Max PQ
+   -Min PQ 
+Problem - Custom Comparator for Priority Queue
+
+Roll Name Marks given, print highest marks student information, if the marks is same print the name who has lower roll. 
+
+2. most frequent value print
+
+Feedback: 
