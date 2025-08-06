@@ -17,3 +17,29 @@ bool isNodePresent(BinaryTreeNode<int> *root, int x)
 
     // return isNodePresent(root->left, x) || isNodePresent(root->right, x);
 }
+
+// 2nd solution:
+int flag = 0;
+void test(BinaryTreeNode<int> *root, int x)
+{
+    if (root == NULL)
+    {
+        if (flag != 1) // update
+            flag = 0;
+        return;
+    }
+    if (root->data == x)
+    {
+        flag = 1;
+        return;
+    }
+
+    test(root->left, x);
+    test(root->right, x);
+}
+
+bool isNodePresent(BinaryTreeNode<int> *root, int x)
+{
+    test(root, x);
+    return flag;
+}

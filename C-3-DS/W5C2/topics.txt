@@ -5,6 +5,3 @@
 3. perfect binary tree nodes
 
 4. right outer nodes
-
-note: 
-https://forms.gle/HtRft2uWtoD4zv9o6
