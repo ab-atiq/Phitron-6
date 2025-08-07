@@ -15,15 +15,12 @@ public:
     }
 };
 
-int mx_dep;
-int sum = 0;
-
 int max_height(Node *root)
 {
     if (root == NULL)
         return 0;
     if (root->left == NULL && root->right == NULL)
-        return 0;
+        return 0; // 0 - based height
     int l = max_height(root->left);
     int r = max_height(root->right);
 
@@ -73,51 +70,40 @@ Node *input_tree()
     return root;
 }
 
-void level_order(Node *root)
+int count_nodes(Node *root)
 {
     if (root == NULL)
-    {
-        cout << "No Tree";
-        return;
-    }
-    queue<pair<Node *, int>> q;
-    q.push({root, 0});
-    while (!q.empty())
-    {
-        // 1.  ber kore ana
-        pair<Node *, int> f = q.front();
-        q.pop();
-
-        Node *node = f.first;
-        int level = f.second;
-
-        // 2.  oi node ke niye kaj
-        // cout << f->val << " ";
-        if (level == mx_dep)
-        {
-            sum += node->val;
-        }
-
-        // 3.  children push kora
-        if (node->left)
-            q.push({node->left, level + 1});
-        if (node->right)
-            q.push({node->right, level + 1});
-    }
+        return 0;
+    int l = count_nodes(root->left);
+    int r = count_nodes(root->right);
+    return l + r + 1;
 }
 
 int main()
 {
     Node *root = input_tree();
     // level_order(root);
-    mx_dep = max_height(root);
-    level_order(root);
-    cout << sum << endl;
+    int mx_dep = max_height(root);
+    int total_Nodes = count_nodes(root);
+    int cal = pow(2, mx_dep + 1) - 1;
+    cout << "Total nodes: " << total_Nodes << endl;
+    cout << "Perfect binary nodes: " << cal << endl;
     return 0;
 }
 
-/* 
+/*
+input 1
 1 2 3 4 5 -1 6 7 -1 -1 -1 -1 8 -1 -1 -1 -1
 
-15
+Total nodes: 8
+Perfect binary nodes: 15
+
+
+
+input 2
+1 2 3 4 5 9 6 7 8 10 11 12 13 14 8 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+
+Total nodes: 15
+Perfect binary nodes: 15
+
 */

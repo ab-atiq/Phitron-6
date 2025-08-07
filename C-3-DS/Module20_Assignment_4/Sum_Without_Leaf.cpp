@@ -80,3 +80,37 @@ int main()
     cout << sum_except_leaf_nodes(root);
     return 0;
 }
+
+
+
+/* 
+int ans=0;
+int sum(Node * root){
+    if(root==NULL){
+        return ans;
+    }
+    if(root->left==NULL && root->right==NULL){
+        return ans;
+    }
+    int l=sum(root->left);
+    int r=sum(root->right);
+    return l+r+root->val;
+}
+*/
+
+
+/* 
+int travel(Node* root) {
+    if (!root) return 0;
+   
+    int sum = 0;
+    if (root->left || root->right) {
+        sum += root->val;
+    }
+
+    sum += travel(root->left);
+    sum += travel(root->right);
+
+    return sum;
+}
+*/

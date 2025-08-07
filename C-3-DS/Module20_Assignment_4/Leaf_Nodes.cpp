@@ -68,7 +68,7 @@ void find_leaf_nodes(Node *root, vector<int> &leaf_nodes)
     if (root->left == NULL && root->right == NULL)
     {
         leaf_nodes.push_back(root->val);
-        return;
+        return; // No need to traverse further
     }
 
     find_leaf_nodes(root->left, leaf_nodes);

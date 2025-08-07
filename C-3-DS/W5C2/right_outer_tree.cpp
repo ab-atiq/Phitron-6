@@ -15,21 +15,6 @@ public:
     }
 };
 
-int mx_dep;
-int sum = 0;
-
-int max_height(Node *root)
-{
-    if (root == NULL)
-        return 0;
-    if (root->left == NULL && root->right == NULL)
-        return 0;
-    int l = max_height(root->left);
-    int r = max_height(root->right);
-
-    return max(l, r) + 1;
-}
-
 Node *input_tree()
 {
     int val;
@@ -73,51 +58,30 @@ Node *input_tree()
     return root;
 }
 
-void level_order(Node *root)
+void traverse_right(Node *root)
 {
-    if (root == NULL)
+    if (root != NULL)
     {
-        cout << "No Tree";
-        return;
+        cout << root->val << endl;
     }
-    queue<pair<Node *, int>> q;
-    q.push({root, 0});
-    while (!q.empty())
+
+    while (root != NULL)
     {
-        // 1.  ber kore ana
-        pair<Node *, int> f = q.front();
-        q.pop();
-
-        Node *node = f.first;
-        int level = f.second;
-
-        // 2.  oi node ke niye kaj
-        // cout << f->val << " ";
-        if (level == mx_dep)
+        if (root->right)
         {
-            sum += node->val;
+            root = root->right;
         }
-
-        // 3.  children push kora
-        if (node->left)
-            q.push({node->left, level + 1});
-        if (node->right)
-            q.push({node->right, level + 1});
+        else
+        {
+            root = root->left;
+        }
+        cout << root->val << endl;
     }
 }
 
 int main()
 {
     Node *root = input_tree();
-    // level_order(root);
-    mx_dep = max_height(root);
-    level_order(root);
-    cout << sum << endl;
+    traverse_right(root);
     return 0;
 }
-
-/* 
-1 2 3 4 5 -1 6 7 -1 -1 -1 -1 8 -1 -1 -1 -1
-
-15
-*/
