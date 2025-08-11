@@ -8,3 +8,5 @@
 3. '1' will remove/elimination previous '2' with itself. After elimination, if another elimination possible then remove. Then check "Empty" or "Not empty".
 
 sting = 12211211
+
+Must watch: Week-4  Conceptual session-2
