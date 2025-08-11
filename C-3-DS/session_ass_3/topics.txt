@@ -1,0 +1,10 @@
+1. practice day - 1 (problem 2)
+
+2. restaurant food order - 
+    - Q query
+    - 0 NAME = "NAME" stand in line 
+    - 1 = print "NAME" who got food, if no client present then print "No Student"
+
+3. '1' will remove/elimination previous '2' with itself. After elimination, if another elimination possible then remove. Then check "Empty" or "Not empty".
+
+sting = 12211211
