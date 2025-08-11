@@ -7,6 +7,14 @@ int main()
     // fgets(s, sizeof(s), stdin); // Read the entire line
     gets(s);
 
+    // module - shown
+    for (int i = 0; s[i] != '\\'; i++)
+    {
+        // putchar(s[i]);
+        printf("%c", s[i]);
+    }
+
+    // my code
     // for (int i = 0; s[i] != '\0'; i++)
     // for (int i = 0; i < strlen(s); i++)
     for (int i = 0; i < sizeof(s); i++)
