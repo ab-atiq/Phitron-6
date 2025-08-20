@@ -18,6 +18,12 @@ void bfs(int n, vector<vector<int>> &graph, int L)
         int node = q.front();
         q.pop();
 
+        // level node collect
+        if (level[node] == L)
+        {
+            result.push_back(node);
+        }
+
         for (int neighbor : graph[node])
         {
             if (level[neighbor] == -1)
@@ -29,16 +35,17 @@ void bfs(int n, vector<vector<int>> &graph, int L)
     }
 
     // Collect nodes at level L
-    for (int i = 0; i < n; i++)
-    {
-        if (level[i] == L)
-        {
-            result.push_back(i);
-        }
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (level[i] == L)
+    //     {
+    //         result.push_back(i);
+    //     }
+    // }
 
     // Sort in descending order
-    sort(result.rbegin(), result.rend());
+    // sort(result.rbegin(), result.rend());
+    sort(result.begin(), result.end(), greater<int>());
 
     // Print the result
     for (int node : result)
@@ -53,6 +60,7 @@ int main()
     int n, m;
     cin >> n >> m;
 
+    // vector<int> adj_mat[n];
     vector<vector<int>> graph(n);
 
     // Input edges

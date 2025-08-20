@@ -4,7 +4,7 @@ int main()
 {
     int n, e;
     cin >> n >> e;
-    vector<pair<int, int>> edge_list;
+    vector<pair<int, int>> edge_list; // vector of pairs
 
     while (e--)
     {

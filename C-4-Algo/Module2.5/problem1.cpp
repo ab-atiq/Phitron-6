@@ -60,3 +60,74 @@ int main()
 
     return 0;
 }
+
+/*
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+ll n, e;
+vector<ll> edge_list[100005];
+bool vis[100005];
+ll level[100005];
+
+void bfs(int src)
+{
+    queue<ll> q;
+    q.push(src);
+    vis[src] = true;
+    level[src] = 0;
+
+    while (!q.empty())
+    {
+        ll par = q.front();
+        q.pop();
+
+        for (ll child : edge_list[par])
+        {
+            if (!vis[child])
+            {
+                q.push(child);
+                vis[child] = true;
+                level[child] = level[par] + 1;
+            }
+        }
+    }
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    cin >> n >> e;
+    while (e--)
+    {
+        int a, b;
+        cin >> a >> b;
+        edge_list[a].push_back(b);
+        edge_list[b].push_back(a);
+    }
+
+    //
+    memset(vis, false, sizeof(vis));
+    memset(level, -1, sizeof(level));
+
+    int q;
+    cin >> q;
+    while (q--)
+    {
+        int src, des;
+        cin >> src >> des;
+
+        memset(vis, false, sizeof(vis));
+        memset(level, -1, sizeof(level));
+
+        bfs(src);
+
+        if (!vis[des])
+            cout << -1 << endl;
+        else
+            cout << level[des] << endl;
+    }
+    return 0;
+}
+*/

@@ -4,7 +4,7 @@ int main()
 {
     int n, e;
     cin >> n >> e;
-    int a[n];
+    int a[n]; // array of integers
     vector<int> adj_list[n]; // array of vector
 
     while (e--)
