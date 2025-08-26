@@ -38,3 +38,20 @@ int main()
     dfs(si, sj);
     return 0;
 }
+
+/*
+input:
+2 3
+...
+...
+1 1 - source
+
+output:
+1 1
+0 1
+0 0
+1 0
+0 2
+1 2
+
+*/

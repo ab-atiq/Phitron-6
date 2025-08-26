@@ -55,3 +55,15 @@ int main()
     cout << level[di][dj] << endl;
     return 0;
 }
+
+/*
+input:
+2 3
+...
+...
+1 1 0 0
+
+output:
+2 - level of destination
+
+*/

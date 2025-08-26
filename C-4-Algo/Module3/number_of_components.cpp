@@ -35,3 +35,17 @@ int main()
     cout << cnt << endl;
     return 0;
 }
+
+/*
+input:
+8 6
+1 2
+0 5
+2 3
+6 7
+4 5
+1 3
+output:
+3
+
+*/
