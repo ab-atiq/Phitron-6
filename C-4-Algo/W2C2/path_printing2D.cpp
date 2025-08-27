@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 char grid[105][105];
 bool vis[105][105];
 int level[105][105];
-pair<int, int> parent[105][105];
+pair<int, int> parent[105][105]; // chnage to pair
 
 vector<pair<int, int>> d = {{-1, 0}, {0, 1}, {0, -1}, {1, 0}}; // change direction
 int n, m;
@@ -38,7 +39,7 @@ void bfs(int si, int sj)
                 q.push({ci, cj});
                 vis[ci][cj] = true;
                 level[ci][cj] = level[par_i][par_j] + 1;
-                parent[ci][cj] = {par_i, par_j};
+                parent[ci][cj] = {par_i, par_j}; // pair
             }
         }
     }
@@ -49,6 +50,7 @@ int main()
 
     cin >> n >> m;
 
+    // user input and src , destination find
     int si, sj, di, dj;
     for (int i = 0; i < n; i++)
     {
@@ -68,10 +70,33 @@ int main()
         }
     }
 
+    //
     memset(vis, false, sizeof(vis));
     memset(level, -1, sizeof(level));
     memset(parent, -1, sizeof(parent));
     bfs(si, sj);
+
+    // print visited nodes
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         if (vis[i][j])
+    //         {
+    //             grid[i][j] = 'o';
+    //         }
+    //     }
+    // }
+
+    // print grid
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         cout << grid[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
 
     int x = di, y = dj;
 
@@ -99,3 +124,20 @@ int main()
 
     return 0;
 }
+
+/*
+5 5
+A....
+.###.
+.###.
+.###.
+....B
+
+output:
+A o o o o
+. # # # o
+. # # # o
+. # # # o
+. . . . B
+
+*/

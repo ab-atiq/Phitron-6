@@ -9,7 +9,6 @@ void bfs(int src)
 {
     queue<int> q;
     q.push(src);
-    q.push(2); // forcefully any node path print
     vis[src] = true;
     level[src] = 0;
 
@@ -66,16 +65,17 @@ int main()
 }
 
 /*
-5 6
-0 3
-0 1
-0 4
-1 2
+7 8
+0 5
+5 1
+1 4
+1 6
+4 6
+6 3
 3 2
 4 2
-0 2
+5
+2
 
-output:
-0 3 2
-
+5 1 4 2 
 */
