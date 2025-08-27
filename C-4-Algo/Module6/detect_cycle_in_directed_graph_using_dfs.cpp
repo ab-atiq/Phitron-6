@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 bool vis[105];
 vector<int> adj_list[105];
@@ -9,11 +9,11 @@ void dfs(int src)
 {
     vis[src] = true;
     pathvis[src] = true;
-    for(int child : adj_list[src])
+    for (int child : adj_list[src])
     {
-        if(vis[child] && pathvis[child])
+        if (vis[child] && pathvis[child])
             cycle = true;
-        if(!vis[child])
+        if (!vis[child])
         {
             dfs(child);
         }
@@ -24,23 +24,23 @@ void dfs(int src)
 
 int main()
 {
-    int n,e;
+    int n, e;
     cin >> n >> e;
-    while(e--)
+    while (e--)
     {
-        int a,b;
+        int a, b;
         cin >> a >> b;
         adj_list[a].push_back(b);
     }
-    memset(vis,false,sizeof(vis));
-    memset(pathvis,false,sizeof(pathvis));
+    memset(vis, false, sizeof(vis));
+    memset(pathvis, false, sizeof(pathvis));
     cycle = false;
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        if(!vis[i])
+        if (!vis[i])
             dfs(i);
     }
-    if(cycle)
+    if (cycle)
         cout << "Cycle Detected\n";
     else
         cout << "No Cycle\n";

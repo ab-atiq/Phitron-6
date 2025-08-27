@@ -1,27 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
-bool vis[105];
-vector<int> adj_list[105];
-int parent[105];
-bool cycle;
+vector<int> adj_list[1005];
+bool vis[1005];
+int level[1005];
+int parent[1005];
 
 void bfs(int src)
 {
     queue<int> q;
     q.push(src);
+    q.push(2);
     vis[src] = true;
+    level[src] = 0;
+
     while (!q.empty())
     {
         int par = q.front();
         q.pop();
+
         for (int child : adj_list[par])
         {
-            if (vis[child] && parent[par] != child)
-                cycle = true;
             if (!vis[child])
             {
                 q.push(child);
                 vis[child] = true;
+                level[child] = level[par] + 1;
                 parent[child] = par;
             }
         }
@@ -40,47 +43,24 @@ int main()
         adj_list[b].push_back(a);
     }
     memset(vis, false, sizeof(vis));
+    memset(level, -1, sizeof(level));
     memset(parent, -1, sizeof(parent));
-    cycle = false;
-    for (int i = 0; i < n; i++)
+    int src, dst;
+    cin >> src >> dst;
+    bfs(src);
+
+    vector<int> path;
+    int node = dst;
+    while (node != -1)
     {
-        if (!vis[i])
-            bfs(i);
+        path.push_back(node);
+        node = parent[node];
     }
-    if (cycle)
-        cout << "Cycle Detected\n";
-    else
-        cout << "No Cycle\n";
+    reverse(path.begin(), path.end());
+    for (int x : path)
+    {
+        cout << x << " ";
+    }
+
     return 0;
 }
-
-/*
-input:
-6 6
-0 1
-1 2
-3 4
-4 5
-5 3
-
-output:
-cycle detected (3 -> 4 -> 5 -> 3)
-
-input:
-3 3
-0 1
-1 2
-2 2
-
-output:
-cycle detected (2 -> 2)
-
-input:
-3 3
-0 1
-1 2
-2 0
-
-output:
-cycle detected (0 -> 1 -> 2 -> 0)
-*/

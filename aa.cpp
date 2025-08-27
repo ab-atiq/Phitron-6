@@ -1,92 +1,58 @@
+// cycle detect undirected graph
+
 #include <bits/stdc++.h>
 using namespace std;
-char grid[1005][1005];
-bool vis[1005][1005];
-int level[1005][1005];
-vector<pair<int, int>> dir = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-int row, col;
+bool vis[1005];
+bool cycle = false;
+int parent[1005];
 
-bool valid(int i, int j)
+void dfs(int src, vector<vector<int>> &adj_list)
 {
-    if (i < 0 || row <= i || j < 0 || col <= j)
+    vis[src] = true;
+    for (int ch : adj_list[src])
     {
-        return false;
-    }
-    return true;
-}
-
-// void dfs(int si, int sj)
-// {
-//     cout << si << " " << sj << endl;
-//     vis[si][sj] = true;
-//     // for (int i = 0; i < 4; i++)
-//     for (pair<int, int> d : dir)
-//     {
-//         // int ci = si + dir[i].first;
-//         // int cj = sj + dir[i].second;
-//         int ci = si + d.first;
-//         int cj = sj + d.second;
-//         if (!vis[ci][cj] && valid(ci, cj))
-//         {
-//             dfs(ci, cj);
-//         }
-//     }
-// }
-
-void bfs(int si, int sj)
-{
-    queue<pair<int, int>> q;
-    q.push({si, sj});
-    vis[si][sj] = true;
-    level[si][sj] = 0;
-    while (!q.empty())
-    {
-        int pi = q.front().first;
-        int pj = q.front().second;
-        q.pop();
-        cout << pi << " " << pj << endl;
-        // for (int i = 0; i < 4; i++)
-        for (pair<int, int> pai : dir)
+        if (vis[ch] && parent[src] != ch)
         {
-            // int ci = pi + dir[i].first;
-            // int cj = pj + dir[i].second;
-            int ci = pi + pai.first;
-            int cj = pj + pai.second;
-            if (!vis[ci][cj] && valid(ci, cj))
-            {
-                q.push({ci, cj});
-                vis[ci][cj] = true;
-                level[ci][cj] = level[pi][pj] + 1;
-            }
+            cycle = true;
+        }
+        if (!vis[ch])
+        {
+            parent[ch] = src;
+            dfs(ch, adj_list);
         }
     }
 }
 
 int main()
 {
-
-    cin >> row >> col;
-    // vector<int> adj_list[node];
-    for (int i = 0; i < row; i++)
-        for (int j = 0; j < col; j++)
-            cin >> grid[i][j];
-    for (int i = 0; i < row; i++)
+    int node, edge;
+    cin >> node >> edge;
+    vector<vector<int>> adj_list(node);
+    for (int i = 0; i < edge; i++)
     {
-        for (int j = 0; j < col; j++)
-        {
-            cout << grid[i][j] << " ";
-        }
-        cout << endl;
+        int u, v;
+        cin >> u >> v;
+        adj_list[u].push_back(v);
+        adj_list[v].push_back(u);
     }
 
     memset(vis, false, sizeof(vis));
-    int si, sj, di, dj;
-    cin >> si >> sj >> di >> dj;
-    // dfs(si, sj);
-    bfs(si, sj);
-    if (vis[di][dj])
+    memset(parent, -1, sizeof(parent));
+
+    dfs(0, adj_list);
+
+    if (cycle)
     {
-        cout << level[di][dj] << endl;
+        cout << "Cycle detected";
+    }
+    else
+    {
+        cout << "No Cycle detected";
     }
     return 0;
 }
+
+/* 
+
+
+*/
