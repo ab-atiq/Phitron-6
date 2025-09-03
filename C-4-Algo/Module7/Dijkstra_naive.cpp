@@ -3,6 +3,7 @@ using namespace std;
 vector<pair<int, int>> adj_list[105];
 int dis[105];
 
+// time complexity: O(V*E)
 void dijkstra(int src)
 {
     queue<pair<int, int>> q;
@@ -55,7 +56,7 @@ int main()
         dis[i] = INT_MAX;
 
     // print distance array before dijkstra
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         cout << dis[i] << endl;
 
     dijkstra(0);
@@ -67,6 +68,7 @@ int main()
 }
 
 /*
+input:
 5 8
 0 1 10
 1 2 1
@@ -77,6 +79,7 @@ int main()
 1 4 3
 2 4 5
 
+output:
 0 -> 0
 1 -> 6
 2 -> 5

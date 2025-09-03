@@ -3,6 +3,7 @@ using namespace std;
 vector<pair<int, int>> adj_list[105];
 int dis[105];
 
+// time complexity: O((V+E) log V)
 void dijkstra(int src)
 {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
@@ -43,11 +44,31 @@ int main()
 
     for (int i = 0; i < n; i++)
         dis[i] = INT_MAX;
-        
+
     dijkstra(0);
 
     for (int i = 0; i < n; i++)
         cout << i << " -> " << dis[i] << endl;
-        
+
     return 0;
 }
+
+/*
+input:
+5 8
+0 1 10
+1 2 1
+0 2 7
+0 3 4
+2 3 1
+3 4 5
+1 4 3
+2 4 5
+
+output:
+0 -> 0
+1 -> 6
+2 -> 5
+3 -> 4
+4 -> 9
+*/
