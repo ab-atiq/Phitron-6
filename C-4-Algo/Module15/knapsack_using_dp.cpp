@@ -34,8 +34,9 @@ int main()
         cin >> val[i];
     for (int i = 0; i < n; i++)
         cin >> weight[i];
+        
     cin >> mx_weight;
-
+ 
     for (int i = 0; i <= n; i++)
         for (int j = 0; j <= mx_weight; j++)
             dp[i][j] = -1;

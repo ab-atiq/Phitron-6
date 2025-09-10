@@ -1,25 +1,16 @@
 #include <stdio.h>
-
 int main()
 {
     int n;
     scanf("%d", &n);
-    int a[n];
-    for (int i = 0; i < n; i++)
+
+    for (int i = 1; i <= n; i++)
     {
-        scanf("%d", &a[i]);
-    }
-    int fre[6] = {0};
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] >= 0 && a[i] <= 5)
+        if (i % 2 == 0)
         {
-            fre[a[i]]++;
+            printf("%d\n", i);
         }
     }
-    for (int i = 0; i < 6; i++)
-    {
-        printf("%d\n", fre[i]);
-    }
+
     return 0;
 }
