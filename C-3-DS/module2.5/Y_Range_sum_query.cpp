@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/Y
+
 // Next module provide optimization of this code
 #include <iostream>
 #include <vector>

@@ -1,0 +1,38 @@
+https://codeforces.com/group/MWSDmqGsZm/contests - Assiust university training contests
+
+Data Structure - 
+    1. Time/Space complexity analysis/measurement
+    ** predict performance & compare algorithm efficiency
+    - Constant TC O(1)
+    - Linear TC O(N)
+    - Logarithmic TC O(log N) - Binary search
+    - Square Root TC O(sqrt(N)) - All divisor find of N 
+    - Linearithmic TC O(N * log N)
+    - Quadratic TC O(N*N)
+    - Exponential TC O(2^N)
+    - Factorial TC O(N!) - Traveling Salesman Problem (Brute Force Solution) - all node/cities possible route
+    2. Vector (Dynamic, sequencial)
+    3. Binary search(sorted array), prefix(cumulative sum of elements)/sufix sum
+    4. Singly/Doubly Linked list (efficient memory management)
+    - insertion(head, tail, any position)
+    - deletion (head, tail, any position)
+    - printing(forward, backward)
+    - sorting(ascending, descending)
+    \/
+    /\ referenceces (not important in problem solving, but, important in pass function and get result from function)
+
+    -- selection sorting (singly/doubly LL) TC - O(N*N)
+
+    -- STL list (container of DLL), efficient insertion & deletion at any point, constant time access only first & last elements, does not pre-allocate fixed size, providing dynamic resizing as needed.
+
+    -- reversing list (manually does not needed)
+
+    -- cycle detect (slow-fast, hare-tortoise) - not used in STL list
+
+
+** remove duplicate, sort, palindrome, swapping, 
+
+C course -
+
+    1. 
+
