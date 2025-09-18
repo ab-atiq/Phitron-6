@@ -1,0 +1,70 @@
+1. Graph input and store -
+    - adjacency matrix (inefficient for sparse graphs(
+        -- graphs with few edges), 
+        -- space efficient for dense graphs(many edges), 
+        -- constant time time edge check or check two nodes are connected or not.)
+    - adjacency list (
+        -- suitable for sparse graphs, 
+        -- efficient for finding neighbors)
+    - edge list(work with edges)
+2. Types of graphs-
+    - Direction(Directed, Undirected)
+    - Weight(Weighted, Unweighted)
+    - Cycle(cyclic, acyclic)
+
+3. Graph Examples (google map, facebook, network)
+
+4. Graph traversal algorith -
+    - BFS (Breadth First Search) - O(n+e)
+        -- uses
+            - shortest path cost/path printing(parent track) in Unweighted graphs
+            - single source shortest distance
+            - finding connected components
+            - detecting cycle 
+            - check a node can be visited or not
+
+    - DFS (Depth First Search) - O(n+e)
+        -- node visited or not 
+        -- easy to implement 
+
+
+5. 2D grid problem solving 
+    - BFS or DFS (O(V+E)==O(n*m+E))
+    - source to destination shortest path 
+
+** Number of components (graph and 2D grid)
+** Number of node or cell each components (graph and 2D grid)
+
+6. cycle detection (directed (path visit track) and Undirected)
+
+7. Dijkstra
+    - source to destination shortest distance from Weight graph
+    - path relaxation technique follow
+    - TC - O((v+e)*(log V)) = O(E*(log V))
+
+
+
+Bellman Ford
+    - Negative Weighted cycle
+    - edge or node relaxation
+    - TC - O((V-1)*E) = O(V*E)
+
+
+Floyd Warshall 
+    - all pair shortest distance
+    - TC - O(V^3)
+    - 
+
+** DFS vs BFS vs Dijkstra vs Bellman Ford vs Floyd Warshall
+
+
+DSU - Disjoint Set Union (find, union)
+    - connected or not
+    - cycle detection
+    - minimum spanning tree
+
+Dynamic programming - 
+    - Recursive/Memoization/Top-down approach
+    - iterative/tabulation/bottom-up approach
+
+    -- factorial(recusion), fibonacci(recusion, dp(Memoization, tabulation)), 0/1 knapsack - TC=O(N*W)
