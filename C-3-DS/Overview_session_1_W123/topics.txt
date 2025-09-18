@@ -34,5 +34,9 @@ Data Structure -
 
 C course -
 
-    1. 
+    1. pattern, 2d array, two pointer technique, palindrome, frequency array, array operation, swap, reverse, string operation & manipulation, 
+
+
+C++ course-
+    1. string, array of objects
 
