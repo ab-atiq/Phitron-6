@@ -15,3 +15,29 @@ int main()
     }
     return 0;
 }
+
+/*
+________________________
+|                      |
+|     AB Atiq          |
+|______________________|
+*/
+
+// Problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/P
+
+#include <stdio.h>
+int main()
+{
+    int x;
+    scanf("%1d", &x); // first digit input from number
+    // printf("%d", x);
+    if (x % 2 == 0)
+    {
+        printf("EVEN\n");
+    }
+    else
+    {
+        printf("ODD\n");
+    }
+    return 0;
+}
