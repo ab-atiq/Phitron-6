@@ -1,3 +1,4 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/329103/problem/A
 #include <stdio.h>
 int main()
 {

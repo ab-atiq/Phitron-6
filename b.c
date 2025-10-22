@@ -1,33 +1,23 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    int A, B, C;
+    char arr[1001];
+    scanf("%s", &arr);
+    int i = 0, j = strlen(arr) - 1;
+    while (i < j)
+    {
+        if (arr[i] != arr[j])
+        {
+            printf("NO");
+            // break;
+            return 0;
+        }
+        i++;
+        j--;
+    }
 
-    scanf("%d %d %d", &A, &B, &C);
+    printf("YES");
 
-    if (A >= C && B >= C)
-    {
-        printf("%d ", C);
-    }
-    else if (C >= B && A >= B)
-    {
-        printf("%d ", B);
-    }
-    else if (C >= A && B >= A)
-    {
-        printf("%d ", A);
-    }
-    if (A >= B && A >= C)
-    {
-        printf("%d", A);
-    }
-    else if (C >= A && C >= B)
-    {
-        printf("%d", C);
-    }
-    else if (B >= C && B >= A)
-    {
-        printf("%d", B);
-    }
     return 0;
 }
