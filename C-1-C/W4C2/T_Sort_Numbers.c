@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/T
+
 /* #include <stdio.h>
 
 int main()
@@ -267,6 +269,64 @@ int main()
     // Print the minimum, middle, and maximum values
     printf("%d\n%d\n%d\n\n", min_v, mid_v, max_v);
     // original a, b, c value print
+    printf("%d\n%d\n%d", a, b, c);
+    return 0;
+}
+
+// new approach
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    int min = a, mid = b, max = c;
+    if (min > mid)
+    {
+        int temp = min;
+        min = mid;
+        mid = temp;
+    }
+    if (min > max)
+    {
+        int temp = min;
+        min = max;
+        max = temp;
+    }
+    if (mid > max)
+    {
+        int temp = mid;
+        mid = max;
+        max = temp;
+    }
+    printf("%d\n%d\n%d\n\n", min, mid, max);
+    printf("%d\n%d\n%d", a, b, c);
+    return 0;
+}
+
+// another approach
+#include <stdio.h>
+int main()
+{
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    int min = a, mid = a, max = a;
+    // min find and fixed
+    if (b < min)
+        min = b;
+    if (c < min)
+        min = c;
+
+    // max find and fixed
+    if (b > max)
+        max = b;
+    if (c > max)
+        max = c;
+
+    // mid find and fixed
+    int sum_a_b_c = a + b + c;
+    mid = sum_a_b_c - min - max;
+    printf("%d\n%d\n%d\n\n", min, mid, max);
     printf("%d\n%d\n%d", a, b, c);
     return 0;
 }

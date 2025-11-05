@@ -1,9 +1,14 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223205/problem/G
+
 #include <stdio.h>
+#include <limits.h>
 
 void find_min_max(int arr[], int size, int *min, int *max)
 {
-    *min = arr[0];
-    *max = arr[0];
+    // *min = arr[0];
+    // *max = arr[0];
+    *min = INT_MAX;
+    *max = INT_MIN;
 
     for (int i = 1; i < size; i++)
     {
@@ -31,7 +36,7 @@ int main()
 
     int min, max; // min and max value update using function
     find_min_max(arr, n, &min, &max);
-    
+
     printf("%d %d\n", min, max);
 
     return 0;

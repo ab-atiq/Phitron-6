@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void swap_it(int *a, int *b)
+void swap_it(int *a, int *b) // pointer receives address in parameter
 {
-    int temp = *a;
+    int temp = *a; // dereferencing to get value
     *a = *b;
     *b = temp;
 }
@@ -13,7 +13,7 @@ int main()
     scanf("%d %d", &x, &y);
 
     printf("Before Swap: %d %d\n", x, y);
-    swap_it(&x, &y);
+    swap_it(&x, &y); // address passed
     printf("After Swap: %d %d\n", x, y);
 
     return 0;

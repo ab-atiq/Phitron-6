@@ -1,3 +1,4 @@
+// Count the number of capital letters, small letters, and digits in given strings.
 #include <stdio.h>
 #include <string.h>
 int main()
