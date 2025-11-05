@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223205/problem/G
+
 #include <stdio.h>
 
 void find_min_max(int arr[], int size, int *min, int *max)

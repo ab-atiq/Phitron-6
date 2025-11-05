@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 int main()
 {
     int n;
@@ -10,20 +11,23 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int min = 1e5 + 1, min_pos = -1;
+    // int min = 1e5 + 1, min_pos = -1;
+    int min = INT_MAX, min_pos = -1;
     for (int i = 0; i < n; i++)
     {
         if (arr[i] < min)
         {
             min = arr[i];
-            min_pos = i + 1; // 1 index based
+            // min_pos = i + 1; // 1 index based
+            min_pos = i;
         }
     }
-    printf("%d %d", min, min_pos);
+    // printf("%d %d", min, min_pos);
+    printf("%d %d", min, min_pos + 1); // converting to 1 index based
     return 0;
 }
 
-/*  
+/*
 Input
 3
 1 2 3

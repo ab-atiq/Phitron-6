@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223205/problem/B
+
 #include <stdio.h>
 
 void print_numbers(int n)
