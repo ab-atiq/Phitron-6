@@ -1,40 +1,74 @@
-// method 1: solve depend on array index
+// easy solution
 #include <stdio.h>
 #include <limits.h>
 
-int findMax(int a[], int n, int i)
-{
-    if (i == n - 1) // if index is last item then that is return as max value
-    {
-        return a[i];
-    }
+int max_val = INT_MIN; // global variable to store the maximum value
 
-    int max_rest = findMax(a, n, i + 1);
-    if (a[i] > max_rest)
-    {
-        return a[i];
-    }
-    else
-    {
-        return max_rest;
-    }
+void findMax(int arr[], int n, int i)
+{
+    if (i == n) // base case: reached end of array
+        return;
+
+    if (arr[i] > max_val)
+        max_val = arr[i]; // update max value
+
+    findMax(arr, n, i + 1); // recursive call for next index
 }
 
 int main()
 {
     int n;
     scanf("%d", &n);
-    int a[n];
+
+    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d", &arr[i]);
     }
 
-    int max_value = findMax(a, n, 0);
-    printf("%d\n", max_value);
+    findMax(arr, n, 0); // start recursion from index 0
 
+    printf("%d\n", max_val);
     return 0;
 }
+
+// method 1: solve depend on array index
+// #include <stdio.h>
+// #include <limits.h>
+
+// int findMax(int a[], int n, int i)
+// {
+//     if (i == n - 1) // if index is last item then that is return as max value
+//     {
+//         return a[i];
+//     }
+
+//     int max_rest = findMax(a, n, i + 1);
+//     if (a[i] > max_rest)
+//     {
+//         return a[i];
+//     }
+//     else
+//     {
+//         return max_rest;
+//     }
+// }
+
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int a[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     }
+
+//     int max_value = findMax(a, n, 0);
+//     printf("%d\n", max_value);
+
+//     return 0;
+// }
 
 /*
 // method 1.1: solve depend on array index

@@ -1,0 +1,274 @@
+// https://chatgpt.com/share/691220e2-fcf4-8000-8917-79fdd5bd53dc
+
+💡 Problem Name:
+Maximum Consecutive Frequency
+
+📝 Problem Statement:
+You are given an array A of N integers. Your task is to determine which number appears most consecutively in the array.
+
+A consecutive frequency means the number of times a value repeats continuously without interruption.
+
+Your job is to:
+1. Find the number with the highest consecutive frequency.
+2. Print that number and its maximum frequency.
+
+If two or more numbers have the same consecutive frequency, choose the one that appears first in the array.
+
+
+
+⌨️ Input Format:
+* The first line contains an integer *N* — the size of the array.
+* The second line contains *N* space-separated integers representing the array elements.
+
+
+🖥️ Output Format:
+Print two integers separated by a space: number frequency
+Where:
+* number = the value that has the maximum consecutive frequency
+* frequency = how many times it appears consecutively
+
+
+
+📌 Constraints:
+1≤N≤10000
+-10^9≤A[i]≤10^9
+
+
+Input0:
+10
+2 2 2 5 5 1 1 1 1 3
+
+Output0:
+1 4
+
+
+Example Explanation:
+Array: 2 2 2 5 5 1 1 1 1 3
+
+- 2 appears 3 times consecutively
+- 5 appears 2 times consecutively
+- 1 appears 4 times consecutively ✅ (maximum)
+- 3 appears 1 time consecutively
+
+So, the answer is:
+Number = 1
+Frequency = 4
+
+Input1:
+10
+2 2 5 5 3 4 5 2 2 2   
+
+Output1:
+2 3
+
+Example Explanation:
+Array: 2 2 5 5 3 4 5 2 2 2 
+
+- 2 appears 2 times consecutively
+- 5 appears 2 times consecutively
+- 3 appears 1 time consecutively
+- 4 appears 1 time consecutively
+- 5 appears 1 time consecutively
+- 2 appears 3 times consecutively ✅ (maximum)
+
+So, the answer is:
+Number = 2
+Frequency = 3
+
+
+Input2:
+10
+2 2 2 2 4 5 5 5 5 4
+Output2:
+2 4
+
+Example Explanation:
+Array: 2 2 2 2 4 5 5 5 5 4
+- 2 appears 4 times consecutively ✅ (maximum)
+- 4 appears 1 time consecutively
+- 5 appears 4 times consecutively (tied with 2, but 2 appears first)
+So, the answer is:
+Number = 2
+Frequency = 4
+
+
+Input3:
+1
+100000000
+Output3:
+100000000 1
+
+Example Explanation:
+Array: 100000000
+
+- 100000000 appears 1 time consecutively ✅ (maximum)
+So, the answer is:
+Number = 100000000
+Frequency = 1
+
+
+Input4:
+7
+4 4 7 7 7 2 2
+Output4:
+7 3
+
+Input5:
+5
+1 1 1 1 1
+Output5:
+1 5
+
+Input6:
+5
+3 2 1 2 3
+Output6:
+3 1
+
+Input7:
+8
+5 5 5 2 2 3 3 3
+Output7:
+5 3
+
+Input8:
+6
+9 9 1 1 1 1
+Output8:
+1 4
+
+Input9:
+6
+10 20 30 40 50 60
+Output9:
+10 1
+
+Input10:
+9
+7 7 7 7 5 5 5 2 2
+Output10:
+7 4
+
+Input11:
+4
+0 0 0 1
+Output11:
+0 3
+
+Input12:
+4
+6 6 5 5
+Output12:
+6 2
+
+Input13:
+10
+3 3 1 1 1 2 2 2 2 2
+Output13:
+2 5
+
+Input14:
+6
+-1 -1 -1 2 2 -1
+Output14:
+-1 3
+
+Input15:
+7
+-5 -5 -5 -5 -2 -2 -2
+Output15:
+-5 4
+
+Input16:
+10
+8 8 7 7 7 7 1 1 1 1
+Output16:
+7 4
+
+Input17:
+9
+4 4 4 4 4 4 4 4 4
+Output17:
+4 9
+
+Input18:
+6
+3 3 2 2 1 1
+Output18:
+3 2
+
+Input19:
+23
+-1 -1 -1 -1 -1 -1 3 3 3 3 4 4 4 4 4 4 4 2 2 2 9 9 9
+Output19:
+4 7
+
+Input20:
+20
+-100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000  -999999 -999999 -999999 -999999 -999999 -999999 -999999 -999999 -999999 -999999
+Output20:
+-100000 10
+
+
+
+সমস্যা বিবৃতি:
+তোমাকে একটি অ্যারে 'A' দেওয়া হয়েছে যার আকার 'N'। তোমার কাজ হল নির্ধারণ করা *কোন সংখ্যা* অ্যারেতে *সবচেয়ে বেশি ধারাবাহিকভাবে* উপস্থিত হয়েছে।
+
+
+
+সমাধানের Hints:
+1. প্রথমে N পড়ে নাও — অ্যারের সাইজ।
+2. এরপর Nটি সংখ্যাকে একটি অ্যারেতে ইনপুট হিসেবে নাও (a[0] ... a[N-1])।
+3. শুরুতে currNum = a[0], currFreq = 1 সেট করো এবং maxNum = a[0], maxFreq = 1 ধার্য করো।
+4. i = 1 থেকে N-1 পর্যন্ত একটি লুপ চালাও:
+    - যদি a[i] == currNum হয় → currFreq++ (একই সংখ্যা ধারাবাহিকভাবে চলেছে)।
+    - নাহলে (নতুন সংখ্যা এলে):
+        - যদি currFreq > maxFreq হয় → maxFreq = currFreq, maxNum = currNum আপডেট করো।
+        - তারপর currNum = a[i] এবং currFreq = 1 করে নতুন সংখ্যা ট্র্যাক শুরু করো।
+
+5. লুপ শেষ হলে শেষ segment টি অবশ্যই চেক করো: 
+    - যদি currFreq > maxFreq হয় → maxFreq = currFreq, maxNum = currNum আপডেট করো।
+
+6. এখন আউটপুট হিসেবে maxNum এবং maxFreq প্রিন্ট করো — ফরম্যাট: number frequency।
+
+
+
+Code:
+#include <stdio.h>
+int main() {
+    int N;
+    scanf("%d", &N);
+    
+    int arr[N];
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int maxNum = arr[0], maxFreq = 1;
+
+    int currNum = arr[0], currFreq = 1;
+    
+    for (int i = 1; i < N; i++) { // i=1 থেকে শুরু কারণ আমরা arr[0] দিয়ে শুরু করেছি
+        if (arr[i] == currNum) {
+            currFreq++; // একই সংখ্যা চলতে থাকলে frequency বাড়বে
+        } else {
+            // নতুন সংখ্যা শুরু হলে আগের সংখ্যার frequency সঙ্গে maxFreq তুলনা করো 
+            if (currFreq > maxFreq) {
+                maxFreq = currFreq;
+                maxNum = currNum;
+            }
+            currNum = arr[i];
+            currFreq = 1;
+        }
+    }
+    
+    // লুপ শেষ হওয়ার পর শেষ সংখ্যাটির frequency চেক করো
+    if (currFreq > maxFreq) {
+        maxFreq = currFreq;
+        maxNum = currNum;
+    }
+    
+    printf("%d %d\n", maxNum, maxFreq);
+    
+    return 0;
+}

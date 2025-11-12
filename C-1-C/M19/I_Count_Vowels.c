@@ -43,3 +43,28 @@ helloworld
 output:
 3
 */
+
+// method 2 - recursion
+/* #include <stdio.h>
+int cnt_vowels = 0;
+void countVowels(char s[], int i)
+{
+    if (s[i] == '\0')
+    {
+        return;
+    }
+    if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' || s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U')
+    {
+        cnt_vowels++;
+    }
+    countVowels(s, i + 1);
+}
+int main()
+{
+    char s[201];
+    fgets(s, 201, stdin);
+    countVowels(s, 0);
+    printf("%d", cnt_vowels);
+
+    return 0;
+} */

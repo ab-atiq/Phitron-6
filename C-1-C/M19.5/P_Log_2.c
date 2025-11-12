@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/P
+
 #include <stdio.h>
 
 /*
@@ -8,6 +10,8 @@ For example:
     log₂(127) = 6, because 127 → 63 → 31 → 15 → 7 → 3 → 1 (6 steps)
     log₂(16) = 4, because 16 → 8 → 4 → 2 → 1 (4 steps)
     log₂(8) = 3, because 8 → 4 → 2 → 1 (3 steps)
+    log₂(4) = 2, because 4 → 2 → 1 (2 steps)
+    log₂(2) = 1, because 2 → 1 (1 step)
     log₂(1) = 0, because it's already ≤ 1
 */
 long long log2_function(long long n)
@@ -27,5 +31,58 @@ int main()
 
     printf("%lld\n", log2_function(N));
 
+    return 0;
+}
+
+// methode 2: small to hight
+#include <stdio.h>
+#define ll long long
+
+ll log2(ll n, ll res, ll i)
+{
+    if (res > n)
+    {
+        return i - 1;
+    }
+
+    return log2(n, res * 2, i + 1);
+}
+
+int main()
+{
+    ll n;
+    scanf("%lld", &n);
+    ll res = 1, i = 0;
+    printf("%lld", log2(n, res, i));
+}
+
+// method 3: log2 calculation using loop
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    long long int n;
+    scanf("%lld", &n);
+    long long int result = 0;
+    while (n >= 2)
+    {
+        n /= 2;
+        result++;
+    }
+    printf("%lld\n", result);
+    return 0;
+}
+
+
+// method 4: log2 calculation using built-in function
+#include <math.h>
+#include <stdio.h>
+int main()
+{
+    long long int n;
+    scanf("%lld", &n);
+    int result = (int)log2(n);
+    printf("%d\n", result);
     return 0;
 }

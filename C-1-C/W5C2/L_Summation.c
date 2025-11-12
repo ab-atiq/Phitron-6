@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/L
+
 #include <stdio.h>
 
 // method 1: 0 to n-1 index value sum

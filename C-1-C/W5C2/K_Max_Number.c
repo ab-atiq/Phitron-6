@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/K
+
 // method 1: solve depend on array index
 #include <stdio.h>
 #include <limits.h>
@@ -81,7 +83,7 @@ long long int max(int arr[], int n)
 
     // Compare the first element of the array with the maximum of the rest of the array (obtained by a recursive call). Return the larger of the two.
     long long int max_of_rest = max(arr + 1, n - 1);
-    return (arr[0] > max_of_rest) ? arr[0] : max_of_rest;
+    return (arr[n - 1] > max_of_rest) ? arr[n - 1] : max_of_rest;
 }
 
 int main()

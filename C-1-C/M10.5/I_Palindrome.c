@@ -71,3 +71,29 @@ int main()
     printf("%s", flag ? "YES" : "NO");
     return 0;
 }
+
+// https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/I - C++ version using string  
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s, rev_s = "";
+    cin >> s;
+    int n = s.length(); // s.size() also works
+    for (int i = n - 1; i >= 0; i--)
+    {
+        // rev_s += s[i];
+        rev_s.push_back(s[i]);
+    }
+    // cout << rev_s << "\n";
+    if (s == rev_s)
+    {
+        cout << "YES\n";
+    }
+    else
+    {
+        cout << "NO\n";
+    }
+    return 0;
+}

@@ -34,7 +34,7 @@ void frequency_count(char str[], int fre[])
     // for (int i = 0; str[i] != '\0'; i++) // okay
     // for (int i = 0; i < strlen(str); i++) // time limit exceeded
     int len = strlen(str);
-    for (int i = 0; i < len; i++) // time limit exceeded
+    for (int i = 0; i < len; i++) // time limit exceeded handle
     {
         fre[str[i] - 'a']++; // Increment the count for the letter
     }

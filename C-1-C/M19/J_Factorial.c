@@ -36,3 +36,56 @@ input:
 ouput:
 2432902008176640000
 */
+
+// method 2 - recursion
+#include <stdio.h>
+void factorial(int n, long long int *res)
+{
+    if (n == 1)
+    {
+        return;
+    }
+
+    *res = (*res) * n;
+    factorial(n - 1, res);
+}
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    long long int res = 1;
+    factorial(n, &res);
+    printf("%lld", res);
+
+    return 0;
+}
+
+// method 3 - recursion
+#include <stdio.h>
+void factorial(int n, long long int fact)
+{
+    if (n == 1)
+    {
+        printf("%lld", fact);
+        return;
+    }
+
+    fact = fact * n;
+    factorial(n - 1, fact);
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    if (n == 0)
+    {
+        printf("1");
+    }
+    else
+    {
+        factorial(n, 1);
+    }
+
+    return 0;
+}

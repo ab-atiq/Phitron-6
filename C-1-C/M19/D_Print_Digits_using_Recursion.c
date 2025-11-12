@@ -26,16 +26,16 @@ int main()
     return 0;
 }
 
-/*  
-input: 
+/*
+input:
 3
 121
 39
 123456
 
-output: 
-1 2 1 
-3 9 
-1 2 3 4 5 6 
+output:
+1 2 1
+3 9
+1 2 3 4 5 6
 
 */
