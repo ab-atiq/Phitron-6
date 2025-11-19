@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/J
+
 #include <iostream>
 #include <algorithm> // count and min_element
 using namespace std;

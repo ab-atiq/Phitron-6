@@ -24,7 +24,7 @@ Student *fun()
     return p;
 }
 
-// create object then return object pointer so we can access from stack memory to object heap memory
+// dynamic object create then return object pointer so we can access from stack memory to object heap memory
 Student *fun2()
 {
     Student *karim = new Student(23, 8, 4.77);

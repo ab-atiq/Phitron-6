@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/W
+
 #include <iostream>
 using namespace std;
 int main()
@@ -31,7 +33,7 @@ int main()
     return 0;
 }
 
-/*  
+// solution using switch case
 #include <iostream>
 using namespace std;
 
@@ -41,7 +43,7 @@ int main() {
 
     cin >> A >> S >> B >> Q >> C;
 
-    int result;
+    long long int result;
 
     switch (S) {
         case '+':
@@ -62,5 +64,3 @@ int main() {
 
     return 0;
 }
-
-*/

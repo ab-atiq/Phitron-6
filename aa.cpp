@@ -1,33 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+class Student
+{
+public:
+    char name[100];
+    int roll;
+    double gpa;
+};
 int main()
 {
+    Student a, b;
+    cin.getline(a.name, 100);
+    cin >> a.roll >> a.gpa;
+    cin.ignore();
+    cin.getline(b.name, 100);
+    cin >> b.roll >> b.gpa;
+    cin.ignore();
 
-    list<int> li;
-    while (1)
-    {
-
-        int x;
-        cin >> x;
-        if (x == -1)
-            break;
-
-        li.push_back(x);
-    }
-
-    int mx = INT_MIN;
-    int mn = INT_MAX;
-
-    // int sz = li.size();
-
-    for (auto it = li.begin(); it != li.end(); ++it)
-    {
-
-        cout << *it << " ";
-    }
-
-    cout << mx - mn << endl;
-
+    cout << a.name << " " << a.roll << " " << a.gpa << endl;
+    cout << b.name << " " << b.roll << " " << b.gpa << endl;
     return 0;
 }

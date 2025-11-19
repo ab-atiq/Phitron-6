@@ -18,5 +18,5 @@ int main()
 
 /*
 In fun(), p = 10
-After calling fun(), p = 0
+After calling fun(), p = 0 [can not access variable address]
 */

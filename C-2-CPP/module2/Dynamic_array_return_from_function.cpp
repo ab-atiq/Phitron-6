@@ -21,11 +21,11 @@ int main()
         cout << x[i] << " "; // printing elements of the array
     }
     cout << endl;
-    
+
     delete[] x; // deallocating the memory allocated for the array
     return 0;
 }
 
 /*
-Elements of the array returned from function: Segmentation fault
+Elements of the array returned from function: 1 2 3 4 5
 */

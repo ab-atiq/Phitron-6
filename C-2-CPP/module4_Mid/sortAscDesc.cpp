@@ -15,7 +15,8 @@ int main()
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] > arr[j])
+            if (arr[i] > arr[j]) // ascending order
+            // if (arr[i] < arr[j]) // descending order
             {
                 long long int temp = arr[i];
                 arr[i] = arr[j];

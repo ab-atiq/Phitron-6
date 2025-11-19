@@ -8,7 +8,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        cout << arr[i] << " " << DyArr[i] << " "; // printing uninitialized/garbage values of static and dynamic arrays
+        cout << arr[i] << " " << DyArr[i] << "\n"; // printing uninitialized/garbage values of static and dynamic arrays
     }
     return 0;
 }

@@ -35,10 +35,11 @@ int main()
     // Student rahim(123, 5, 4.33);
     // cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
 
-    // Student karim_obj = fun();
+    // Student karim_obj = fun(); // function return object copy to karim_obj object in main function stack memory
     // cout << karim_obj.roll << " " << karim_obj.cls << " " << karim_obj.gpa << endl;
 
-    Student *karim_obj = fun();                                                        // we can not get proper output because karim object remove from stack memory
+    // we can not get proper output because karim object remove from stack memory
+    Student *karim_obj = fun();
     cout << karim_obj->roll << " " << karim_obj->cls << " " << karim_obj->gpa << endl; // here garbage value print
 
     return 0;

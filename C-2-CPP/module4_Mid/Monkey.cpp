@@ -1,3 +1,82 @@
+// sort char array and print string without spaces
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char str[100001];
+
+    while (cin.getline(str, 100001))
+    {
+        // cout << str << endl;
+        int len = strlen(str); // length calculate
+        sort(str, str + len);
+        // cout << str << endl; // space will print
+        for (int i = 0; i < len; i++)
+        {
+            if (str[i] != ' ')
+            {
+                cout << str[i];
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// char array copy to another char array without spaces
+#include <iostream>
+#include <string.h>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    char str[100001];
+    while (cin.getline(str, 100001)) // Read entire line for character array.
+    {
+        int len = strlen(str);
+        char result[100001];
+        int j = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (str[i] != ' ')
+            {
+                result[j++] = str[i];
+            }
+        }
+        result[j] = '\0'; // Null-terminate the result string
+        sort(result, result + strlen(result));
+        cout << result << endl;
+    }
+    return 0;
+}
+
+// char array copy to same char array without spaces
+#include <iostream>
+#include <string.h>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    char str[100001];
+    while (cin.getline(str, 100001)) // Read entire line for character array.
+    {
+        int len = strlen(str);
+        int j = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (str[i] != ' ')
+            {
+                str[j++] = str[i];
+            }
+        }
+        str[j] = '\0'; // Null-terminate the result string
+        sort(str, str + strlen(str));
+        cout << str << endl;
+    }
+    return 0;
+}
+
+// built in string frequency count and print sorted without spaces
 #include <iostream>
 using namespace std;
 int main()
@@ -13,7 +92,7 @@ int main()
         for (int i = 0; i < len; i++)
         {
             if (s[i] != ' ')
-                freq[s[i] - 'a']++; // s[i] = ' ' then, ' ' - 'a' = -65 which is invalid
+                freq[s[i] - 'a']++; // s[i] = ' ' then, ' ' - 'a' = 32 - 97 = -65 which is invalid
         }
 
         // print character frequency times
@@ -29,7 +108,7 @@ int main()
     return 0;
 }
 
-/*
+// create new string without spaces and sort
 #include <iostream>
 #include <algorithm>
 #include <cstring>
@@ -50,9 +129,9 @@ int main() {
     return 0;
 }
 
-*/
 
-/*
+
+// built-in string remove spaces using remove and erase functions
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -77,7 +156,7 @@ int main() {
     return 0;
 }
 
-*/
+
 
 /*
 ✅ Using cin.getline() (C-style strings):

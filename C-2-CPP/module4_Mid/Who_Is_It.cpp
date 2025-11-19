@@ -1,3 +1,112 @@
+// Student class object without constructor
+#include <bits/stdc++.h>
+using namespace std;
+class Student
+{
+public:
+    int id;
+    char name[101];
+    char section;
+    int total_mark;
+};
+
+int main()
+{
+    int tc;
+    cin >> tc;
+    while (tc--)
+    {
+        Student s1, s2, s3;
+        cin >> s1.id >> s1.name >> s1.section >> s1.total_mark;
+        // cout << s1.id << s1.name << s1.section << s1.total_mark << endl;
+        cin >> s2.id >> s2.name >> s2.section >> s2.total_mark;
+        // cout << s2.id << s2.name << s2.section << s2.total_mark << endl;
+        cin >> s3.id >> s3.name >> s3.section >> s3.total_mark;
+        // cout << s3.id << s3.name << s3.section << s3.total_mark << endl;
+        Student top = s1;
+        if (s2.total_mark > top.total_mark)
+        {
+            top = s2;
+        }
+        // else if (s2.total_mark == top.total_mark)
+        // {
+        //     // if student id not sequencially provide
+        //     if (top.id > s2.id)
+        //     {
+        //         top = s2;
+        //     }
+        // }
+        if (s3.total_mark > top.total_mark)
+        {
+            top = s3;
+        }
+        cout << top.id << " " << top.name << " " << top.section << " " << top.total_mark << endl;
+    }
+    return 0;
+}
+
+// Student class object using constructor
+#include <bits/stdc++.h>
+using namespace std;
+class Student
+{
+public:
+    int id;
+    char name[101];
+    char section;
+    int total_mark;
+    Student(int i, char n[], char sec, int t_m)
+    {
+        id = i;
+        strcpy(name, n);
+        section = sec;
+        total_mark = t_m;
+    }
+};
+
+int main()
+{
+    int tc;
+    cin >> tc;
+    while (tc--)
+    {
+        int id;
+        char name[101];
+        char section;
+        int total_mark;
+
+        cin >> id >> name >> section >> total_mark;
+        Student s1(id, name, section, total_mark); // make object using constructor
+
+        cin >> id >> name >> section >> total_mark;
+        Student s2(id, name, section, total_mark);
+
+        cin >> id >> name >> section >> total_mark;
+        Student s3(id, name, section, total_mark);
+
+        Student top = s1;
+        if (s2.total_mark > top.total_mark)
+        {
+            top = s2;
+        }
+        // else if (s2.total_mark == top.total_mark)
+        // {
+        //     // if student id not sequencially provide
+        //     if (top.id > s2.id)
+        //     {
+        //         top = s2;
+        //     }
+        // }
+        if (s3.total_mark > top.total_mark)
+        {
+            top = s3;
+        }
+        cout << top.id << " " << top.name << " " << top.section << " " << top.total_mark << endl;
+    }
+    return 0;
+}
+
+// Struct use
 #include <iostream>
 using namespace std;
 
@@ -25,10 +134,13 @@ int main()
             Student s;
             cin >> s.id >> s.name >> s.section >> s.marks;
 
+            // if student id not sequencially provide - one condition
             // if (s.marks > best.marks || (s.marks == best.marks && s.id < best.id))
             // {
             //     best = s;
             // }
+
+            // if student id not sequencially provide - nested condition
             if (s.marks > best.marks)
             {
                 best = s;
@@ -187,7 +299,7 @@ int main()
 }
 */
 
-/*
+
 #include <iostream>
 using namespace std;
 
@@ -228,4 +340,3 @@ int main()
 
     return 0;
 }
-*/

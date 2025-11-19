@@ -1,4 +1,5 @@
-/* #include <iostream>
+/* 
+#include <iostream>
 #include <algorithm>
 using namespace std;
 
@@ -24,7 +25,8 @@ int main()
         cout << arr[i] << " ";
     }
     return 0;
-} */
+} 
+*/
 
 #include <iostream>
 #include <algorithm>

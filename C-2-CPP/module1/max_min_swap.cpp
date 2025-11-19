@@ -17,6 +17,7 @@ int main()
 
     // max() use
     cout << max(a, b) << endl;
+    cout << max({10, 20, 5, 30, 15}) << endl;
 
     // minimum value find
     if (a < b)
@@ -29,6 +30,7 @@ int main()
     }
     // min() use
     cout << min(a, b) << endl;
+    cout << min({10, 20, 5, 30, 15}) << endl;
 
     // before swap
     cout << "Before swap a=" << a << ", b=" << b << endl;

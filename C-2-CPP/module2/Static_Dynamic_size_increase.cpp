@@ -16,6 +16,7 @@ int main()
     }
     b[3] = 40;
     b[4] = 50;
+    // delete[] a; // Error: Cannot delete static array
     for (int i = 0; i < 5; i++)
     {
         cout << b[i] << " ";

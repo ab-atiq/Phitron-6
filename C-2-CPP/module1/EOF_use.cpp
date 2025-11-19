@@ -12,3 +12,14 @@ int main()
 
     return 0;
 }
+/* 
+input:
+10
+20
+30
+
+output:
+You entered: 10
+You entered: 20
+You entered: 30
+*/
