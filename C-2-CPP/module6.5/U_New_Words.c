@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/U
+
 #include <stdio.h>
 #include <ctype.h> // For toupper function
 

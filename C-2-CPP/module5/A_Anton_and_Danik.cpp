@@ -14,7 +14,8 @@ int main()
     cin >> s;
 
     int A_cnt = 0, D_cnt = 0;
-    for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    for (int i = 0; i < s.size(); i++)
     {
         if (s[i] == 'A')
         {

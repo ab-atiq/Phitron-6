@@ -1,3 +1,5 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/U
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -26,5 +28,24 @@ int main()
     }
 
     cout << min({e, g, y, p, t}) << endl;
+    return 0;
+}
+
+// solution using frequency array
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    string s;
+    cin >> s;
+    int freq[26] = {0};
+    for (char c : s)
+    {
+        c = toupper(c); // Convert to uppercase
+        freq[c - 'A']++;
+    }
+    cout << min({freq['E' - 'A'], freq['G' - 'A'], freq['Y' - 'A'], freq['P' - 'A'], freq['T' - 'A']}) << endl;
     return 0;
 }
