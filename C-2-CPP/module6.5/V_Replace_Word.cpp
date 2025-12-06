@@ -56,6 +56,27 @@ int main()
     return 0;
 }
 
+// solution - 3 - substr method
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string s;
+    cin >> s;
+
+    for (size_t i = 0; i < s.length();i++)
+    {
+        string sub = s.substr(i, 5);
+        if (sub == "EGYPT")
+        {
+            s.replace(i, 5, " ");
+        }
+    }
+    cout << s << endl;
+    return 0;
+}
+
 // find & replace method
 #include <bits/stdc++.h>
 using namespace std;
