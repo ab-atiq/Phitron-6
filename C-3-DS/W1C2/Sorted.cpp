@@ -19,11 +19,11 @@ int main()
             cin >> v[i];
         }
 
-        // method 1: check consecutive two value
+        // method 1: check consecutive two value - TC: O(n)
         // bool sorted = true;
 
         // // for (int i = 1; i < n; i++)
-        // //     if (v[i - 1] > v[i])
+        // //     if (v[i - 1] > v[i]) // for ascending order check
 
         // for (int i = 0; i < n - 1; i++)
         // {
@@ -34,7 +34,7 @@ int main()
         //     }
         // }
 
-        // method 2: new array create then sort new array. then check array and new array same or not.
+        // method 2: new array create then sort new array. then check array and new array same or not. TC: O(n log n)
         vector<int> v2(v);
         sort(v2.begin(), v2.end(), greater<int>());
 
