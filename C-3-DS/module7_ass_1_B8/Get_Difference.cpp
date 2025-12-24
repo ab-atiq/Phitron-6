@@ -11,6 +11,8 @@ public:
     {
         this->val = val;
         this->next = NULL;
+        // cout << (*this).val << endl; 
+        // cout << this << endl; // address of the current object
     }
 };
 
@@ -50,6 +52,7 @@ int main()
 {
     Node *Head = NULL;
     Node *Tail = NULL;
+
     int num;
     while (1)
     {
@@ -61,6 +64,7 @@ int main()
         insert_at_tail(Head, Tail, num);
     }
     // print_linked_list(Head);
+
     Node *head = Head;
     int mn = INT_MAX, mx = INT_MIN;
     while (head != NULL)

@@ -36,8 +36,14 @@ void print_linked_list(Node *head)
     }
 }
 
+// TC - O(1)
 void delete_at_head(Node *&head)
 {
+    // not show in module
+    if (head == NULL)
+    {
+        return;
+    }
     Node *deleteNode = head;
     head = head->next;
     delete deleteNode;

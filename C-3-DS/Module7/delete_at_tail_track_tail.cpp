@@ -43,6 +43,11 @@ void delete_at_tail(Node *head, Node *&tail, int idx)
     for (int i = 1; i < idx; i++)
     {
         tmp = tmp->next;
+        // not shown in module
+        if(tmp == NULL)
+        {
+            return; // If idx is out of bounds, do nothing
+        }
     }
     Node *deleteNode = tmp->next;
     tmp->next = tmp->next->next;

@@ -13,6 +13,7 @@ public:
     }
 };
 
+// TC - O(1)
 void insert_at_head(Node *&head, int val)
 {
     Node *newnode = new Node(val);

@@ -24,6 +24,12 @@ void insert_at_any_pos(Node *head, int idx, int val) // we will not modify the h
         return;         // returning because the process is done
     }
 
+    // now show in module
+    // if( idx > likedListSize) {
+    //     cout << "Invalid index" << endl;
+    //     return;
+    // }
+
     // not show in module
     if (idx == 1) // if index is 1 based then we want to insert at the head
     {
@@ -38,7 +44,8 @@ void insert_at_any_pos(Node *head, int idx, int val) // we will not modify the h
         tmp = tmp->next;
         if (tmp = NULL)
         {
-            return;
+            // cout << "Invalid index" << endl;
+            return; // solved in practice module
         }
     }
     newnode->next = tmp->next; // first step

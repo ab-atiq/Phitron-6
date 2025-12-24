@@ -23,6 +23,7 @@ void insert_at_tail(Node* &head, int val)
         return;
     }
 
+    // TC - O(N)
     Node* tmp = head;
     while(tmp->next != NULL)
     {
