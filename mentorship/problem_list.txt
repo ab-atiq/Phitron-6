@@ -1,0 +1,54 @@
+Basic problem solving Contest 1
+---------------------------------------------------------
+Link: https://vjudge.net/contest/771932
+password: mentor_atiqur
+
+1. https://www.codechef.com/problems/MVR - math + conditional statements
+2. https://www.codechef.com/problems/FUELCHK - if-else statements
+3. https://www.codechef.com/problems/RIP2000 - math
+4. https://www.codechef.com/problems/CCLEARN - multiply by 2
+5. https://www.codechef.com/problems/PHONEYR - conditional statements or input output handling
+6. https://www.codechef.com/problems/OFFBY1 - conditional statements or input output handling
+7. https://www.codechef.com/problems/ERROR404 - conditional statements
+8. https://www.codechef.com/problems/P1149 - conditional statements
+9. https://www.codechef.com/problems/CHRBUY - test cases and conditionals
+10. https://www.codechef.com/problems/WOLFDOWN - count all zero before first one
+
+---------------------------------------------------------
+Basic problem solving Contest 2 
+---------------------------------------------------------
+Link: https://vjudge.net/contest/775956
+password: mentor_atiqur
+
+1. https://www.codechef.com/problems/GAMBLING - 7-a
+2. https://www.codechef.com/problems/NUGGET 
+3. https://www.codechef.com/problems/IPLTRSH
+4. https://www.codechef.com/problems/TOURIST - manhattan distance
+5. https://www.codechef.com/problems/HATTRICK - module
+6. https://www.codechef.com/problems/GCEA - module
+7. https://www.codechef.com/problems/SINGLEUSE - module
+8. https://www.codechef.com/problems/DICENUM 
+9. https://www.codechef.com/problems/EXAMCHEF
+10. https://www.codechef.com/problems/SPCP2
+
+---------------------------------------------------------
+Basic problem solving Contest 3
+---------------------------------------------------------
+Link: https://vjudge.net/contest/778901
+password: mentor_atiqur
+
+
+1. https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_4_A - data type 
+2. https://www.codechef.com/problems/BNE_APT
+3. https://www.codechef.com/problems/FOODCOST
+4. https://www.codechef.com/problems/AIRINDEX
+5. https://www.codechef.com/problems/NEWCC
+6. https://www.codechef.com/problems/P1149
+7. https://www.codechef.com/problems/AGEING
+8. https://www.codechef.com/problems/CHESS_PAIR
+9. https://www.codechef.com/problems/DICENUM 
+10. https://www.codechef.com/problems/FAIRSHARE
+
+---------------------------------------------------------
+Basic problem solving Contest 4
+---------------------------------------------------------

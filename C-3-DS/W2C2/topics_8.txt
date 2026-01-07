@@ -1,8 +1,12 @@
 1. Find duplicate in singlylinked list (array discussion (frequency array, nested loop, sorting then checking))
 
-2. Delete duplicate in singlylinked list
+2. Delete duplicate in singlylinked list (sorted order, original order)
 
-3. Module 6 - practice problem 4
+3. Module 5 - practice problem 3 (middle of linked list)
+
+4. Module 6 - practice problem 2 (variation - two singly linked list same or not)
+
+5. Module 6 - practice problem 4
 
 
 
