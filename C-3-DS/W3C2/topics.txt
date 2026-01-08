@@ -1,0 +1,14 @@
+1. Train Route Tracker (dinajpur rangpur natore dhaka cumilla chittagong end)
+- visit location
+- next
+- prev
+
+2. queries again (module 9: problem 4)
+
+3. remember previous queries? (STL List)
+- X V 
+    - X=0, head insert
+    - X=1, tail insert
+    - X=2, delete v'th index (if invalid then does not perform operation)
+
+4. Extra practice problem discussion (module 10)
