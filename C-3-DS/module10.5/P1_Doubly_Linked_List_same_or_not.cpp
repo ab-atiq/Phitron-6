@@ -1,3 +1,37 @@
+/*
+Question: Take two doubly linked lists as input and check if they are the same or not.
+Sample Input:
+10 20 30 40 50 -1
+10 20 30 40 50 -1
+Sample Output:
+YES
+
+Sample Input:
+10 20 30 40 50 -1
+10 20 30 40 -1
+Sample Output:
+NO
+
+Sample Input:
+10 20 30 40 -1
+10 20 30 40 50 -1
+Sample Output:
+NO
+
+Sample Input:
+10 20 30 40 -1
+40 30 20 10 -1
+Sample Output:
+NO
+
+Sample Input:
+1 2 3 4 5 -1
+5 4 1 2 6 -1
+Sample Output:
+NO
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

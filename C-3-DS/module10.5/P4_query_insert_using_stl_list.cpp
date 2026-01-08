@@ -1,3 +1,28 @@
+/*
+Question: You have a doubly linked list which is empty initially. You need to take a value Q which refers to queries. For each query you will be given X and V. You will insert the value V to the Xth index of the doubly linked list and print the list in both left to right and right to left. If the index is invalid then print “Invalid”.
+
+Sample Input:
+6
+0 10
+1 20
+4 30
+0 30
+1 40
+5 50
+
+Sample Output:
+10
+10
+10 20
+20 10
+Invalid
+30 10 20
+20 10 30
+30 40 10 20
+20 10 40 30
+Invalid
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,15 +49,18 @@ void print_list_backward(list<int> lst)
     //     cout << *it << " ";
     // }
     // cout << endl;
+
     // another way to print list in reverse
-    // for (auto it = lst.end(); it != lst.begin(); --it)
+    // for (auto it = lst.end(); it != lst.begin();)
     // {
+    //     it--;
     //     cout << *it << " ";
     // }
+    // cout << endl;
 
     // alternative way using reverse function then printing
-    // reverse(lst.begin(), lst.end());
-    lst.reverse(); // reverse the list
+    // reverse(lst.begin(), lst.end()); // reverse the list using algorithm reverse function
+    lst.reverse(); // reverse the list using list reverse function
     for (auto it : lst)
     {
         cout << it << " ";

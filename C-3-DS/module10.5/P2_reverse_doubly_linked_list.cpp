@@ -1,3 +1,17 @@
+/*
+Question: Take a doubly linked list as input and reverse it. After that print the linked list.
+
+Sample Input
+10 20 30 -1
+Sample Output
+30 20 10
+
+Sample Input
+10 20 30 40 -1
+Sample Output
+40 30 20 10
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

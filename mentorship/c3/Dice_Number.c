@@ -203,3 +203,45 @@ int main()
 
     return 0;
 }
+
+/* 
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int tc;
+    cin >> tc;
+    while (tc--)
+    {
+        int a1, a2, a3;
+        cin >> a1 >> a2 >> a3;
+        int b1, b2, b3;
+        cin >> b1 >> b2 >> b3;
+        int mx_a = max({a1, a2, a3});
+        int mn_a = min({a1, a2, a3});
+        int md_a = a1 + a2 + a3 - (mx_a + mn_a);
+
+        int alice_max_value = mx_a * 100 + md_a * 10 + mn_a;
+
+        int mx_b = max({b1, b2, b3});
+        int mn_b = min({b1, b2, b3});
+        int md_b = b1 + b2 + b3 - (mx_b + mn_b);
+
+        int bob_max_value = mx_b * 100 + md_b * 10 + mn_b;
+
+        if (alice_max_value > bob_max_value)
+        {
+            cout << "Alice" << endl;
+        }
+        else if (alice_max_value < bob_max_value)
+        {
+            cout << "Bob" << endl;
+        }
+        else
+        {
+            cout << "Tie" << endl;
+        }
+    }
+    return 0;
+} */

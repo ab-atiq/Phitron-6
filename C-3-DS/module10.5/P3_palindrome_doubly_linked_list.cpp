@@ -1,3 +1,37 @@
+/*
+Question: Take a doubly linked list as input and check if it forms any palindrome or not.
+
+Sample Input:
+10 20 30 20 10 -1
+Sample Output:
+YES
+
+Sample Input:
+10 20 30 30 20 10 -1
+Sample Output:
+YES
+
+Sample Input:
+10 20 30 40 20 10 -1
+Sample Output:
+NO
+
+Sample Input:
+10 20 30 20 40 -1
+Sample Output:
+NO
+
+Sample Input:
+10 20 30 10 10 -1
+Sample Output:
+NO
+
+Sample Input:
+10 20 20 20 10 -1
+Sample Output:
+YES
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
