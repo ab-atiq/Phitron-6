@@ -52,3 +52,16 @@ password: mentor_atiqur
 ---------------------------------------------------------
 Basic problem solving Contest 4
 ---------------------------------------------------------
+Link: https://vjudge.net/contest/780287
+password: mentor_atiqur
+
+1. https://atcoder.jp/contests/abc235/tasks/abc235_a
+2. https://codeforces.com/problemset/problem/110/A
+3. https://atcoder.jp/contests/abc284/tasks/abc284_b
+4. https://www.codechef.com/problems/VIDEOWORTH
+5. https://atcoder.jp/contests/abc302/tasks/abc302_a
+6. https://atcoder.jp/contests/abc304/tasks/abc304_b
+7. https://atcoder.jp/contests/abc326/tasks/abc326_a
+8. https://atcoder.jp/contests/abc149/tasks/abc149_b
+9. https://codeforces.com/contest/1560/problem/A
+10. https://atcoder.jp/contests/abc336/tasks/abc336_a
