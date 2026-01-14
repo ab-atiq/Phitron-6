@@ -51,17 +51,20 @@ public:
     void push(int data)
     {
         siz++;
-        Node *newnode = new Node(data);
-        // push item in top. So, we can make any node next of previous node. (NOTE: add item in tail we connect previous node with newNode, But, here we will connect nextNode with Previous node )
-        if (head == NULL)
-        {
-            head = newnode; // head point new node
-        }
-        else
-        {
-            newnode->next = head; // Exception, because we usually connect head->next = newNode. But, here is reverse, newNode->next=head
-            head = newnode;       // point last node as head
-        }
+        // Node *newnode = new Node(data);
+        // // push item in top. So, we can make any node next of previous node. (NOTE: add item in tail we connect previous node with newNode, But, here we will connect nextNode with Previous node )
+        // if (head == NULL)
+        // {
+        //     head = newnode; // head point new node
+        // }
+        // else
+        // {
+        //     newnode->next = head; // Exception, because we usually connect head->next = newNode. But, here is reverse, newNode->next=head
+        //     head = newnode;       // point last node as head
+        // }
+
+        Node *newnode = new Node(data, head); // directly next pointer added
+        head = newnode;
     }
 
     void pop()
