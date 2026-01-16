@@ -65,3 +65,17 @@ password: mentor_atiqur
 8. https://atcoder.jp/contests/abc149/tasks/abc149_b
 9. https://codeforces.com/contest/1560/problem/A
 10. https://atcoder.jp/contests/abc336/tasks/abc336_a
+
+
+---------------------------------------------------------
+Basic problem solving Contest 5
+---------------------------------------------------------
+Link: https://vjudge.net/contest/781854
+password: mentor_atiqur
+
+
+1. https://atcoder.jp/contests/abc306/tasks/abc306_a
+2. https://atcoder.jp/contests/abc301/tasks/abc301_a
+3. https://atcoder.jp/contests/abc296/tasks/abc296_b
+4. https://atcoder.jp/contests/abc294/tasks/abc294_b
+5. https://atcoder.jp/contests/abc236/tasks/abc236_b
