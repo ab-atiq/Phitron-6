@@ -43,7 +43,7 @@ password: mentor_atiqur
 3. https://www.codechef.com/problems/FOODCOST
 4. https://www.codechef.com/problems/AIRINDEX
 5. https://www.codechef.com/problems/NEWCC
-6. https://www.codechef.com/problems/P1149
+6. https://www.codechef.com/problems/P1149 - duplicate of contest 1 problem 8
 7. https://www.codechef.com/problems/AGEING
 8. https://www.codechef.com/problems/CHESS_PAIR
 9. https://www.codechef.com/problems/DICENUM 
@@ -79,3 +79,19 @@ password: mentor_atiqur
 3. https://atcoder.jp/contests/abc296/tasks/abc296_b
 4. https://atcoder.jp/contests/abc294/tasks/abc294_b
 5. https://atcoder.jp/contests/abc236/tasks/abc236_b
+
+
+---------------------------------------------------------
+Basic problem solving Contest 6
+---------------------------------------------------------
+Link: https://vjudge.net/contest/783056
+password: mentor_atiqur
+
+
+1. https://atcoder.jp/contests/abc289/tasks/abc289_a
+2. https://codeforces.com/contest/1873/problem/A
+3. https://codeforces.com/contest/1703/problem/A
+4. https://atcoder.jp/contests/abc235/tasks/abc235_b
+5. https://atcoder.jp/contests/abc297/tasks/abc297_a
+6. https://www.codechef.com/problems/RIGHTTHERE
+7. https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_C
