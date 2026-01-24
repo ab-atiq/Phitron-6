@@ -1,4 +1,14 @@
 /*
+________________________
+|                      |
+|     AB Atiq          |
+|______________________|
+*/
+
+// Problem link: 
+
+// Segregate Even and Odd Nodes in a Singly Linked List
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -45,7 +55,7 @@ int main()
 
     Node *oddHead = NULL;
     Node *oddTail = NULL;
-    
+
     Node *temp = head;
     while (temp != NULL)
     {
@@ -96,15 +106,7 @@ int main()
     }
     cout << endl;
     return 0;
-} 
-*/
-
-/*
-________________________
-|                      |
-|     AB Atiq          |
-|______________________|
-*/
+}
 
 // Problem link:
 
@@ -136,6 +138,43 @@ int main()
     for (auto val : oddList)
     {
         cout << val << " ";
+    }
+    cout << endl;
+    return 0;
+}
+
+// Another approach using vector
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    vector<int> even_nodes;
+    vector<int> odd_nodes;
+    for (int i = 0; i < n; i++)
+    {
+        int value;
+        cin >> value;
+        if (value % 2 == 0)
+        {
+            even_nodes.push_back(value);
+        }
+        else
+        {
+            odd_nodes.push_back(value);
+        }
+    }
+
+    // Output even nodes first, then odd nodes
+    for (int even_value : even_nodes)
+    {
+        cout << even_value << " ";
+    }
+    for (int odd_value : odd_nodes)
+    {
+        cout << odd_value << " ";
     }
     cout << endl;
     return 0;

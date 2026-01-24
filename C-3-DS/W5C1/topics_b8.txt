@@ -3,7 +3,7 @@ Conceptual Session - [Week 5-1]
 
 1) What is Tree?
 Ans: 
-    - A tree is a hierarchical data structure. 
+    - A tree is a non linear + hierarchical data structure. 
     - Each node can have zero or more child nodes
     - There is a unique path (acyclic) from the root to every other node in the tree.
 
