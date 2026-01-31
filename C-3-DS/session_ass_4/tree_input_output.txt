@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Node
 {
 public:
@@ -15,6 +12,9 @@ public:
     }
 };
 
+
+
+// tree input
 Node *input_tree()
 {
     int val;
@@ -59,29 +59,52 @@ Node *input_tree()
     return root;
 }
 
-// Function to calculate the depth of the tree
-int max_depth(Node *root)
+
+// tree output - level order
+void level_order(Node *root)
 {
     if (root == NULL)
-        return 0;
+    {
+        cout << "No Tree";
+        return;
+    }
+    queue<Node *> q;
+    q.push(root);
+    while (!q.empty())
+    {
+        // 1.  ber kore ana
+        Node *f = q.front();
+        q.pop();
 
-    return 1 + max(max_depth(root->left), max_depth(root->right));
+        // 2.  oi node ke niye kaj
+        cout << f->val << " ";
+
+        // 3.  children push kora
+        if (f->left)
+            q.push(f->left);
+        if (f->right)
+            q.push(f->right);
+    }
 }
 
-int max_height(Node *root)
+
+// count leaf nodes
+int count_leaf_nodes(Node *root)
 {
     if (root == NULL)
         return 0;
 
+    // any node left and right child does not exist then that node is child node
     if (root->left == NULL && root->right == NULL)
         return 1;
 
-    int l = max_height(root->left);
-    int r = max_height(root->right);
-
-    return max(l, r) + 1; // maximum of left or right. Then add that node height.
+    int l = count_leaf_nodes(root->left);
+    int r = count_leaf_nodes(root->right);
+    return l + r;
 }
 
+
+// count total nodes
 int count_nodes(Node *root)
 {
     if (root == NULL)
@@ -91,30 +114,17 @@ int count_nodes(Node *root)
     return l + r + 1; // left and right subtree's nodes count + current node
 }
 
-bool is_perfect_tree(Node *root)
+// max height of tree
+int max_height(Node *root)
 {
     if (root == NULL)
-        return true; // An empty tree is considered perfect
+        return 0;
 
-    // int depth = max_depth(root);
-    int depth = max_height(root);
-    int total_nodes = count_nodes(root);
+    if (root->left == NULL && root->right == NULL)
+        return 0;
 
-    // Check the formula for a perfect binary tree
-    return total_nodes == (pow(2, depth) - 1);
+    int l = max_height(root->left);
+    int r = max_height(root->right);
+
+    return max(l, r) + 1; // maximum of left or right. Then add that node height.
 }
-
-int main()
-{
-    Node *root = input_tree();
-
-    if (is_perfect_tree(root))
-        cout << "YES";
-    else
-        cout << "NO";
-
-    return 0;
-}
-
-// Test Input: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-// Expected Output: YES

@@ -112,7 +112,7 @@ int main()
 /*
 #include<bits/stdc++.h>
 using namespace std;
-vector<int>v;
+
 class Node{
 
     public:
@@ -172,6 +172,8 @@ Node* input_tree(){
     }
     return root;
 }
+
+vector<int>v;
 void level_order(Node * root,int x){
 
     queue<pair<Node *,int>>q;
@@ -197,6 +199,7 @@ void level_order(Node * root,int x){
         }
     }
 }
+
 int max_dep(Node * root){
     if(root==NULL){
         return 0;
@@ -208,6 +211,7 @@ int max_dep(Node * root){
     int r=max_dep(root->right);
     return max(l,r)+1;
 }
+
 int main(){
 
     Node * root=input_tree();
@@ -225,6 +229,7 @@ int main(){
         cout<<i<<" ";
     }
     cout<<endl;
+    
     return 0;
 }
 

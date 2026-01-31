@@ -83,7 +83,8 @@ int main()
     find_leaf_nodes(root, leaf_nodes);
 
     // Sort leaf nodes in descending order
-    sort(leaf_nodes.rbegin(), leaf_nodes.rend());
+    // sort(leaf_nodes.rbegin(), leaf_nodes.rend()); // Alternative way to sort in descending order
+    sort(leaf_nodes.begin(), leaf_nodes.end(), greater<int>());
 
     // Print the leaf nodes
     for (int val : leaf_nodes)

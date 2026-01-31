@@ -15,13 +15,13 @@ public:
     }
 };
 
-void find_leaf_node(Node *root)
+void inorder(Node *root)
 {
     if (root == NULL)
         return;
-    find_leaf_node(root->left);  // left
-    cout << root->val << " ";    // root
-    find_leaf_node(root->right); // right
+    inorder(root->left);      // left
+    cout << root->val << " "; // root
+    inorder(root->right);     // right
 }
 
 int main()
@@ -39,7 +39,7 @@ int main()
     b->left = d;
     b->right = e;
 
-    find_leaf_node(root); // preorder traversal: 40 20 10 50 30 60
+    inorder(root); // inorder traversal: 40 20 10 50 30 60
 
     return 0;
 }
