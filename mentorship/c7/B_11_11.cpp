@@ -168,3 +168,47 @@ int main()
     cout << ans << endl;
     return 0;
 }
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int month;
+    cin >> month;
+
+    vector<int> days(month + 1);
+    for (int i = 1; i <= month; i++)
+    {
+        cin >> days[i];
+    }
+
+    int ans = 0;
+
+    for (int d = 1; d <= 9; d++)
+    {
+        int m1 = d;      // d
+        int m2 = d * 11; // dd
+
+        // Month = d
+        if (m1 <= month)
+        {
+            if (d <= days[m1])
+                ans++;
+            if (d * 11 <= days[m1])
+                ans++;
+        }
+
+        // Month = dd
+        if (m2 <= month)
+        {
+            if (d <= days[m2])
+                ans++;
+            if (d * 11 <= days[m2])
+                ans++;
+        }
+    }
+
+    cout << ans << endl;
+    return 0;
+}
