@@ -109,3 +109,34 @@ Password: mentor_atiqur
 3. https://codeforces.com/contest/1352/problem/A
 4. https://codeforces.com/contest/1669/problem/B
 5. https://atcoder.jp/contests/abc328/tasks/abc328_b
+
+
+
+---------------------------------------------------------
+Road to XPSC Contest - 2
+---------------------------------------------------------
+Link: https://vjudge.net/contest/790407
+Password: mentor_atiqur
+
+
+1. https://codeforces.com/problemset/problem/1927/A
+2. https://codeforces.com/problemset/problem/381/A
+3. https://www.codechef.com/problems/MAKESUB
+4. https://atcoder.jp/contests/abc233/tasks/abc233_b?lang=en
+5. https://atcoder.jp/contests/abc311/tasks/abc311_b
+6. https://codeforces.com/contest/1850/problem/B
+
+
+
+---------------------------------------------------------
+Road to XPSC Contest - 3
+---------------------------------------------------------
+Link: https://vjudge.net/contest/791949
+Password: mentor_atiqur
+
+1. https://codeforces.com/problemset/problem/2009/A
+2. https://www.codechef.com/problems/HDIVISR
+3. https://codeforces.com/problemset/problem/1884/A
+4. https://www.codechef.com/problems/FACEDIR
+5. https://codeforces.com/problemset/problem/1772/B
+6. https://atcoder.jp/contests/abc325/tasks/abc325_b
