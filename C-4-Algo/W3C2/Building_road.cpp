@@ -41,6 +41,15 @@ void dsu_union(int node1, int node2)
 int main()
 {
 
+    // memset(par, -1, sizeof(par));
+    // memset(group_size, 1, sizeof(group_size));
+
+    // for (int i = 0; i < 100005; i++)
+    // {
+    //     par[i] = -1;
+    //     group_size[i] = 1;
+    // }
+
     int n, m;
     cin >> n >> m;
 
@@ -59,36 +68,83 @@ int main()
         }
     }
 
+    // solution way - 1
     int cnt = 0;
-    vector<int> ans;
-    // vector<pair<int, int>> ans;
-
-    for (int node = 1; node <= n; node++)
+    vector<int> v;
+    for (int i = 2; i <= n; i++)
     {
-        int par_1 = find(1);       // 1 er parent
-        int par_node = find(node); // i er parent
-
-        if (par_1 != par_node)
+        int leader_1 = find(1);
+        int leader_node = find(i);
+        if (leader_1 != leader_node)
         {
             cnt++;
-
-            dsu_union(1, node);
-            ans.push_back(node);
-            // ans.push_back({1, node});
+            dsu_union(leader_1, leader_node);
+            v.push_back(leader_node);
         }
     }
-
     cout << cnt << endl;
 
-    for (auto it : ans)
+    for (int val : v)
     {
-        cout << '1' << " " << it << endl;
+        cout << 1 << " " << val << endl;
     }
 
+    // solution way - 2
+    // int cnt = 0;
+    // vector<int> ans;
+    // // vector<pair<int, int>> ans; // solution way - 3
+
+    // for (int node = 1; node <= n; node++)
+    // {
+    //     int par_1 = find(1);       // 1 er parent
+    //     int par_node = find(node); // i er parent
+
+    //     if (par_1 != par_node)
+    //     {
+    //         cnt++;
+
+    //         dsu_union(1, node);
+    //         ans.push_back(node);
+    //         // ans.push_back({1, node}); // solution way - 3
+    //     }
+    // }
+
+    // cout << cnt << endl;
+
+    // for (auto it : ans)
+    // {
+    //     cout << '1' << " " << it << endl;
+    // }
+
+    // solution way - 3
     // Print the edges to be added - pair input
     // for (auto it : ans)
     // {
     //     cout << it.first << " " << it.second << endl;
+    // }
+
+    // solution way - 4 - error
+    // int cnt = 0;
+    // vector<int> v;
+
+    // int leader_1 = find(1);
+    // v.push_back(leader_1);
+
+    // for (int i = 2; i <= n; i++)
+    // {
+    //     int leader_node = find(i);
+    //     if (leader_1 != leader_node)
+    //     {
+    //         cnt++;
+    //         dsu_union(leader_1, leader_node);
+    //         v.push_back(leader_node);
+    //     }
+    // }
+    // cout << cnt << endl;
+
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     cout << v[i] << " " << v[i + 1] << endl;
     // }
 
     return 0;
