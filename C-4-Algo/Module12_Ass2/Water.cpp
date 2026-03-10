@@ -38,3 +38,51 @@ int main()
     }
     return 0;
 }
+
+// Another solution - Accepted
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    cin >> T;
+
+    while (T--)
+    {
+        int N;
+        cin >> N;
+
+        vector<long long> H(N);
+
+        for (int i = 0; i < N; i++)
+        {
+            cin >> H[i];
+        }
+
+        int first = -1, second = -1;
+
+        for (int i = 0; i < N; i++)
+        {
+            if (first == -1 || H[i] > H[first])
+            {
+                second = first;
+                first = i;
+            }
+            else if (second == -1 || H[i] > H[second])
+            {
+                second = i;
+            }
+        }
+
+        if (first < second)
+            cout << first << " " << second << "\n";
+        else
+            cout << second << " " << first << "\n";
+    }
+
+    return 0;
+}
