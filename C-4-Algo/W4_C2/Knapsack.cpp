@@ -1,4 +1,3 @@
-// https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/U
 #include <bits/stdc++.h>
 using namespace std;
 int val[1005], weight[1005];
@@ -29,13 +28,13 @@ int knapsack(int i, int mx_weight)
 int main()
 {
     int n, mx_weight;
-    cin >> n >> mx_weight;
+    cin >> n;
+    cin >> mx_weight;
 
     for (int i = 0; i < n; i++)
-    {
         cin >> weight[i];
+    for (int i = 0; i < n; i++)
         cin >> val[i];
-    }
 
     for (int i = 0; i <= n; i++)
         for (int j = 0; j <= mx_weight; j++)
