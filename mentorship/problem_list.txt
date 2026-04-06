@@ -140,3 +140,22 @@ Password: mentor_atiqur
 4. https://www.codechef.com/problems/FACEDIR
 5. https://codeforces.com/problemset/problem/1772/B
 6. https://atcoder.jp/contests/abc325/tasks/abc325_b
+
+
+
+---------------------------------------------------------
+Road to XPSC Last Practice Contest 
+---------------------------------------------------------
+Link: 
+Password: mentor_atiqur
+
+1. https://codeforces.com/contest/1915/problem/B
+2. https://atcoder.jp/contests/abc323/tasks/abc323_a
+3. https://atcoder.jp/contests/abc299/tasks/abc299_a
+4. https://cses.fi/problemset/task/1660
+5. https://cses.fi/problemset/task/1621
+6. https://cses.fi/problemset/task/1633
+7. https://cses.fi/problemset/task/1196
+8. https://cses.fi/problemset/task/1753
+9. https://cses.fi/problemset/task/1646
+10. https://cses.fi/problemset/task/1672
