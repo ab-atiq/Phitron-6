@@ -3,7 +3,7 @@ Problem solving with Loop and Array (Array recap):
     1-N print(loop), 
     N-1 print(loop), 
     1-N(positive) or N-0(negative) print depend on N value (loop), 
-    sum of positive and negative from array (array).
+    sum of positive and negative number from array (array).
     
 2. print all the values of Array at even_indexes in reverse way. (index starts from 0 or 0 index based) 
    + update index value.
