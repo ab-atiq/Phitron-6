@@ -1,0 +1,560 @@
+Week 01: Welcome to Frontend Part - 1
+
+    Module 01: HTML
+        1.1-HTML-Intro
+        1.2-heding-paragraph-line-break-Tag
+        1.3-div-section-Achore tag
+        1.4-images-hr -tag-Button-tag
+        1.5-ol&ul-nested-list
+        1.6-table
+        1.7-Form-Tag-Input-Type
+        1.8-Awsome-HTML-tag
+        1.9-summary
+        Module 01 Resources
+
+    Module 02: CSS
+        Module 02 Resources
+        2.1-css-intro
+        2.2-CSS-selctor-id-class-tag
+        2.3-box-model
+        2.4-display property and color hex and rgba
+        2.5-google font-fontaowsome
+        2.6-css position
+        2.7-flex-box
+        2.8-background-image-liniar-gradient
+        2.9-project-part-1(navbar).
+        2.10-project-part-2(banner)
+        2.11-project-part-3(service section)
+        2.12 project-part-4(contat form)
+
+    Module 2.5: week 01 practice day 01
+        Figma
+        1-media-Query 
+        2-media Query 
+        Practice task explain 
+        Download Resources from Figma File
+
+    Module 03: bootstrap
+        Module 03 Resources
+        1-Bootstrap-linking
+        2-bootstrap-overview
+        3-flex-Bootstrap
+        4-grid-theory-Bootstrap
+        5-grid-Bootstrap-implimentation
+        6-bootstrap-responsive-class
+        7-bootstrap-project-part-1(navbar&carousel)
+        8-project-part-2(services menus)
+        9-project-part-3(contact us)
+        10-Project part-4(footer)
+
+    Module 3.5: week 01 practice day 02
+        Github Link
+        3.5-1 Practice 
+
+    Module 04: Assignment 01
+        Exam Instruction: Module 04 [Must Read]
+        4-1 Instruction
+        4-2 deploy submit 
+        Assignment 01
+
+
+Week 02: JavaScript
+
+    Module 05: Introduction to JavaScript
+        Module 05 Resources
+        5.1 Javascript Intro and Setup environment
+        5.2 Variables in Javascript
+        5.3 Keywords and datatypes
+        5.4 parseInt and parseFloat and OCmments in JS
+        5.5 if else
+        5.6 Object
+        5.7 Array
+        5.8-Loop-Part-1
+        5.9-Loop-Part-2
+        5.10-Function
+
+    Module 06: ES6-DOM
+        Module 06 Resources
+        6.0 Intro ES6
+        6.1 let & const ES6
+        6.2-Tamplet litarels & Spread Operators
+        6.3-Distructuring array and object
+        6.4 Arrow function
+        6.5 Find
+        6.6-Filter-ES
+        6.7-map and forEach
+        6.8-problem-solving-part-1
+        6.9-problem-solving-part-2
+        6.10-connect Javascript with DOM
+
+    Module 6.5: Week 02 Practice Day 01
+        Practice Instruction: Module 6.5 [Must Read]
+
+    Module 07: API&DOM with Javascript-boost
+        Module 07 Resources
+        7.1 Intro
+        7.2 Javascript Selector with DOM
+        7.3 DOm-Looop-if-else
+        7.4 Add event listener
+        7.5 DOM-Manupulation
+
+
+Milestone 01: Getting Started with Django
+
+    Module 01: Introduction to Django & Project Setup
+        Text Instructions of Module 01
+        1.0 What is django
+        1.1 Create Virtual Environment and initialize a project
+        1.2 Understand Django’s architecture_ projects, MVT structure
+        1.3 Set up the Task Management System project
+        1.4 Define Urls and Create Function Based Views
+        1.5 Working with app urls
+        1.6 Generate Requirements.txt file
+        1.7 Module Summary & Possible Error Solutions
+        Quiz Module 01
+
+    Module 02: Version Control with GitHub
+        2.1 GitHub & Git Version Control
+        2.2 Configuring Git and Creating a GitHub Account
+        2.3 Understanding Git Basics
+        2.4 Creating a .gitignore File
+        2.5 Pushing the Repository to GitHub
+        2.6 Dynamic URLs ,Git Branching and Merging
+        2.7 Introduction to git clone and git pull
+        2.8 Going Back to a Specific Commit
+        2.9 Module Summary
+        Quiz Module 02
+
+    Module 03: Introduction to Tailwind
+        3.1 Getting started with Tailwind_ explore colors
+        3.2 Tailwind Typography, background, text, and border
+        3.3 Explore Tailwind width, height, padding, and margin
+        3.4 Tailwind Flex layout and responsive flex
+        3.5 Explore Grid layout and responsive grid
+        3.6 Design Task Management Admin Dashboard Part-1
+        3.7 Design Task Management Admin Dashboard Part-2
+        3.8 Design Task Management Admin Dashboard Part-3
+        3.9 Design Task Management Admin Dashboard Part-4
+        3.10 Design Task Management Admin Dashboard Part-5
+
+    Module 3.5: practice day 01
+        Text Instructions
+        3.5-1 Practice Instructions
+
+    Module 04: Django Templates & Static Files
+        Source Code Link
+        4.1 Set up and use Django templates for dynamic HTML
+        4.2 Template inheritance and template tags
+        4.3 Add and serve static files (CSS, JS, images)
+        4.4 Configure Tailwind CSS in Django Project
+        4.5 Context in Django
+        4.6 Exploring Django Template Tags
+
+    Module-5: Database Setup, Models and Relationship
+        Source Code Link
+        5.1 Installing PostgreSQL & PgAdmin in windows
+        5.2 Installing PostgreSQL & PgAdmin in Ubuntu
+        5.3 Configuring PostgreSQL in Django
+        5.4 Define Model & Fields & Relationship
+        5.5 Defining One-to-One Relationship
+        5.6 Introduction to Django Shell
+        5.7 Defining Many-to-One Relationship
+        5.8 Defining Many-to-Many Relationship
+        5.9 Understanding Reverse Relationship and related_name
+        Quiz: Module 05
+
+    Module 06: Forms & ModelForm
+        Source Code Link
+        6.1 GET vs POST Method in Django
+        6.2 Introduction to Django Form and Dynamically Populate Relational Fields in Django Forms
+        6.3 Create Task into Database Using Form Data
+        6.4 Django Model Form
+        6.5 Custom Widget in Django Model Form
+        6.6 Use Form Mixins for Clean Code [Advanced]
+        6.7 Understanding MRO and Bug Fixing [Advanced]
+        Quiz Module 06
+
+    Module 07: Django ORM
+        Source Code Link
+        7.1 Intro to Django ORM & Setup Django Debug Toolbar
+        7.2 Reset Database in Django
+        7.3 Retrieving Data
+        7.4 Filtering Data
+        7.5 Complex Lookups Using Q Objects
+        7.6 Related Data Queries [Advanced]
+        7.7 Aggregations [Advanced]
+        7.8 How to check module code on github
+        Quiz: Module 07
+
+    Module 7.5: Week 02 Practice Day 1
+        Text Instructions
+        Practice 7.5 Questions
+        7.5-1 Practice
+
+    Module 08: CRUD Operations in Django
+        Source Code Link
+        8.1 Dynamic Dashboard
+        8.2 Optimizing Database Query.
+        8.3 Dynamic Query, Urls name, URL tag
+        8.4 Create Multiple Object in a Single View
+        8.5 Update Query on Database
+        8.6 Delete Query on Database
+
+    Module 09: Django Assignment 01
+        Django Assignment Instruction: Module 09 [Must Read]
+        9.1 Assignment Instructions
+        9.2 Deploy Django Project on Render
+        Django Assignment 01
+
+Milestone 02: Django Authentication & User Roles
+    Module 10: Building Django Authentication
+        10.1 Introduction to Django Admin Panel
+        10.2 Signup Using User Creation Form
+        10.3 Customizing UserCreationForm
+        10.4 Form Field Validation
+        10.5 Field & Non-Field Errors
+        10.6 Login with custome HTML Form
+        10.7 Logout
+
+    Module-11: Django Signals & Sending Email
+        11.1 Introduction to Django Signal
+        11.2 Signals For Many to Many Fields
+        11.3 Bug Fixes and post_delete
+        11.4 Create Environment Variable
+        11.5 Signal Best Practices & Send User Activation Email
+        11.6 Login with AuthenticationForm
+        11.7 Activate User
+
+    Module 12: Role Based Access Control
+        12.1 Introduction to RBAC
+        12.2 Assign Default Role and Create Admin View
+        12.3 Assign Role to User
+        12.4 Create Group
+        12.5 Show Group List
+        12.6 Finding Bugs
+        12.7 Enforcing Views to Check Permission
+        12.8 Optimize query for fetching groups and users[Advanced]
+
+    Module 13: Details View and Media Files
+        13.1 Homepage & Dynamic Navbar
+        13.2 Multilevel Template Inheritance
+        13.3 Create Task Details Views
+        13.4 Revert a migrations
+        13.5 Update Templates According to user views
+        13.6 Working With Media Files
+        13.7 Default ImageField & Change Task Status
+        13.8 Redirect Users to Role-Based Dashboards in Django
+
+    Module 14: Django Assignment 02
+        14.1 Assignment Instructions
+        Django Assignment 02
+
+Milestone 03: Advanced Django Concepts
+    Module 15: Class-Based Views (CBVs)
+        15.1 Introduction To Class-Based-Views
+        15.2 Reusability of Class Based View
+        15.3 Converting Function Views to Class Based View
+        15.4 Understanding Mixins
+        15.5 ListView
+        15.6 DetailView
+        15.7 UpdateView
+        15.8 Module Summary
+
+    Module 16: Django Auth Views & Custom Filters
+        16.1 Intro to Auth Views and LoginView
+        16.2 Customizing LoginView
+        16.3 ProfileView using TemplateView
+        16.4 Django Custom Template Filter
+        16.5 LogoutView
+        16.6 PasswordChangeView
+        16.7 PasswordResetView
+        16.8 PasswordResetConfirmView
+        16.9 Custom Email Template
+
+    Module 17: Customizing User Model
+        17.1 Create User Profile
+        17.2 Fixing User Profile Error
+        17.3 Edit User Profile
+        17.4 Showing User Profile Details in Template
+        17.5 Customize User Model
+        17.6 Transitioning to a Custom User Model
+        17.7 Custome User & Admin Panel Customization
+
+    Module 17.5: Practice Module
+        17.5 Practice Instructions
+
+    Module 18: Django Mid Term Exam
+        18.1 Exam Instructions
+        Django Mid Term Exam
+
+Milestone 04: Django Rest Framework
+    Module 19: Introduction to DRF & Project Setup
+        Source Code Link
+        PhiMart Requirement
+        19.1 Introduction to DRF
+        19.2 PhiMart Requirement Analysis
+        19.3 Setup Project
+        19.4 Customizing User Model With Email Based Authentication
+        19.5 Creating Necessary Models
+        19.6 Setup Debug Toolbar & Add Dummy Data Using Fixtures
+
+    Module 20: Serializers & API View
+        Source Code Link
+        20.1 Api Naming Convention
+        20.2 Introduction to get_object_or_404
+        20.3 Use Django Serializer
+        20.4 Serializing Relationship
+        20.5 Model Serializer
+        20.6 Deserializer
+        20.7 Validation
+        20.8 Update and Delete Operations
+        Quiz: Module 20
+
+    Module 21: Advanced API Concepts
+        Source Code Link
+        21.1 Class Based API View
+        21.2 Implementing Category API
+        21.3 Mixins & Generic API View
+        21.4 Customizing Generic Views
+        21.5 Viewsets & Routers
+        21.6 Nested Routers & Creating Review API
+        21.7 Filtering & Generic Filter
+        21.8 Searching & Sorting
+        21.9 Pagination
+        21.10 Module Summary
+        Quiz Module 21
+
+    Module 22: Building Cart API
+        Source Code Link
+        22.1 Cart API Desing & Updating Models
+        22.2 Creating & Getting Cart
+        22.3 Serializer Nesting for Cart Items
+        22.4 Delete Cart & Get Cart Items
+        22.5 Adding Cart Item
+        22.6 Updating & Deleting Cart Items
+        22.7 Module Summary & Api Root
+
+    Module 22.5: Practice Module
+        Practice Doc: Module 22.5
+        22.5.1 Practice Instructions
+        22.5.2 Practice Instructions
+
+    Module 23: Securing API
+        Source Code Link
+        23.1 Setup Joser and Simple JWT
+        23.2 Registering User API
+        23.3 Login User Using JWT
+        23.4 Fetching Current User
+        23.5 Permissions & Custom Permission Class
+        23.6 Model Permission & Custom Model Permission Class
+        23.7 Updating Review Model
+        23.8 Securing Product Review API
+
+    Module 24: Building Order API
+        Source Code Link
+        24.1 Securing Cart API and Revisit Order Model
+        24.2 Getting Order
+        24.3 Validation For Creating Order
+        24.4 Creating Order
+        24.5 Services & Transaction
+        24.6 Update Order
+        24.7 Implementing Order Canceling System
+        24.8 Action For Canceling Order
+        24.9 Action For Updating Order Status
+        Quiz Module 24
+
+    Module 25: Product Image & API Documentation
+        Source Code Link
+        25.1 Creating Product Image API
+        25.2 Custom Validators
+        25.3 Setup Swagger For API Documentation
+        25.4 Using Swagger & Setup JWT in Documentation
+        25.5 Customizing Swagger Endpoint Description
+        25.6 Customize API Documentation Using swagger_auto_schema
+        25.7 How to Read and Fix Error
+        25.8 What to do next
+
+    Module 26: Deployment Techniques & Readme File
+        Source Code Link
+        26.1 Martkdown Syntax
+        26.2 Creating README file for PhiMart
+        26.3 Setting Up Supabase For Postgres
+        26.4 Fixing Migrations & Fixtures Bugs
+        26.5 Setup Cloudinary For Serving Media Files
+        26.6 Setup Whitenoise For Serving Static Files
+        26.7 Deploy Django Project to Vercel
+        26.8 Deployment Possible Errors and It_s solutions
+        26.9 Send Activation Email using Djoser
+        Quiz Module 26
+
+    Module 26.5 Practice Module
+        Practice Doc: Module 26.5
+        26.5 Practice Instructions
+
+    Module 27: Django Final Exam
+        Django Final Exam Instruction: Module 27 [Must Read]
+        27.1 Django Final Exam Instructions
+        Django Final Exam
+
+Milestone 05: Introduction To React (Bonus)
+    Module 28: Introduction To React, Components, JSX, Icons
+        Source Code Link
+        28.1 Introduction to React
+        28.2 Getting Things Ready & Project Structure
+        28.3 Component & JSX
+        28.4 Conditional Rendering
+        28.5 Showing a List of Data Using Map
+        28.6 Configuring TailwindCSS in React
+        28.7 Handling Events
+        28.8 Managing State
+        28.9 Passing Data Using Props
+        28.10 Creating a Reusable Button Component
+        28.11 Creating a Reusable Alert Component
+        28.12 Icons In React & Fixing Bugs
+        Quiz Module 28
+    Module 29: React Hooks & Data Fetching
+        29.1 Introduction to useState
+        29.2 Updating Object State
+        29.3 Updating Array State
+        29.4 Updating Array of State Object
+        29.5 Sharing State Between Components
+        29.6 Introduction to Effect Hook and Understaning StrictMode
+        29.7 Understanding Effect Dependancies
+        29.8 Fetching API data using useEffect
+        29.9 Fetch Data Using Axios, Handling Errors, Network Tab
+
+    Module 30: Forms in React & CartApp Project
+        30.1 Creating a Form Component
+        30.2 Accessing Input Data using useRef
+        30.3 Accessing input using useState & Controlled Component
+        30.4 React Hook Form
+        30.5 Form Validation
+        30.6 CartApp Project - Add Item Form
+        30.7 CartApp Project - Item List
+        30.8 CartApp Project - Add Cart Item
+        30.9 CartApp Project - Increase, Decrease quantity & Remove Item
+        30.10 CartApp Project - Calculate Total Price using reduce
+
+    Module 31: React Router & UI Components
+        31.1 Project Setup & Install React Router
+        31.2 Todo_ What We Are Going to Build
+        31.3 Project Structure , Custom CSS & Routes
+        31.4 React Router Nested Routes
+        31.5 React Router Navigation, TailwindCSS & DaisyUI setup
+        31.6 Creating Navbar, Footer & Hero Component
+        31.7 How to Get Design Ideas & Images
+        31.8 Creating CarouselSlide Component
+        31.9 Creating Carousel
+        31.10 Making Carousel Responsive
+        31.11 Creating Features Component
+
+    Module 32: Phimart Client - Enabling Cors, Product , Discount & Category Section
+        32.1 Enable Cors For Client App
+        32.2 Building Product Section
+        32.3 Creating Loading Spinner, Error & Services
+        32.4 Creating Discount Section
+        32.5 Creating a Discount Timer and Effect Cleanup [Advanced]
+        32.6 Creating a Category Section
+
+    Module 33: Phimart Client - Building Shop Page
+        33.1 (Initial setup & layout)
+        33.2 (Shop page structure)
+        33.3 (Filter UI setup)
+        33.4 (Product listing improvements)
+        33.5 (UI refinement)
+        33.6 Dynamically Change Price Range
+        33.7 Filter Product by PriceRange and Category
+        33.8 Filter By Searching
+        33.9 Sorting Product By Price
+        33.10 Module Summary
+
+    Module 34: Phimart Client - Building Authentication
+        Source Code Link
+        34.1 Understanding Context API
+        34.2 Creating AuthContext For Login User
+        34.3 Creating Hooks for Modularity
+        34.4 Creating Login Component
+        34.5 Login User, Fetch User and Dynamic Navbar
+        34.6 Showing Login Error & Private Route
+        34.7 Handle Timing of The State Updates & Loading
+        34.8 Creating Register Component
+        34.9 Registering a User
+        34.10 Handling Registration Error
+        34.11 Logout And Redirecting to Login Page After Registration
+        34.12 Setup Frontend URL in Activation Email
+        34.13 Activating User From Frontend
+
+
+    Module 35: Phimart Client - Building Dashboard & Profile
+        35.1 Designing Dashboard Page
+        35.2 How to Make a Component More Readable and Organize
+        35.3 Creating Dashboard Layout
+        35.4 Creating Profile Form Component
+        35.5 Creating Change Password Form
+        35.6 Updating User Profile
+        35.7 Change User Password
+        35.8 Updating UserSerializer For Differentiate Between User and Admin
+
+    Module 35.5: Practice Module
+        Practice instructions module 35.5
+        35.5.1 Practice Instructions
+
+    Module 36: PhiMart Client - Product Details and Cart Page
+        36.1 Creating Image Gallery For Product Detail
+        36.2 Add To Cart Button Stock Update
+        36.3 Creating a Dynamic Add to Cart Button
+        36.4 Finishing ProductDetail Page
+        36.5 Creating Cart Context API
+        36.6 Updating CartViewset for Handling Existing Cart
+        36.7 Adding Items To The Cart
+        36.8 Creating AuthApiClient service with Axios Interceptor
+        36.9 useCallback Hook
+        36.10 Handling Cart Items Quantity Update
+        36.11 Update Cart Items Quantity on Both Server & Locally
+        36.12 Remove Item From Cart
+        36.13 Design Cart Summary
+        36.14 Updating Total Price & Cart Summary in Navbar
+
+    Module 37: PhiMart Client - Building Order Feature
+        37.1 Planning For Implementing Order Feature
+        37.2 Implementing Order Page
+        37.3 Making OrderCard Item more Modular
+        37.4 Placing Order From Cart
+        37.5 Getting All Orders
+        37.6 Solving Some Bugs
+        37.7 Canceling Order
+        37.8 Order Status Update By Admin
+
+    Module 38: PhiMart Client - Payment Gateway Integrations
+        38.1 Introduction to Payment Gateway & SSLCommerze
+        38.2 Create a SSLCommerze Sandbox Account
+        38.3 Initiating Payment API
+        38.4 Making Payment Information Dynamic
+        38.5 Handling Payment From Frontend Part-1
+        38.6 Handling Payment Information From Frontend Part-2
+        38.7 Handling Payment Success From Frontend
+        38.8 Handling Payment Fail & Cancel
+        38.9 Deploying Updated API in Vercel
+
+    Module 39: Add Product & Review
+        39.1 Module Overview
+        39.2 Implementing Add Product Feature
+        39.3 Accept Floating Value Price For Product
+        39.4 Image Upload & Showing Image Preview
+        39.5 Uploading Image To The Server
+        39.6 Endpoint to Check If an User Ordered the Product
+        39.7 Creating Star Component
+        39.8 Creating ReviewForm Component
+        39.9 POST Review To Database
+        39.10 Showing Review List
+        39.11 Showing Loading Spinner & Review Count
+        39.12 Handling Review Edit Part-1
+        39.13 Handling Review Edit Part-2
+        39.14 Handling Review Edit Last Part
+        39.15 Deleting Review
+        39.16 Wrap Up
+
+    Module 40: Full Stack Assignment
+        Full Stack Assignment Instructions [Must Read]
+        40.1 Assignment Instructions [Must Watch]
+        Full Stack Assignment

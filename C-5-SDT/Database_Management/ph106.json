@@ -1,0 +1,1786 @@
+{
+    "data": {
+        "_id": "680c58703ea51b14627fb607",
+        "title": "Database Management",
+        "courseId": "PH106",
+        "milestone": [
+            {
+                "_id": "680caf860b7fed23c62e2b4b",
+                "title": "Week 01: Introduction to Database",
+                "courseId": "680c58703ea51b14627fb607",
+                "module": [
+                    {
+                        "_id": "680caffb3ea51b146280552c",
+                        "name": "Module 01: Introduction",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-04-26T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "680cb012fe95c86c1d7332e2",
+                                "name": "1-0 Module 1 Introduction",
+                                "slug": "ph106-1-0-module-1-introduction",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb012fe95c86c1d7332e4",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "c01435fcb3394dabb42a133ad13c6837",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "1"
+                                }
+                            },
+                            {
+                                "_id": "680cb0233006ccebf293940d",
+                                "name": "1-1 Data vs Information",
+                                "slug": "ph106-1-1-data-vs-information",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb0233006ccebf293940f",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "21ed7d8790744588837d49c1f93d4014",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "6"
+                                }
+                            },
+                            {
+                                "_id": "680cb03af1de4e6d781ae148",
+                                "name": "1-2 Database and Types of Database",
+                                "slug": "ph106-1-2-database-and-types-of-database",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb03af1de4e6d781ae14a",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "f092f2cb37544f11b97947189dadfef0",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "10"
+                                }
+                            },
+                            {
+                                "_id": "680cb0553006ccebf29394ac",
+                                "name": "1-3 Table, Record, Field, Value",
+                                "slug": "ph106-1-3-table-record-field-value",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb0553006ccebf29394ae",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "7c289ac8cbe54cd783acca6ea7de3691",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "6"
+                                }
+                            },
+                            {
+                                "_id": "680cb068c96ccb6db183bee7",
+                                "name": "1-4 DBMS, RDBMS",
+                                "slug": "ph106-1-4-dbms-rdbms",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb068c96ccb6db183bee9",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b6c5c429a67849f28e173ec8de933944",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "9"
+                                }
+                            },
+                            {
+                                "_id": "680cb07d3ea51b1462805692",
+                                "name": "1-5 Key, Primary Key",
+                                "slug": "ph106-1-5-key-primary-key",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb07d3ea51b1462805694",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "39df61b3618c47b0be2483b16e033e14",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "11"
+                                }
+                            },
+                            {
+                                "_id": "680cb0940b7fed23c62e2d60",
+                                "name": "1-6 Relation, Foreign Key",
+                                "slug": "ph106-1-6-relation-foreign-key",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb0940b7fed23c62e2d62",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b11caa1d158845aab33ec4b3525c19a7",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "14"
+                                }
+                            },
+                            {
+                                "_id": "680cb0b70b7fed23c62e2e63",
+                                "name": "1-7 Module 01 Summary",
+                                "slug": "ph106-1-7-module-1-summary",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680caffb3ea51b146280552c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb0b70b7fed23c62e2e65",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "a731115f888c49b0a36ce4abaf0411eb",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "3"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "680cb3c9c96ccb6db183c42c",
+                        "name": "Module 02: MySQL and Basic Query",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-04-27T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "680cb3ea3ea51b1462805ef7",
+                                "name": "2-0 Module 02 Introduction",
+                                "slug": "ph106-2-0-module-02-introduction",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb3ea3ea51b1462805ef9",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "0f1ae35d2bb7461ab3d2257d7d47f2bb",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "1"
+                                }
+                            },
+                            {
+                                "_id": "680cb3f73ea51b1462805f5b",
+                                "name": "2-1 Query, SQL 01",
+                                "slug": "ph106-2-1-query-sql-01",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb3f73ea51b1462805f5d",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "76c927a1fa964f8c9595124314973ff6",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "6"
+                                }
+                            },
+                            {
+                                "_id": "680cb41099cc1e5aaaeb1756",
+                                "name": "2-1 Query, SQL 02",
+                                "slug": "ph106-2-1-query-sql-02",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb41099cc1e5aaaeb1758",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "1ac6c47dddc14d82a996bea9d0fc5093",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "12"
+                                }
+                            },
+                            {
+                                "_id": "680cb42a99cc1e5aaaeb1804",
+                                "name": "2-2 MySQL Download and Install",
+                                "slug": "ph106-2-2-mysql-download-and-install",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb42a99cc1e5aaaeb1806",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9e7ff50d6036407caa0802930b95f537",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "16"
+                                }
+                            },
+                            {
+                                "_id": "680cb4d8c96ccb6db183c54a",
+                                "name": "2-3 SQL vs MySQL",
+                                "slug": "ph106-2-3-sql-vs-mysql",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb4d8c96ccb6db183c54c",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "62ac51bfb1b6496a961768debc4672ff",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "3"
+                                }
+                            },
+                            {
+                                "_id": "680cb4f70b7fed23c62e3918",
+                                "name": "2-4 MySQL Datatypes",
+                                "slug": "ph106-2-4-mysql-datatypes",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb4f70b7fed23c62e391a",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "0349ad798d4447c394e136a08d2f5555",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "13"
+                                }
+                            },
+                            {
+                                "_id": "680cb50c0b7fed23c62e39ea",
+                                "name": "2-5 CREATE, INSERT, UPDATE, DELETE, DROP",
+                                "slug": "ph106-2-5-create-insert-update-delete-drop",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb50c0b7fed23c62e39ec",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "fb25fe9d08e1414d9298f5253f038fb6",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "26"
+                                }
+                            },
+                            {
+                                "_id": "680cb51ff1de4e6d781aecb4",
+                                "name": "2-6 Summary",
+                                "slug": "ph106-2-6-summary",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb3c9c96ccb6db183c42c",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb51ff1de4e6d781aecb6",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "672a60186aee483da5a63966ed1d7cc7",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "680cb83f3ea51b14628067b8",
+                        "name": "Module 2.5: Week 01 Practice Day 01",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-04-28T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "680cb84e0b7fed23c62e4181",
+                                "name": "Practice Problem set: Module 2.5",
+                                "slug": "ph106-practice-problem-set-module-2-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb83f3ea51b14628067b8",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "680cb84e0b7fed23c62e4183",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "680cb877fe95c86c1d73406c",
+                                "name": "2.5-1 Practice ",
+                                "slug": "ph106-2-5-1-practice-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb83f3ea51b14628067b8",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb877fe95c86c1d73406e",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "42aeb1af0fdc4e468bc52f62bf1d2ee1",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "680cb8a80b7fed23c62e4232",
+                        "name": "Module 03: Table Query",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-04-29T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "680cb8d73ea51b14628068e6",
+                                "name": "3-0 Introduction Module 03",
+                                "slug": "ph106-3-0-introduction-module-03",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb8d73ea51b14628068e8",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "bd0e193956424d6ab719a849ccb6a457",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "680cb8effab79be75b6a29ad",
+                                "name": "3-1 Constraints",
+                                "slug": "ph106-3-1-constraints",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb8effab79be75b6a29af",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "90ebd8cf756d46bda696140eab6bb6ee",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "33"
+                                }
+                            },
+                            {
+                                "_id": "680cb9163006ccebf293a1a7",
+                                "name": "3-2 SELECT",
+                                "slug": "ph106-3-2-select",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb9163006ccebf293a1a9",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "04814b81495745aaa2764401386c6400",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "6"
+                                }
+                            },
+                            {
+                                "_id": "680cb92cfab79be75b6a2a15",
+                                "name": "3-3 WHERE",
+                                "slug": "ph106-3-3-where",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb92cfab79be75b6a2a17",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b0f7806a69b046dc88fcaae1df236d31",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "5"
+                                }
+                            },
+                            {
+                                "_id": "680cb945fab79be75b6a2abf",
+                                "name": "3-4 Arithmatic Operators",
+                                "slug": "ph106-3-4-arithmatic-operators",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb945fab79be75b6a2ac1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "c2e45a85f3704991bc1c059d00d44abc",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "7"
+                                }
+                            },
+                            {
+                                "_id": "680cb9550b7fed23c62e4458",
+                                "name": "3-5 Comparison Operators",
+                                "slug": "ph106-3-5-comparison-operators",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb9550b7fed23c62e445a",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "97b43e0eb56242f78521ea009bbe41d4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "3"
+                                }
+                            },
+                            {
+                                "_id": "680cb973f1de4e6d781af7ef",
+                                "name": "3-6 Logical AND OR Operators",
+                                "slug": "ph106-3-6-logical-and-or-operators",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb973f1de4e6d781af7f1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "93b817256b1c4e818df32bc0b55f73bf",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "8"
+                                }
+                            },
+                            {
+                                "_id": "680cb987fab79be75b6a2bc9",
+                                "name": "3-7 DISTINCT, ORDER BY, LIMIT, OFFSET",
+                                "slug": "ph106-3-7-distinct-order-by-limit-offset",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb987fab79be75b6a2bcb",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "d09d63faf30c41358dc55ca7f850d8db",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "17"
+                                }
+                            },
+                            {
+                                "_id": "680cb99c99cc1e5aaaeb25a3",
+                                "name": "3-8 Summary",
+                                "slug": "ph106-3-8-summary",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb8a80b7fed23c62e4232",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cb99c99cc1e5aaaeb25a5",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "0f588f5c04a443348c7c73c182c59148",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "680cb9ed3ea51b1462806aef",
+                        "name": "Module 3.5: week 01 practice day 02",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-04-30T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "680cba083ea51b1462806bb6",
+                                "name": "Practice Problem Set: Module 3.5",
+                                "slug": "ph106-practice-problem-set-module-3-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb9ed3ea51b1462806aef",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "680cba083ea51b1462806bb8",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "680cba203ea51b1462806d18",
+                                "name": "3.5-1 Practice",
+                                "slug": "ph106-3-5-1-practice",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "680cb9ed3ea51b1462806aef",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "680cba203ea51b1462806d1a",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "f14f94e4dad74cd8bc0c314ef9b61eb7",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "6811ae0744e1ebabd14a1323",
+                        "name": "Module 04: Assignment 01",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-01T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "6811b27084ee0aabd2a6e11c",
+                                "name": "Assignment Instruction: Module 04 [Must Read]",
+                                "slug": "ph106-assignment-instruction-module-04-must-read-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6811ae0744e1ebabd14a1323",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "6811b27084ee0aabd2a6e11e",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "6811b3c044e1ebabd14a1bef",
+                                "name": "4-1 Instructions",
+                                "slug": "ph106-4-1-instructions",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6811ae0744e1ebabd14a1323",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6811b3c044e1ebabd14a1bf1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "5ef24fc3f63f4cd382db204a4ca5a4a1",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "6811b40d84ee0aabd2a6e343",
+                                "name": "Assignment 01",
+                                "slug": "ph106-assignment-01",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6811ae0744e1ebabd14a1323",
+                                "unitType": "assignment",
+                                "onContent": "Assignment",
+                                "contentId": {
+                                    "_id": "6811b40d84ee0aabd2a6e344",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    }
+                ]
+            },
+            {
+                "_id": "6814fd1cd0c1f7186fe0c6e5",
+                "title": "Week 02: Deep Dive Into Database",
+                "courseId": "680c58703ea51b14627fb607",
+                "module": [
+                    {
+                        "_id": "6814fd4944e1ebabd14ed919",
+                        "name": "Module 05: Functions",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-03T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "6814fd8c579b25319337e0fb",
+                                "name": "Dummy Database",
+                                "slug": "ph106-dummy-database",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "6814fd8c579b25319337e0fd",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "6814fd9ed0c1f7186fe0c8c1",
+                                "name": "Ubuntu MySql Setup Commands (Optional)",
+                                "slug": "ph106-ubuntu-mysql-setup-commands-optional-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "6814fd9ed0c1f7186fe0c8c3",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "6814fe9e6ad1121f23962fda",
+                                "name": "5-00 (optional) ubuntu mysql setup",
+                                "slug": "ph106-5-00-optional-ubuntu-mysql-setup",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814fe9e6ad1121f23962fdc",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "fb8788bb60074ec6966a488bbc3eada4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "9"
+                                }
+                            },
+                            {
+                                "_id": "6814ff6ec99c64aae917c427",
+                                "name": "5-0 Introduction Module 5",
+                                "slug": "ph106-5-0-introduction-module-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ff6ec99c64aae917c429",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "98500bd374d74fec8c3e2f296b9b1c0d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "6814ff8d0ab1f2a6d69ef852",
+                                "name": "5-1 Practice Query",
+                                "slug": "ph106-5-1-practice-query",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ff8d0ab1f2a6d69ef854",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "97456e0b94714719900587f7c55bee8d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "27"
+                                }
+                            },
+                            {
+                                "_id": "6814ffa00ab1f2a6d69ef8cf",
+                                "name": "5-2 Functions",
+                                "slug": "ph106-5-2-functions",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ffa00ab1f2a6d69ef8d1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "c4663cf722ff46cd8e385006367c010c",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "16"
+                                }
+                            },
+                            {
+                                "_id": "6814ffbad0c1f7186fe0d1b8",
+                                "name": "5-3 Group Functions",
+                                "slug": "ph106-5-3-group-functions",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ffbad0c1f7186fe0d1ba",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "04a1f6107ab64570b9e146a57f5b9d98",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "8"
+                                }
+                            },
+                            {
+                                "_id": "6814ffced0c1f7186fe0d1cf",
+                                "name": "5-4 GROUP BY, HAVING",
+                                "slug": "ph106-5-4-group-by-having",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ffced0c1f7186fe0d1d1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "8d32151a3d7d4df686afd99af9da1050",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "13"
+                                }
+                            },
+                            {
+                                "_id": "6814ffe2d0c1f7186fe0d2ae",
+                                "name": "5-5 ALTER TABLE",
+                                "slug": "ph106-5-5-alter-table",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814ffe2d0c1f7186fe0d2b0",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "053d8685be14431fbbc145d2f1dfbfc0",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "10"
+                                }
+                            },
+                            {
+                                "_id": "6814fff684ee0aabd2ac25b1",
+                                "name": "5-6 Summary Module 05",
+                                "slug": "ph106-5-6-summary-module-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6814fd4944e1ebabd14ed919",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6814fff684ee0aabd2ac25b3",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "13b901742c5d48febd2444092c2b3fb4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681769130dd1b1e96ba01a45",
+                        "name": "Module 06: Subquery",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-04T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "68176949223dd50550d87ad6",
+                                "name": "6-0 Introduction Module 06",
+                                "slug": "ph106-6-0-introduction-module-6",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176949223dd50550d87ad8",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "6ba95f65c2e34f99bdfc3a108ad95e1c",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "1"
+                                }
+                            },
+                            {
+                                "_id": "6817695ac8929f06f94d1b2e",
+                                "name": "6-1 Subquery",
+                                "slug": "ph106-6-1-subquery",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6817695ac8929f06f94d1b30",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "2699feba29a241c6ad9f3e9f4f6ad1eb",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "5"
+                                }
+                            },
+                            {
+                                "_id": "6817696f098694d05f098d7f",
+                                "name": "6-2 Examples of Subquery",
+                                "slug": "ph106-6-2-examples-of-subquery",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6817696f098694d05f098d81",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "234410776e2b41b2a4c9307dbb8e5b17",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "20"
+                                }
+                            },
+                            {
+                                "_id": "6817698367a71fe8dc66e55f",
+                                "name": "6-3 Advanced Subquery",
+                                "slug": "ph106-6-3-advanced-subquery",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6817698367a71fe8dc66e561",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "d1014b2bf960448f9c8db53fe554f117",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "16"
+                                }
+                            },
+                            {
+                                "_id": "681769a938d62eeedddca06c",
+                                "name": "6-4 Common Table Expressions (WITH AS)",
+                                "slug": "ph106-6-4-common-table-expressions-with-as-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681769a938d62eeedddca06e",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "84d5891856334bbc9162820863b11873",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "681769ba0dd1b1e96ba01be0",
+                                "name": "6-5 Example of Common Table Expressions",
+                                "slug": "ph106-6-5-example-of-common-table-expressions",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681769ba0dd1b1e96ba01be2",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b4a8386f69004ca78ab0d7c0f7fb8d51",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "11"
+                                }
+                            },
+                            {
+                                "_id": "681769df38d62eeedddca196",
+                                "name": "6-6 Summary Module 6",
+                                "slug": "ph106-6-6-summary-module-6",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681769130dd1b1e96ba01a45",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681769df38d62eeedddca198",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9651e370486646ad962a653d5313f0f4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "68176a1a223dd50550d87dcf",
+                        "name": "Module 6.5: Week 02 Practice Day 01",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-05T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "68176a49098694d05f09914e",
+                                "name": "Practice Instruction: Module 6.5 [Must Read]",
+                                "slug": "ph106-practice-instruction-module-6-5-must-read-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176a1a223dd50550d87dcf",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "68176a49098694d05f099150",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "68176a5767a71fe8dc66e82f",
+                                "name": "6.5-1 Practice",
+                                "slug": "ph106-6-5-1-practice",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176a1a223dd50550d87dcf",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176a5767a71fe8dc66e831",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "0bc3a765c87c441e8c7ea5a1bee1e1c2",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "3"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "68176b70277b25a0d35ddd4f",
+                        "name": "Module 07: Join",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-06T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "68176b84098694d05f099835",
+                                "name": "7-0 Introduction Module 07",
+                                "slug": "ph106-7-0-introduction-module-07",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176b84098694d05f099837",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "13718c6910994af1b06ceff1ad0b496a",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "68176b9d277b25a0d35ddfce",
+                                "name": "7-1 Joining Tables",
+                                "slug": "ph106-7-1-joining-tables",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176b9d277b25a0d35ddfd0",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "71387cc136f84623ab3a4630fb3c827d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "6"
+                                }
+                            },
+                            {
+                                "_id": "68176bae67a71fe8dc66ec15",
+                                "name": "7-2 Joining Tables without using JOIN Query",
+                                "slug": "ph106-7-2-joining-tables-without-using-join-query",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176bae67a71fe8dc66ec17",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b2a1a036c38d493aa4c0003cf3f8a1f9",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "9"
+                                }
+                            },
+                            {
+                                "_id": "68176bbe098694d05f099903",
+                                "name": "7-3 Joining Tables with JOIN Query",
+                                "slug": "ph106-7-3-joining-tables-with-join-query",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176bbe098694d05f099905",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "3515596b02bf4656bf30b28475993856",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "9"
+                                }
+                            },
+                            {
+                                "_id": "68176bd2098694d05f0999ab",
+                                "name": "7-4 INNER, LEFT, RIGHT, CROSS Join",
+                                "slug": "ph106-7-4-inner-left-right-cross-join",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176bd2098694d05f0999ad",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "fb7ec3d30928405a8b81b2d4b82ab5f9",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "14"
+                                }
+                            },
+                            {
+                                "_id": "68176beb277b25a0d35de080",
+                                "name": "7-5 SELF JOIN",
+                                "slug": "ph106-7-5-self-join",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176beb277b25a0d35de082",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "145ad95c665e42ca8fd19d5df7a23423",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "68176bfe1e238070a26db0ff",
+                                "name": "7-6 Examples of JOIN Query",
+                                "slug": "ph106-7-6-examples-of-join-query",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176bfe1e238070a26db101",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "cbd35a8986764549a49dbe30be545abb",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "29"
+                                }
+                            },
+                            {
+                                "_id": "68176c1867a71fe8dc66ef3e",
+                                "name": "7-7 Summary Module 07",
+                                "slug": "ph106-7-7-summary-module-07",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "68176c1867a71fe8dc66ef40",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "cea45c347bd44e20b3e706e0296621f4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "68176e50f9381d0e54647a23",
+                                "name": "Quiz: Module 07 - Quiz",
+                                "slug": "ph106-quiz-module-07-quiz",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "68176b70277b25a0d35ddd4f",
+                                "unitType": "quiz",
+                                "contentId": "68176e50f9381d0e54647a39"
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681b3a38d0caae7eb224eb23",
+                        "name": "Module 7.5: Week 02 Practice Day 02",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-07T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681b3a5fc64a8392a9f8bb2e",
+                                "name": "Practice Instruction: Module 7.5 [Must Read]",
+                                "slug": "ph106-practice-instruction-module-7-5-must-read-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681b3a38d0caae7eb224eb23",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "681b3a5fc64a8392a9f8bb30",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "681b3a73c64a8392a9f8bbf2",
+                                "name": "7.5-1 Practice",
+                                "slug": "ph106-7-5-1-practice",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681b3a38d0caae7eb224eb23",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681b3a73c64a8392a9f8bbf4",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b502c46f8e64431084f99890dd9358f2",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681cb78d4b68e287916adcd5",
+                        "name": "Module 08: Mid Term",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-08T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681cb884a321f8316f45af41",
+                                "name": "Exam Instruction: Module 08 [Must Read]",
+                                "slug": "ph106-exam-instruction-module-08-must-read-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681cb78d4b68e287916adcd5",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "681cb884a321f8316f45af43",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "681cb899ff1cc235ed99e418",
+                                "name": "8-1 instructions",
+                                "slug": "ph106-8-1-instructions",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681cb78d4b68e287916adcd5",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681cb899ff1cc235ed99e41a",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9a1b4955e2934a49bfe079b6d9f8efb1",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "5"
+                                }
+                            },
+                            {
+                                "_id": "681cb8ff4b68e287916ae19f",
+                                "name": "Mid term",
+                                "slug": "ph106-mid-term",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681cb78d4b68e287916adcd5",
+                                "unitType": "assignment",
+                                "onContent": "Assignment",
+                                "contentId": {
+                                    "_id": "681cb8ff4b68e287916ae1a0",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    }
+                ]
+            },
+            {
+                "_id": "681f1d4637d6f65fc6fdad88",
+                "title": "Week 03: Final Week",
+                "courseId": "680c58703ea51b14627fb607",
+                "module": [
+                    {
+                        "_id": "681f1d6e0fd72e52f95b7cd3",
+                        "name": "Module 09: Key, Set Operation & Problem Solving",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-10T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681f1e9237d6f65fc6fdafae",
+                                "name": "9-0 Introduction Module 9",
+                                "slug": "ph106-9-0-introduction-module-9",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1e9237d6f65fc6fdafb0",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "da10ae609b6c4de8975d02e9b54099d5",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "1"
+                                }
+                            },
+                            {
+                                "_id": "681f1eaa37d6f65fc6fdb025",
+                                "name": "9-1 Primary Key, Foreign Key Constraint Part 01",
+                                "slug": "ph106-9-1-primary-key-foreign-key-constraint-part-01",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1eaa37d6f65fc6fdb027",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b170dacaf378440ab660d216385804f0",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "681f1ec237d6f65fc6fdb232",
+                                "name": "9-1 Primary Key, Foreign Key Constraint Part 02",
+                                "slug": "ph106-9-1-primary-key-foreign-key-constraint-part-2",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1ec237d6f65fc6fdb234",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "e57f0c7ec51f4cc5a1422a67130621a4",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "12"
+                                }
+                            },
+                            {
+                                "_id": "681f1ed437d6f65fc6fdb2ff",
+                                "name": "9-2 Foreign Key ON DELETE Operation",
+                                "slug": "ph106-9-2-foreign-key-on-delete-operation",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1ed437d6f65fc6fdb301",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "6f87c87cfa594d75b0e934be6ef78bfc",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "14"
+                                }
+                            },
+                            {
+                                "_id": "681f1ee437d6f65fc6fdb362",
+                                "name": "9-3 Set Operations",
+                                "slug": "ph106-9-3-set-operations",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1ee437d6f65fc6fdb364",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "bb12da0d26f64a98be1399624b7fe401",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "17"
+                                }
+                            },
+                            {
+                                "_id": "681f1efc37d6f65fc6fdb395",
+                                "name": "9-4 Problem Solving",
+                                "slug": "ph106-9-4-problem-solving",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1efc37d6f65fc6fdb397",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "b5f2205920a4442280679527be7a3e54",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "17"
+                                }
+                            },
+                            {
+                                "_id": "681f1fb298f26374fd6ba582",
+                                "name": "9-5 Summary Module 9",
+                                "slug": "ph106-9-5-summary-module-9",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1d6e0fd72e52f95b7cd3",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1fb298f26374fd6ba584",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "35e0032c984741bb97e09ddb698a759c",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "1"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681f1fedffc5b2b2a70ff652",
+                        "name": "Module 10: ERD",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-11T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681f1ffec6a6a8ac3e4c0c33",
+                                "name": "10-0 Introduction Module 10",
+                                "slug": "ph106-10-0-introduction-module-10",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f1ffec6a6a8ac3e4c0c35",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9f3669dc4a5943d6825ca29f29cce750",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "681f201547e5af946e0a6e26",
+                                "name": "10-1 Database Design Strategies",
+                                "slug": "ph106-10-1-database-design-strategies",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f201547e5af946e0a6e28",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "0a3daea5a2364f0eb8552d70fd0c8934",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "11"
+                                }
+                            },
+                            {
+                                "_id": "681f202347e5af946e0a6eb1",
+                                "name": "10-2 ERD Notations",
+                                "slug": "ph106-10-2-erd-notations",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f202347e5af946e0a6eb3",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "42472659d75d4c88a3812cb6ec3873fb",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "7"
+                                }
+                            },
+                            {
+                                "_id": "681f20330fd72e52f95b806d",
+                                "name": "10-3 ERD Primary Key and Relation Between Tables",
+                                "slug": "ph106-10-3-erd-primary-key-and-relation-between-tables",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f20330fd72e52f95b806f",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "3d7e220cb223429c8ef0d1923dabcb0f",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "19"
+                                }
+                            },
+                            {
+                                "_id": "681f20480a7b7bc83363ae6d",
+                                "name": "10-4 ERD Strong Entity Weak Entity",
+                                "slug": "ph106-10-4-erd-strong-entity-weak-entity",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f20480a7b7bc83363ae6f",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "a086dffb1b6d439f9e590333c4666507",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "681f206237d6f65fc6fdb53f",
+                                "name": "10-5 ERD Types of Attributes",
+                                "slug": "ph106-10-5-erd-types-of-attributes",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f206237d6f65fc6fdb541",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9dd0e3d7611346f387466c6476351b25",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "7"
+                                }
+                            },
+                            {
+                                "_id": "681f207237d6f65fc6fdb587",
+                                "name": "10-6 ERD Generalization Specialization",
+                                "slug": "ph106-10-6-erd-generalization-specialization",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f207237d6f65fc6fdb589",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "821d0d79e71844e3b66715c7a6ebcb39",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "7"
+                                }
+                            },
+                            {
+                                "_id": "681f20870fd72e52f95b80dd",
+                                "name": "10-7 ERD Example",
+                                "slug": "ph106-10-7-erd-example",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f20870fd72e52f95b80df",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "283d7634b0da4dd9b8afd01b4e4d140d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "12"
+                                }
+                            },
+                            {
+                                "_id": "681f209f0a7b7bc83363af14",
+                                "name": "10-8 Summary Module 10",
+                                "slug": "ph106-10-8-summary-module-10",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f209f0a7b7bc83363af16",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "522055044dee406bb19b023a20764b60",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "681f22aa37d6f65fc6fdb9f0",
+                                "name": "Quiz: Module 10",
+                                "slug": "ph106-quiz-module-10",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f1fedffc5b2b2a70ff652",
+                                "unitType": "quiz",
+                                "contentId": "681f22aa37d6f65fc6fdba06"
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681f23cc47e5af946e0a75c7",
+                        "name": "Module 10.5: Week 03 Practice Day 01",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-12T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681f23e098f26374fd6bac92",
+                                "name": "Practice problem set: Module 10.5",
+                                "slug": "ph106-practice-problem-set-module-10-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f23cc47e5af946e0a75c7",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "681f23e098f26374fd6bac94",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "681f23f498f26374fd6bad35",
+                                "name": "10.5-1 Practice",
+                                "slug": "ph106-10-5-1-practice",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f23cc47e5af946e0a75c7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f23f498f26374fd6bad37",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "cd583de92a094d7abefc21dd4222e413",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "3"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681f25e598f26374fd6bb1b7",
+                        "name": "Module 11: Python & MySQL",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-13T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681f260f47e5af946e0a78b2",
+                                "name": "Important Notice and Code Link",
+                                "slug": "ph106-important-notice-and-code-link",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "681f260f47e5af946e0a78b4",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "681f262a47e5af946e0a7927",
+                                "name": "11-0 Introduction Module 11 ",
+                                "slug": "ph106-11-0-introduction-module-11-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f262a47e5af946e0a7929",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "f3b4881d824146209b7d078a1b001c28",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            },
+                            {
+                                "_id": "681f2648c6a6a8ac3e4c12d2",
+                                "name": "11-1 (Optional) Python MySQL Setup ",
+                                "slug": "ph106-11-1-optional-python-mysql-setup-",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f2648c6a6a8ac3e4c12d4",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "9fbef342a58d4e1dafb479df6bf5bb3d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "14"
+                                }
+                            },
+                            {
+                                "_id": "681f26680a7b7bc83363baa9",
+                                "name": "11-2 (Optional) Execute MySQL Query in Python",
+                                "slug": "ph106-11-2-optional-execute-mysql-query-in-python",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f26680a7b7bc83363baab",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "de47121f9646468a828c87d46861a805",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "16"
+                                }
+                            },
+                            {
+                                "_id": "681f26810a7b7bc83363bb6e",
+                                "name": "11-3 Student Library Management System ERD",
+                                "slug": "ph106-11-3-student-library-management-system-erd",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f26810a7b7bc83363bb70",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "3bab05f0981e4b448ce3dd6c4220447a",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "8"
+                                }
+                            },
+                            {
+                                "_id": "681f269698f26374fd6bb36a",
+                                "name": "11-4 Student Library Management System Schema SQL Code",
+                                "slug": "ph106-11-4-student-library-management-system-schema-sql-code",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f269698f26374fd6bb36c",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "8abcea5ebdb848429f76de431c68605e",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "14"
+                                }
+                            },
+                            {
+                                "_id": "681f26a8ffc5b2b2a71000bf",
+                                "name": "11-5 Future ToDo",
+                                "slug": "ph106-11-5-future-todo",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f26a8ffc5b2b2a71000c1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "34eff2c0869c4dd1a51fc4812549649b",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "681f26c6c6a6a8ac3e4c137e",
+                                "name": "11-6 Summary Module 11",
+                                "slug": "ph106-11-6-summary-module-11",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f25e598f26374fd6bb1b7",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f26c6c6a6a8ac3e4c1380",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "4009a79d390b4a0db625ffaae73e14e8",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "681f27500fd72e52f95b8e7e",
+                        "name": "Module 11.5: Week 03 Practice Day 02",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-14T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "681f27690fd72e52f95b8f01",
+                                "name": "Practice Problem Set: Module 11.5",
+                                "slug": "ph106-practice-problem-set-module-11-5",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f27500fd72e52f95b8e7e",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "681f27690fd72e52f95b8f03",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "681f277e6bf245d67b0e0c16",
+                                "name": "11.5-1 Practice",
+                                "slug": "ph106-11-5-1-practice",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "681f27500fd72e52f95b8e7e",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "681f277e6bf245d67b0e0c18",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "e9a203b1958041dfb83df4eac7a30c65",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "2"
+                                }
+                            }
+                        ],
+                        "isLast": false,
+                        "isEarlyReleaseEnable": true
+                    },
+                    {
+                        "_id": "6825eac2111871ac87ca2037",
+                        "name": "Module 12: Final Exam",
+                        "courseId": "680c58703ea51b14627fb607",
+                        "releasedDate": "2025-05-15T16:00:00.000Z",
+                        "releaseUserType": [
+                            "tester",
+                            "student"
+                        ],
+                        "unit": [
+                            {
+                                "_id": "6825ec0dcb0afab3cd383ac7",
+                                "name": "Exam Instructions: Module 12",
+                                "slug": "ph106-exam-instructions-module-12",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6825eac2111871ac87ca2037",
+                                "unitType": "post",
+                                "onContent": "PostType",
+                                "contentId": {
+                                    "_id": "6825ec0dcb0afab3cd383ac9",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            },
+                            {
+                                "_id": "6825ee0b83634aeda23cf6df",
+                                "name": "12-1 Instruction",
+                                "slug": "ph106-12-1-instruction",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6825eac2111871ac87ca2037",
+                                "unitType": "video",
+                                "onContent": "VideoContent",
+                                "contentId": {
+                                    "_id": "6825ee0b83634aeda23cf6e1",
+                                    "courseId": "680c58703ea51b14627fb607",
+                                    "videoId": "26a5c745edec4859abbc9a98ee2f6d0d",
+                                    "link": "3dc4497be663425ca77c947e8bba950c",
+                                    "duration": "4"
+                                }
+                            },
+                            {
+                                "_id": "6825eeba03b0ef57c51de4b1",
+                                "name": "Final Exam",
+                                "slug": "ph106-final-exam",
+                                "courseId": "680c58703ea51b14627fb607",
+                                "module": "6825eac2111871ac87ca2037",
+                                "unitType": "assignment",
+                                "onContent": "Assignment",
+                                "contentId": {
+                                    "_id": "6825eeba03b0ef57c51de4b2",
+                                    "courseId": "680c58703ea51b14627fb607"
+                                }
+                            }
+                        ],
+                        "isLast": true,
+                        "isEarlyReleaseEnable": true
+                    }
+                ]
+            }
+        ],
+        "coursePath": "SDT"
+    },
+    "progress": 100,
+    "upcomingRelease": "2025-05-15T16:00:00.000Z",
+    "batchInfo": {
+        "_id": "66d6af44ca8efde0774342bf",
+        "name": "CS Fundamentals With Phitron: Fall 2024",
+        "batchId": "batch6",
+        "supportAvailable": true
+    },
+    "upcomingPreRelease": "2026-04-16T16:00:00.000Z",
+    "currentDate": "2026-04-17T09:19:48.436Z"
+}

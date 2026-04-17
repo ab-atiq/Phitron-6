@@ -1,0 +1,138 @@
+Week 01: Introduction to Database
+
+Module 01: Introduction
+1-0 Module 1 Introduction
+1-1 Data vs Information
+1-2 Database and Types of Database
+1-3 Table, Record, Field, Value
+1-4 DBMS, RDBMS
+1-5 Key, Primary Key
+1-6 Relation, Foreign Key
+1-7 Module 01 Summary
+
+Module 02: MySQL and Basic Query
+1-0 Module 02 Introduction
+1-1 Query, SQL 01
+1-1 Query, SQL 02
+1-2 MySQL Download and Install
+1-3 SQL vs MySQL
+1-4 MySQL Datatypes
+1-5 CREATE, INSERT, UPDATE, DELETE, DROP
+1-6 Summary
+
+Module 2.5: Week 01 Practice Day 01
+Practice Problem set: Module 2.5
+2.5-1 Practice
+
+Module 03: Table Query
+1-0 Introduction Module 03
+1-1 Constraints
+1-2 SELECT
+1-3 WHERE
+1-4 Arithmatic Operators
+1-5 Comparison Operators
+1-6 Logical AND OR Operators
+1-7 DISTINCT, ORDER BY, LIMIT, OFFSET
+1-8 Summary
+
+Module 3.5: week 01 practice day 02
+Practice Problem Set: Module 3.5
+3.5-1 Practice
+
+Module 04: Assignment 01
+Assignment Instruction: Module 04 [Must Read]
+4-1 Instructions
+Assignment 01
+
+
+Week 02: Deep Dive Into Database
+
+Module 05: Functions
+Dummy Database
+Ubuntu MySql Setup Commands (Optional)
+5-00 (optional) ubuntu mysql setup
+5-0 Introduction Module 5
+5-1 Practice Query
+5-2 Functions
+5-3 Group Functions
+5-4 GROUP BY, HAVING
+5-5 ALTER TABLE
+5-6 Summary Module 05
+
+Module 06: Subquery
+6-0 Introduction Module 06
+6-1 Subquery
+6-2 Examples of Subquery
+6-3 Advanced Subquery
+6-4 Common Table Expressions (WITH AS)
+6-5 Example of Common Table Expressions
+6-6 Summary Module 6
+
+Module 6.5: Week 02 Practice Day 01
+Practice Instruction: Module 6.5 [Must Read]
+6.5-1 Practice
+
+Module 07: Join
+7-0 Introduction Module 07
+7-1 Joining Tables
+7-2 Joining Tables without using JOIN Query
+7-3 Joining Tables with JOIN Query
+7-4 INNER, LEFT, RIGHT, CROSS Join
+7-5 SELF JOIN
+7-6 Examples of JOIN Query
+7-7 Summary Module 07
+Quiz: Module 07 - Quiz
+
+Module 7.5: Week 02 Practice Day 02
+Practice Instruction: Module 7.5 [Must Read]
+7.5-1 Practice
+
+Module 08: Mid Term
+Exam Instruction: Module 08 [Must Read]
+8-1 instructions
+Mid term
+
+
+
+Milestone -> Week 03: Final Week
+
+Module 09: Key, Set Operation & Problem Solving
+9-0 Introduction Module 9
+9-1 Primary Key, Foreign Key Constraint Part 01
+9-1 Primary Key, Foreign Key Constraint Part 02
+9-2 Foreign Key ON DELETE Operation
+9-3 Set Operations
+9-4 Problem Solving
+9-5 Summary Module 9
+
+Module 10: ERD
+10-0 Introduction Module 10
+10-1 Database Design Strategies
+10-2 ERD Notations
+10-3 ERD Primary Key and Relation Between Tables
+10-4 ERD Strong Entity Weak Entity
+10-5 ERD Types of Attributes
+10-6 ERD Generalization Specialization
+10-7 ERD Example
+10-8 Summary Module 10
+Quiz: Module 10
+
+Module 10.5: Week 03 Practice Day 01
+Practice problem set: Module 10.5
+10.5-1 Practice
+
+Module 11: Python & MySQL
+Important Notice and Code Link
+11-0 Introduction Module 11
+11-1 (Optional) Python MySQL Setup
+11-2 (Optional) Execute MySQL Query in Python
+11-3 Student Library Management System ERD
+11-4 Student Library Management System Schema SQL Code
+11-5 Future ToDo
+11-6 Summary Module 11
+
+Module 11.5: Week 03 Practice Day 02
+Practice Problem Set: Module 11.5
+11.5-1 Practice
+
+Module 12: Final Exam
