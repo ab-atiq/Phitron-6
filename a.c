@@ -23,11 +23,62 @@ ________________________
 //     printf("\nyour first number is: %d", num1);
 //     return 0;
 // }
+// #include <stdio.h>
+// #include <stdbool.h>
+// int main()
+// {
+//     printf("hello/\\/\\\n");
+//     printf("100%%");
+//     return 0;
+// }
+
 #include <stdio.h>
-#include <stdbool.h>
+#include <limits.h>
 int main()
 {
-    printf("hello/\\/\\\n");
-    printf("100%%");
+    int a;
+
+    scanf("%d", &a);
+    int ar[a];
+    for (int i = 0; i < a; i++)
+    {
+        scanf("%d", &ar[i]);
+    }
+
+    int min = INT_MAX; // min value stored
+    int mx = INT_MIN;  // max value stored
+    int tmp = -1; // max value index
+    
+    for (int i = 0; i < a; i++)
+    {
+        if (ar[i] < min)
+        {
+            min = ar[i];
+        }
+
+        if (ar[i] > mx)
+        {
+            mx = ar[i];
+
+            tmp = i;
+        }
+    }
+
+    for (int i = 0; i < a; i++)
+    {
+        if (ar[i] == min)
+        { 
+            // min_index value replace by max value
+            ar[i] = mx;
+        }
+        if (i == tmp)
+        {
+            // max index value replace by min value
+            ar[i] = min;
+        }
+
+        printf("%d ", ar[i]);
+    }
+
     return 0;
 }
