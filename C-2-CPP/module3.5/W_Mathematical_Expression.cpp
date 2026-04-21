@@ -1,12 +1,13 @@
 // https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/W
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     long long int a, b, c;
     char s, eq;
     cin >> a >> s >> b >> eq >> c;
+    // scanf("%lld %c %lld %c %lld", &a, &s, &b, &eq, &c); // faster than cin
 
     long long int res;
     if (s == '+')
@@ -37,7 +38,8 @@ int main()
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int A, B, C;
     char S, Q;
 
@@ -45,16 +47,17 @@ int main() {
 
     long long int result;
 
-    switch (S) {
-        case '+':
-            result = A + B;
-            break;
-        case '-':
-            result = A - B;
-            break;
-        case '*':
-            result = A * B;
-            break;
+    switch (S)
+    {
+    case '+':
+        result = A + B;
+        break;
+    case '-':
+        result = A - B;
+        break;
+    case '*':
+        result = A * B;
+        break;
     }
 
     if (result == C)

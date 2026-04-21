@@ -6,7 +6,7 @@ ________________________
 */
 
 // Problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/O
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -62,5 +62,32 @@ int main()
         res = n1 / n2;
     }
     printf("%d\n", res);
+    return 0;
+}
+ */
+
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    char s;
+    // scanf("%d%c%d", &a, &s, &b); // correct
+    scanf("%d %c %d", &a, &s, &b);
+    if (s == '+')
+    {
+        printf("%d\n", a + b);
+    }
+    else if (s == '-')
+    {
+        printf("%d\n", a - b);
+    }
+    else if (s == '*')
+    {
+        printf("%d\n", a * b);
+    }
+    else if (s == '/')
+    {
+        printf("%d\n", a / b);
+    }
     return 0;
 }

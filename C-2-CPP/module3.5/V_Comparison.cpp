@@ -1,12 +1,13 @@
 // https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/V
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int a, b;
     char s;
-    cin >> a >> s >> b;
+    // cin >> a >> s >> b;
+    scanf("%d %c %d", &a, &s, &b); // faster than cin
     // cout << a << (int)s << b;
     if (s == '>')
     {
