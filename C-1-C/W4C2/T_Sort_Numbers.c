@@ -304,7 +304,7 @@ int main()
     return 0;
 }
 
-// another approach
+// another approach - easy
 #include <stdio.h>
 int main()
 {

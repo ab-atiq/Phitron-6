@@ -2,6 +2,9 @@
 
 void swap_it(int *a, int *b) // pointer receives address in parameter
 {
+    // a, b -> address
+    // *a, *b -> value
+
     int temp = *a; // dereferencing to get value
     *a = *b;
     *b = temp;
